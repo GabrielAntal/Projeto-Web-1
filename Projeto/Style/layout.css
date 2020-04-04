@@ -71,6 +71,27 @@
     body{width: 100%;}
     img{width: 100%;}
   }
-   
+
+  a:hover{ 
+    background-color:rgba(10,158,255,.1);
+
+  }
+  a{
+    color: #1087ff;
+  }
+  body{
+    font-family: 'Source Sans Pro',sans-serif ;
+    color:#575757;
+    font-size: 16px;
+    line-height: 28px;
+
+  }
+ 
+  figure{
+    background-color:#f6f8fa; 
+  }
+ 
+ 
+
 
    
