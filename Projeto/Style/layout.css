@@ -84,12 +84,55 @@
     color:#575757;
     font-size: 16px;
     line-height: 28px;
+    
 
   }
  
   figure{
     background-color:#f6f8fa; 
   }
+  .barra_autor{/* borda inferor da barra*/
+    border-bottom: 1px solid;
+    border-color:rgb(188, 197, 206) ;
+    padding-bottom:8px;
+   
+  }
+  .perfil_autor{
+    float:left;
+    margin-right: 3px;
+    padding-right: 3px;
+    
+  }
+  .image_perfil{ /* borada da imagem do perfil */
+    border:solid 1px;
+    border-color: lightgray;
+    border-radius:360px;
+    
+  }
+  .editor_name{
+    float:left;
+    
+  }
+  .text{ /* texto informções do autor*/
+    font-size: 12px;
+    line-height: 7px;
+    
+  }
+  .data{
+    font-size: 14px;
+    line-height: 20px;
+    color:rgba(82,82,82,.5);
+  }
+.artigo{
+  width: 900px; 
+  background-color:white; 
+  margin: -20px auto 0px auto;
+  padding:  15px ;/*conteudo interno, todo o conteudo sera ajeitado a 15px tanto a direita como esquerda , em cima e embaixo*/
+ 
+}
+ 
+ 
+
  
  
 
