@@ -20,6 +20,11 @@
      line-height: 24px;
      font-size: 22px;
    }
+
+   .tec1:hover{
+      color: rgb(31, 159, 238);
+     
+   }
   
    
    
@@ -31,6 +36,10 @@
      position: relative;
    }
 
+   .logo:hover{
+    background-image:image(img/log2.jpg);
+  }
+
    .voltar{
      background-color: white;
      border: none;
@@ -39,7 +48,18 @@
      bottom: 4px;
      height: 35px;
      width: 35px;
+     text-align: center;
+     line-height: 50%;
    }
+
+   .voltar:hover{
+    background-color: rgba(0,0,0,.06); 
+    border-radius: 50%;
+   }
+
+   .button_back:hover{
+    background-color: rgba(0,0,0,0);
+  }
 
    .search{
     background-color: white;
@@ -49,7 +69,25 @@
     bottom: 4px;
     height: 35px;
     width: 35px;
+    text-align: center;
+    line-height: 50%;
+    
   }
+  .lup{
+    position: relative;
+    line-height: 100%;
+    top:5px;
+    right: 1px;
+    
+  }
+
+  .search:hover{
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.06);
+
+  }
+
+  
 
 
   @media only screen and (max-width: 600px){
