@@ -37,7 +37,7 @@
    }
 
    .logo:hover{
-    background-image:image(img/log2.jpg);
+    background-image:url(img/log2.jpg);
   }
 
    .voltar{
