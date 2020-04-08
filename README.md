@@ -6,4 +6,5 @@ Modificações 07/04/2020
 - Inserido botões de fonte
 - Inserido botões de categoria
 - Mudança do titulo do artigo para preto
-- largura das imagemns modificadaspara 100% para ocuparem todo os espaço da tag figura
+- largura das imagemns modificadas para 100% para ocuparem todo o espaço da tag figura
+- Modificação na barra_autor
