@@ -1,4 +1,4 @@
-
+﻿
 .delimeter{
   float: none;
 }
@@ -9,6 +9,7 @@
     top:0px;
     left: 0px;
     position: sticky;
+    z-index: 1;
 
    }
 
@@ -20,6 +21,7 @@
     top:0;
     position: fixed;
     box-shadow: 0px 6.2px  6px -6px rgba(0,0,0,0.2);
+    z-index: 1;
     
    }
 
@@ -155,71 +157,118 @@
     background-color:#f6f8fa; 
   }
    /*barra autor*/
-  .barra_autor{/* borda inferor da barra*/
+   .barra_autor{/* borda inferor da barra*/
     border-bottom: 1px solid;
     border-color:rgb(188, 197, 206) ;
-    padding-bottom:8px;
-   
-  }
+    margin-top: -5px;
+    overflow: hidden/*recupera a altura e comprimento perdido pelo float*/;
+  } 
   .perfil_autor{
-    float:left;
-    margin-right: 3px;
-    padding-right: 3px;
-    
-  }
-  .image_perfil{ /* borda da imagem do perfil */
-    border:solid 1px;
-    border-color: lightgray;
-    border-radius:360px;
-    margin-top: -9px;
-    padding: 2px;
+    float :left;
+    margin-right: 1%;
+}  
+.perfil_autor_image{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+   
+}
+.perfil_autor_image img{
+  border:solid 1px;
+  border-color: lightgray;
+  border-radius:360px;
+  padding:2px;
+  width: 36px;
+  height: 36px;;
 
-  }
- 
-  .editor_name{
-    float:left;
-    
-  }
-  .text{ /* texto informções do autor*/
+}
+.perfil_autor_image a{
+  background-color: white;
+}
+.perfil_autor_text{
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    margin-left:8px;
+  
+}
+.perfil_autor_text p{
+    font-weight: 200;
     font-size: 12px;
     line-height: 7px;
-    
-  }
-   /*modificação 07/04/ inserção de compartilhar*/
-   .shared{/* modificado imagem de compartilhamento*/
-    float:right;
-    margin-top:-32px;
-    margin-right: 5px;
 }
 
-.shared_image{
-  float:left;
-  margin-top:-8px;
-}
-
-
-.shared_text{
-  float:left;
-  color:#030303;
-  font: 14px "Source Sans Pro", sans-serif;
-  font-weight: 560;
-
-}
-.comentario{
-  float: right;
-  margin-left: 8px;
-  margin-top: -2px;
-
-}
-.comentario:hover{
-  color: #1087ff;
-
+.comment{
+    float: right;
+    margin-right: 1%;
   
 }
+.comment button{
+  cursor: pointer;
+  border:none;
+  color:black;
+}
+
+.comment button:active{
+  border-radius: 5px;
+  border: 3px solid rgba(10,158,255,.1);
+  color: #0a9eff;
+  
+}
+ .comment button :focus{/* não funciona por causa do link*/
+  color: #0a9eff;
+  
+}
+.comment button :hover{
+  color: #0a9eff;
+}
+
+
+.comment a{
+  background-color: white;
+  text-decoration: none;
+}
+
+
 .comment_image{
-  float:left;
-  margin-top:-2px;
+   
+    display: inline-block;
+    position: relative;
+    top: 0px;
+   
+}
+
+
+
+.comment_text{
   
+    display: inline-block;
+    position: relative;
+    top:-5px;
+    /*color:#030303;* deixa aqui*/
+    font: 14px "Source Sans Pro", sans-serif;
+    font-weight:normal;
+  
+}
+
+
+.share{
+   float:right;
+   margin-right: 1%;
+}
+
+.share_image{
+    display: inline-block;
+    position: relative;
+    top: 7px;
+}
+.share_text{
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    color:#030303;
+    font: 14px "Source Sans Pro", sans-serif;
+    font-weight: normal;
 }
    /*modificado 07/04 inserção compartilhar*/
    /* barra autor*/
