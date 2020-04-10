@@ -182,8 +182,10 @@
   height: 36px;;
 
 }
-.perfil_autor_image a{
+.perfil_autor a{
   background-color: white;
+  text-decoration: none;
+  color:#575757;
 }
 .perfil_autor_text{
     display: inline-block;
@@ -211,7 +213,6 @@
 
 .comment button:active{
   border-radius: 5px;
-  border: 3px solid rgba(10,158,255,.1);
   color: #0a9eff;
   
 }
@@ -219,7 +220,7 @@
   color: #0a9eff;
   
 }
-.comment button :hover{
+.comment button:hover{
   color: #0a9eff;
 }
 
