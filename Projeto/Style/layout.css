@@ -231,7 +231,15 @@
   }
  
   figure{
-    background-color:#f6f8fa; 
+    background-color:#f6f8fa;
+    margin-left: 0px;
+    width: 100%; 
+  }
+
+  figcaption p{
+    font-size: 14px;
+    padding: 16px;
+    margin:0px;
   }
    /*barra autor*/
    .barra_autor{/* borda inferor da barra*/
@@ -270,6 +278,12 @@
     top: 0px;
     margin-left:8px;
   
+}
+.link a{
+ color: #1087ff; 
+}
+.link a:hover{
+ background-color:rgba(10,158,255,.1); 
 }
 .perfil_autor_text p{
     font-weight: 200;
@@ -354,7 +368,7 @@
   }
 .artigo{
   float: none;
-  width:90%;
+  width:80%;
   background-color:white; 
   margin: -20px auto 0px auto;
   padding:  15px ;/*conteudo interno, todo o conteudo sera ajeitado a 15px tanto a direita como esquerda , em cima e embaixo*/
@@ -377,31 +391,36 @@ button{
   margin-right: 8px;
   margin-top:8px;
 }
-button:focus{
-  border: 0;
-}
+
 /*botões categoria*/
 .categoria{
   margin:15px;
-
 }
 
-.categoria button{
+.categoria .link_button{
   border-color:#1087ff;
   color:#1087ff;
 }
 .categoria p{
   font-weight:bold;
 }
-.categoria a{
+
+.link_button{
+  border: solid 1px;
+  border-radius: 5px;
+  border-color: darkgray;
+  border-radius: 5px;
+  color:#444;
+  padding: 3px 8px;
+  margin-right: 8px;
+  margin-top:8px;
+  font: 400 13.3333px Arial;
   text-decoration:none;
+  white-space:nowrap; 
 }
-.fonte a{
-  text-decoration: none;
-}
-/*link de botões*/
 .link_button:hover{
   background-color: white ;
+  
 }
  .comentario {
    color:black;
@@ -413,7 +432,9 @@ button:focus{
   margin:0px;
   font-size: 15px;
   text-align: center;
+
 }
+/*botões de reações*/
 .reaction{
   display: inline-block;
 
@@ -422,14 +443,12 @@ button:focus{
 .reactions button{
   margin: 5px 6px 10px;
   padding: 5px 10px;
+  color: #2a2e2e;
 }
-.reactions button:active{
-  color: #0a9eff;
-}
+
 .reaction_text{
   position:relative;
   bottom: 7px;
-  color: #2a2e2e;
   font-family: "Helvetica Neue",arial,sans-serif;
   font-size: 15px;
   margin-left: 8px;
@@ -437,6 +456,23 @@ button:focus{
 .reactions{
  text-align: center;
 }
+.btn-secondary:focus{
+  color: #0a9eff;
+  background-color:#f2f9ff;
+}
+.reaction img{
+  width: 20px;
+  height: 20px;
+}
+.btn-secondary img:hover{
+  animation: mymove 2s infinite;
+  
+}
+@keyframes mymove {
+  from {transform:scale(1,1)}
+  to {transform:scale(1.5,1.5)}
+}
+
 
 
 
