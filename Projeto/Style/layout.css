@@ -55,8 +55,8 @@
      float: left;
    }
 
-
-   .voltar{
+/* originalmente ----------------------------------------------------------------------------------------*/
+  /* .voltar{
      background-color: white;
      border: none;
      position: absolute;
@@ -81,9 +81,32 @@
 
    .button_back:hover{
     background-color: rgba(0,0,0,0);
-  }
+  }*/
 
-   .search{
+  /* fim originalmente ----------------------------------------------------------------------------------------------------------------*/
+/* modificado-----------------------------------------------------------------------------------------------------------------*/
+  .button_back{
+  background-color: white;
+  border: none;
+  position: absolute;
+  left: 10px;
+  bottom: 4px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 50%; 
+}
+.button_back:hover{
+  background-color: rgba(0,0,0,.06); 
+  border-radius: 50%;
+ }
+ .button_back:active{
+  border: solid 3px;
+  border-radius: 50%;
+  border-color:rgba(52,144,220,.5);
+}
+/* modificado-----------------------------------------------------------------------------------------------------------------*/
+.search{
     background-color: white;
     border: none;   
     position: absolute;
@@ -468,12 +491,13 @@ button{
 .btn-secondary:focus{
   color: #0a9eff;
   background-color:#f2f9ff;
+ 
 }
 .reaction img{
   width: 20px;
   height: 20px;
 }
-.btn-secondary img:hover{
+.btn-secondary:hover img{
   animation: mymove 2s infinite; 
 }
 
@@ -487,7 +511,79 @@ button{
   to {transform:scale(1.5,1.5)}
 }
 /*Fim dos botões de reação----------------------------------------------------------------------------------------------*/
+/* Itens de comentário abaixo das reações*/
+.comentarios-tecmundo{
+  padding: 10px;
+  display: inline-block;
+  position:relative;
+  top:3px;
+  font:15px "Helvetica Neue",arial,sans-serif;
+  font-weight:bold;
+  color:#656c6a;
+}
+.comentarios-tecmundo:hover {
+  color:#2a2e2e;
+   background-color:white;
+}
+.quantidade-de-comentarios{
+  font:15px "Helvetica Neue",arial,sans-serif;
+  color:#2a2e2e;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  border-bottom: 2px solid #288ce4;
 
+  
+}
+
+.comentarios-tecmundo a{
+  color:#656c6a;
+  text-decoration: none;
+}
+
+.comentarios-tecmundo a:hover{
+  color:#2a2e2e;
+  background-color:white;
+}
+.comentarios{
+  border-bottom: solid 2px #e7e9ee;
+}
+.iniciar-sessao{
+  float: right;
+  
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border:2px solid #687a86;;
+  border-radius:3px;
+  z-index: 1;
+  padding-top:5px;
+  padding-bottom:5px;
+   min-width:120px;
+}
+.dropdown-content a {
+  color: #687a86;
+  padding: 4px 15px;
+  text-decoration: none;
+  display:block;
+  font-weight:normal;
+
+}
+.dropdown-content a:hover {
+  background-color: #0a9eff;
+  color:white;
+  
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*Fim dos itens de comentário abaixo das reações -------------------------------------------------------------------------------*/
 
 /*Medias para deixar o site responsivo*/
 @media only screen and (max-width: 600px){
