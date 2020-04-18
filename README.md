@@ -17,5 +17,10 @@ Modificações 07/04/2020
  - alterado o tamanho da fonte do figcaption
  - inserido alt nas imagens
  
+ Modificações 16/04/2020
+ - imgs de lupa e seta substituídos por icons, o código origianl foi apenas comentado
+ - inserção de itens do comentario que estão abaixo dos botões de reações(necesita corrigir implementação)
+ - animação dos emojis agora é realizado quando o mouse está sobre o botão e não apenas na imagem
+ 
  
  
