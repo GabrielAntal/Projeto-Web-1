@@ -22,5 +22,10 @@ Modificações 07/04/2020
  - inserção de itens do comentario que estão abaixo dos botões de reações(necesita corrigir implementação)
  - animação dos emojis agora é realizado quando o mouse está sobre o botão e não apenas na imagem
  
+ Modificações 18/04/2020
+ - Removido das @médias as div{100%}, pois modificam a estrutura dos botões de reações ao minimizar a tela 
+ - inseridos itens de coméntário 2
+ - corrigidos posicionamento dos itens de coméntario 1, para que apresente de forma semelhate ao minimizar a tela
+ 
  
  
