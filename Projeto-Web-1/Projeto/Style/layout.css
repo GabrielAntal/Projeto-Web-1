@@ -154,6 +154,7 @@
     text-align: center;
     color: black;
     box-sizing: border-box;
+   
    }
 
    .save_image:hover{
@@ -163,7 +164,7 @@
    .save_image:active{
     border:  solid 2px;
     border-color:  #1087FF;
-    
+   
    }
 
    .img_share{
@@ -185,7 +186,7 @@
    .img_share:active{
     border: solid 2px;
     border-color:  rgb(82, 164, 245);
-    
+   
   }
 
    .img_share:hover{
@@ -349,10 +350,14 @@
 .share button{
   border:none;
   color:black;
+  outline: none;
 }
 
 .share button:hover{
   color:#0a9eff;
+}
+.share button:active{
+  border: #1087FF 1px solid;
 }
 
 .share_image{
@@ -463,7 +468,7 @@ button{
   padding: 5px 10px;
   color: #2a2e2e;
   box-sizing: border-box;
-  
+  outline:none;
 }
 
 
@@ -480,10 +485,12 @@ button{
  
 }
 .btn-secondary:focus{
-  color: #0a9eff;
+  color: #2e87e7;
   background-color:#f2f9ff;
- 
+  border-color:   #2e87e7;
 }
+ 
+
 .reaction img{
   width: 20px;
   height: 20px;
@@ -492,11 +499,7 @@ button{
   animation: mymove 2s infinite; 
 }
 
-.reactions button:active
-{
-  
-  border-color:  #0a9eff; 
-}
+
 @keyframes mymove {
   from {transform:scale(1,1)}
   to {transform:scale(1.5,1.5)}
@@ -651,7 +654,48 @@ select{
 
 }
 /*Fim dos itens de comentário 2, abaixo das reações   -------------------------------------------------------------------------------*/
-
+/*text-area*/
+.text-area img{
+  width:48px;
+  height:48px;
+ 
+ }
+ .text-area{
+   position:relative;
+   
+ }
+ label{
+   position:absolute;
+   top:0;
+  
+ 
+ }
+ textarea {
+   width: 95%;
+   height:44px;
+   padding: 12px 20px;
+   box-sizing: border-box;;
+   border-radius: 4px;
+   border: 2px solid #ccc;
+   background-color: #f8f8f8;
+   resize: none;
+   float:right;
+   font-family:"Helvetica Neue",arial,sans-serif;
+   outline:none;
+   
+  
+ }
+ ::placeholder  {
+   font-size:18px;
+   color: #687a86;
+  }
+  textarea:focus{
+   height: 73px;
+   }
+ 
+ 
+ /*fim do text-area------------------------------------------------------------------------------------------------------------*/
+ 
 
 
 /*Parte de Relacionados*/
@@ -678,16 +722,21 @@ select{
   color:#444444;
   font-size: 18px;
   font-weight: bold;
-  
+
 }
 
-.text1:hover{
-  color: #1087ff;
-}
+
 
 .link_tex{
   text-decoration: none;
+  color: inherit;
 }
+
+.link_tex:hover{
+  color: #1087ff;
+  background-color:white;
+}
+
 
 .save{
   display: inline-block;
@@ -732,6 +781,73 @@ select{
 
 .redirect img{
   border-radius: 10%;
+}
+
+
+.text2{
+  color:#444444;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.pat{
+  color: #E2AC55;
+  height: 17px;
+  font-size: 14px;
+  width: 40px;
+  line-height: 120%;
+  transform: translateY(-170%);
+  text-align: center;
+  display: inline-block;
+}
+
+.veja:hover .ti{
+  text-decoration: underline;
+}
+
+.veja{
+  position: relative;
+  background-color: white;
+  height: 120px;
+  width: 100%;
+  border-bottom: lightgray 1px solid;
+  padding: 16px 0px;
+  cursor: pointer;
+}
+
+.veja a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.veja ul{
+  color:rgb(186, 186, 196);
+  padding-right: 15px;
+  left:15px;
+  height: 17px;
+  line-height: 120%;
+  font-size: 14px;
+  transform: translateY(-170%);
+  text-align: center;
+  display: inline-block;
+  position: relative;
+
+}
+
+.list
+{list-style: none
+}
+
+ .list li:before{
+  content: "•"; 
+  display: inline-block; width: 1em;
+  margin-left: -1em;
+  color:#E2AC55;
+}
+
+.veja img{
+  transform: translateY(-40%);
 }
 
 /*Fim dos relacionados----------------------------------------------------------------------------------------------------------------------*/
