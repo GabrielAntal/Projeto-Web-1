@@ -27,5 +27,24 @@ Modificações 07/04/2020
  - inseridos itens de coméntário 2
  - corrigidos posicionamento dos itens de coméntario 1, para que apresente de forma semelhate ao minimizar a tela
  
+Modificações 20/04/2020 
+ -Removido o: .reactions buttom:active do arquivo style.css, pois não estava fazendo efeito nemhum
+- Removido as bordas outiline dos botões de reações
+- Mudado a cor do texto e borda dos botões para um tom um pouco mais escuro: #2e87e7
+- Inserido textarea
+
+Modificações 22/04/2020
+- Inserido itens do textarea
+- Mudado a cor do backgaround color do a (link), ao passar o mouse para branco;
+- Inserido border radius de 5px para arredondar os cantos, portanto mais parecida com a original, das classes: .save-image:active e img-share: active
+- alteardo a cor de borda do save-image:active, de para #1087ff  para rgba(52,144,220,0.5) e aumentado espessura da borda de 1px para 3px
+- Alterado cor de borda do share-buttom :active, de rgb(82,144,220,.5 )para rgba(52,144,220,0.5)  e aumentado espessura da borda de 1px para 3px
+- removido box-sozing:borderbox do save-image e img-share e adicionado padding de 3px;
+- alteardo a cor de borda do share-buttom:active, de para #1087ff  para rgba(52,144,220,0.5) e aumentado espessura da borda de 1px para 3px
+- Aumentado a espessura da borda de de 1px para 3px e inserido cor de borda rgba(52,144,220,0.5) do comment-buttom:active
+- Estilização da classe .voltar  removida, pois não estava causando efeito nenhum;
+
+
+
  
  
