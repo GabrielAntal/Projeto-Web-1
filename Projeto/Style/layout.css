@@ -55,22 +55,7 @@
      float: left;
    }
 
-/* originalmente ----------------------------------------------------------------------------------------*/
-  .voltar{
-     background-color: white;
-     border: none;
-     position: absolute;
-     left: 10px;
-     bottom: 4px;
-     height: 35px;
-     width: 35px;
-     text-align: center;
-     line-height: 50%;
-     box-sizing: border-box;
-   }
 
- 
-/* modificado-----------------------------------------------------------------------------------------------------------------*/
   .button_back{
   background-color: white;
   border: none;
@@ -91,7 +76,7 @@
   border-radius: 50%;
   border-color:rgba(52,144,220,.5);
 }
-/* modificado-----------------------------------------------------------------------------------------------------------------*/
+
 .search{
     background-color: white;
     border: none;   
@@ -153,7 +138,7 @@
     cursor: pointer;
     text-align: center;
     color: black;
-    box-sizing: border-box;
+    padding: 3px;
    
    }
 
@@ -162,8 +147,9 @@
    }
 
    .save_image:active{
-    border:  solid 2px;
-    border-color:  #1087FF;
+    border:  solid 3px;
+    border-color:  rgba(52,144,220,.5);
+    border-radius: 5px;
    
    }
 
@@ -178,14 +164,15 @@
     cursor: pointer;
     text-align: center;
     color: black;
-    box-sizing: border-box;
-    
+    padding: 3px;
    }
 
 
    .img_share:active{
-    border: solid 2px;
-    border-color:  rgb(82, 164, 245);
+    border: solid 3px;
+    border-color:  rgba(52,144,220,.5);
+    border-radius: 5px;
+    
    
   }
 
@@ -298,9 +285,11 @@
   cursor: pointer;
   border:none;
   color:black;
+  outline:none;
 }
 
 .comment button:active{
+  border:3px solid  rgba(52,144,220,.5); 
   border-radius: 5px;
   color: #0a9eff;
   
@@ -350,10 +339,15 @@
 .share button{
   border:none;
   color:black;
+  outline: none;
 }
 
 .share button:hover{
   color:#0a9eff;
+}
+.share button:active{
+  border: rgba(52,144,220,.5) 3px solid;
+  
 }
 
 .share_image{
@@ -599,6 +593,9 @@ button{
   cursor:pointer;
 
 }
+.item a:hover{
+  background-color: white;
+}
 .recomendar-img{
   color: #f05f70;
   margin-right:1px;
@@ -651,47 +648,167 @@ select{
 }
 /*Fim dos itens de comentário 2, abaixo das reações   -------------------------------------------------------------------------------*/
 /*text-area*/
-.text-area img{
-  width:48px;
-  height:48px;
- 
- }
- .text-area{
-   position:relative;
-   
- }
- label{
-   position:absolute;
-   top:0;
+.comment-textarea{
+  position:relative;
+  overflow:hidden;
+}
+label{
+  position:absolute;
+  top:0;
+}
+.comment-textarea img{
+ width:48px;
+ height:48px;
+}
+.text-area{
+  border-radius: 4px;
+  border: 2px solid#dbdfe4;
+  float: right;
+  width: 94%;
+  
+
+}
+textarea {
+  width: 100%;
+  height:35px;
+  padding: 12px 20px;
+  background-color:white;
+  resize: none;
+  font-family:"Helvetica Neue",arial,sans-serif;
+  outline:none;
+  border:none;
+  box-sizing: border-box;
+  overflow:hidden;
   
  
+}
+::placeholder  {
+  font-size:18px;
+  color: #687a86;
  }
- textarea {
-   width: 95%;
-   height:44px;
-   padding: 12px 20px;
-   box-sizing: border-box;;
-   border-radius: 4px;
-   border: 2px solid #ccc;
-   background-color: #f8f8f8;
-   resize: none;
-   float:right;
-   font-family:"Helvetica Neue",arial,sans-serif;
-   outline:none;
-   
-  
- }
- ::placeholder  {
-   font-size:18px;
-   color: #687a86;
+ textarea:focus{
+  height: 73px;
   }
-  textarea:focus{
-   height: 73px;
-   }
+
+.text-area-icons{
+  background-color: #f6f8f9;
+  border-top: 2px solid  #dbdfe4;
+  float:right;
+  width: 100%;
+  display: block;
+  padding: 5px 0px;
+  height:30px;
  
+
+}
+.icon{
+  color:rgb(172, 165, 165);
+  cursor:pointer;
+  display:inline-block;
+}
+.icon:hover{
+  color: #656c6a;
+}
+.icon-gif{
+  display:inline-block;
+  position: relative;
+  margin: 5px 0px 5px 5px;
+  height:25px;
+  bottom: 3px;
+}
+.gif{
+  font-size:8px;
+  border: 1.5px solid;
+  border-radius: 2px;
+  width:20px;
+  height: 15px;
+  padding:1px;
+  position: relative;
+  top:2px;
+  
  
- /*fim do text-area------------------------------------------------------------------------------------------------------------*/
+}
+.gif p{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.new i{
+  color:#00aced;
+  font-size:12px;
+  position:absolute;
+  top: -4px;
+  right: -4px;
  
+}
+
+.image{
+  transform:scaleX(-1);
+  font-size: 23px;
+  margin:5px;
+  position:relative;
+  bottom: 3px; 
+  height: 25px;
+}
+.divisor{
+  border-left: 2px solid #dbdfe4;
+  margin: 0 5px;
+  width:3px;
+  height: 25px;
+
+  display:inline-block;
+}
+.format-text{
+  font-size: 25px;
+  
+  
+}
+
+.icon-link{
+  height: 25px;
+  position:relative;
+  display: inline-block;
+  bottom:1px;
+ 
+}
+.link1{
+  transform:rotate(89deg);
+  position:absolute;
+  top:-5px;
+  left:5px;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+}
+.link2{
+  transform:rotate(-91deg);
+  font-size: 17px;
+  position: absolute;
+  top:2px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+}
+.spoiler{
+  position:relative;
+  left: 20px;
+}
+.code{
+  position:relative;
+  left: 20px;
+  font-size: 24px;
+  bottom:4px;
+  
+}
+.quote{
+  font-size:20px;
+  position:relative;
+  left: 20px;
+  bottom:4px;
+}
+/*fim do text-area------------------------------------------------------------------------------------------------------------*/
 
 
 /*Parte de Relacionados*/
@@ -718,16 +835,21 @@ select{
   color:#444444;
   font-size: 18px;
   font-weight: bold;
-  
+
 }
 
-.text1:hover{
-  color: #1087ff;
-}
+
 
 .link_tex{
   text-decoration: none;
+  color: inherit;
 }
+
+.link_tex:hover{
+  color: #1087ff;
+  background-color:white;
+}
+
 
 .save{
   display: inline-block;
@@ -772,6 +894,73 @@ select{
 
 .redirect img{
   border-radius: 10%;
+}
+
+
+.text2{
+  color:#444444;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.pat{
+  color: #E2AC55;
+  height: 17px;
+  font-size: 14px;
+  width: 40px;
+  line-height: 120%;
+  transform: translateY(-170%);
+  text-align: center;
+  display: inline-block;
+}
+
+.veja:hover .ti{
+  text-decoration: underline;
+}
+
+.veja{
+  position: relative;
+  background-color: white;
+  height: 120px;
+  width: 100%;
+  border-bottom: lightgray 1px solid;
+  padding: 16px 0px;
+  cursor: pointer;
+}
+
+.veja a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.veja ul{
+  color:rgb(186, 186, 196);
+  padding-right: 15px;
+  left:15px;
+  height: 17px;
+  line-height: 120%;
+  font-size: 14px;
+  transform: translateY(-170%);
+  text-align: center;
+  display: inline-block;
+  position: relative;
+
+}
+
+.list
+{list-style: none
+}
+
+ .list li:before{
+  content: "•"; 
+  display: inline-block; width: 1em;
+  margin-left: -1em;
+  color:#E2AC55;
+}
+
+.veja img{
+  transform: translateY(-40%);
 }
 
 /*Fim dos relacionados----------------------------------------------------------------------------------------------------------------------*/
