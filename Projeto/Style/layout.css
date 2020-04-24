@@ -101,10 +101,10 @@
     
   }
 
+
 .search:active{
   border: solid 3px;
   border-color:rgba(52,144,220,.5);
-  
   
  }
 
@@ -807,6 +807,29 @@ textarea {
   position:relative;
   left: 20px;
   bottom:4px;
+}
+
+.publish{
+  background-color: #575757;
+  color: white;
+  position: absolute;
+  left: 1083px;
+  width: 250px;
+  height: 41px;
+  transform: translateY(-31%);
+  border-radius: 0px 0px 4px 0px;
+  text-align: center;
+  line-height: 50%;
+  font-weight: bold;
+ 
+}
+
+.publish:hover{
+  background-color: #444343;
+}
+
+.publish:active{
+  background-color:#00aced ;
 }
 /*fim do text-area------------------------------------------------------------------------------------------------------------*/
 
