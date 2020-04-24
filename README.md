@@ -44,7 +44,9 @@ Modificações 22/04/2020
 - Aumentado a espessura da borda de de 1px para 3px e inserido cor de borda rgba(52,144,220,0.5) do comment-buttom:active
 - Estilização da classe .voltar  removida, pois não estava causando efeito nenhum;
 
-
+Modificações 23/04/2020
+-Feito o ajuste no Veja também
+-Adicionado um botão de Publicar no text area com hover e active 
 
  
  
