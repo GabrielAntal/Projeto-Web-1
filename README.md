@@ -48,5 +48,8 @@ Modificações 23/04/2020
 - Feito o ajuste no Veja também
 - Adicionado um botão de Publicar no text area com hover e active 
 
+Modificações 24/04/2020
+ - Inseridos icons de inciar sessão (ainda não implementados)
+
  
  
