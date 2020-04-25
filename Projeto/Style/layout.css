@@ -832,7 +832,69 @@ textarea {
   background-color:#00aced ;
 }
 /*fim do text-area------------------------------------------------------------------------------------------------------------*/
+/* iniciar sessão*/
 
+.begin-session p{
+  font-weight: 700;
+  font-size: 11px;
+  color: #687a86;
+  margin: 0 0 10px;
+  line-height: 1;
+}
+.begin-session{
+position:relative;
+left:72px;
+top:20px;
+}
+.session{
+ display:inline-block;
+ color:white;
+ cursor: pointer;
+}
+.discus-hover{
+ position:absolute;
+}
+.discus-hover:hover{
+ opacity: 0;
+}
+.iniciar-com-facebook{
+ border-radius: 50%;
+ background-color:#3b5998 ;
+ opacity:0.9;
+ padding: 7px 12px 0px;
+ position:relative;
+ bottom:8px;
+}
+.iniciar-com-facebook:hover{
+ opacity:1;
+}
+.iniciar-com-twitter{
+ border-radius: 50%;
+ background-color:#00aced; ;
+ opacity:0.9;
+ padding: 7px 9px 2px; ;
+ position:relative;
+ bottom:8px;
+}
+.iniciar-com-twitter:hover{
+opacity:1;
+}
+.iniciar-com-google{
+ border-radius: 50%;
+ background-color:rgb(218, 31, 31) ;
+ opacity:0.9;
+ padding: 4px 8px;
+ position:relative;
+ bottom:5px;
+ font-size: 26px;
+ font-family:Century Gothic;
+ font-weight: bold;
+ opacity: 0.9;
+}
+.iniciar-com-google:hover{
+opacity: 1;
+}
+/* fim Inciar sessão----------------------------------------------------------------------------------------------------------*/
 
 /*Parte de Relacionados*/
 .rvj{
