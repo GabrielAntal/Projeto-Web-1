@@ -206,6 +206,7 @@
     color:#575757;
     font-size: 16px;
     line-height: 28px;
+    
   }
   h1{
     color:black;
@@ -1049,6 +1050,67 @@ opacity: 1;
 }
 
 /*Fim dos relacionados----------------------------------------------------------------------------------------------------------------------*/
+
+/*Institucional*/
+.inst_sites{
+  
+  background-color: rgb(240, 238, 238);
+  padding: 20px 30px 15px 30px;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.inst{
+  color:#575757;
+  line-height: 50%;
+  padding: 8px 16px;
+  
+}
+
+.inst label{
+  display: block;
+  padding: 8px 16px;
+  font-size:18px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.inst ul{
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.inst ul li a{
+  width: 100%;
+  height: 24px;
+  padding: 4px 16px;
+  text-decoration: none;
+  color:inherit;
+  display: block;
+}
+.inst ul li a:hover{
+  color: black;
+  background-color: inherit;
+}
+
+.inst input:checked ~ ul{
+  height: auto;
+  max-height: 200px;
+}
+
+.inst input:checked ~ label{
+ background-color: rgb(231, 229, 229);
+}
+
+.inst input{
+  display: none;
+}
+
+
+
+/*Fim do Institucional--------------------------------------------------------------------------------------------*/
 
 /*Medias para deixar o site responsivo*/
 @media only screen and (max-width: 600px){
