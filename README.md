@@ -50,6 +50,10 @@ Modificações 23/04/2020
 
 Modificações 24/04/2020
  - Inseridos icons de inciar sessão (ainda não implementados)
+ 
+ Modificaçãoes 26/04/2020
+ - implementação dos icons de iniciar sessão
+ - iniciado form do resgistre=se no discus;
 
  
  
