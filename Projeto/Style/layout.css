@@ -834,68 +834,177 @@ textarea {
 }
 /*fim do text-area------------------------------------------------------------------------------------------------------------*/
 /* iniciar sessão*/
-
+.begin-session button{
+  border:none;
+  height: auto;
+  width: auto;
+  padding: 0em;
+  
+ 
+}
 .begin-session p{
-  font-weight: 700;
-  font-size: 11px;
-  color: #687a86;
-  margin: 0 0 10px;
-  line-height: 1;
+   font-weight: 700;
+   font-size: 11px;
+   color: #687a86;
+   margin: 0 0 10px;
+   line-height: 1;
 }
 .begin-session{
-position:relative;
-left:72px;
-top:20px;
+ position:relative;
+ left:60px;
+ top:20px;
 }
+.begin-session a{
+ text-decoration:none;
+}
+.begin-session a:hover{
+  background-color:white;
+}
+
 .session{
- display:inline-block;
- color:white;
- cursor: pointer;
+  color:white;
+  cursor: pointer;
+}
+.discus-button{
+  position: relative;
+  bottom:-2px;
 }
 .discus-hover{
- position:absolute;
+  position:absolute;
 }
 .discus-hover:hover{
- opacity: 0;
+  opacity: 0;
+}
+.facebook-button{
+  position:relative;
+  bottom:8px;
+  left: -10px;
 }
 .iniciar-com-facebook{
- border-radius: 50%;
- background-color:#3b5998 ;
- opacity:0.9;
- padding: 7px 12px 0px;
- position:relative;
- bottom:8px;
+  border-radius: 50%;
+  background-color:#3b5998 ;
+  opacity:0.9;
+  padding: 8px 12px 8px 12px;
 }
 .iniciar-com-facebook:hover{
- opacity:1;
+  opacity:1;
+}
+.twitter-button{
+  position:relative;
+  bottom:8px;
+  left: -20px;
 }
 .iniciar-com-twitter{
- border-radius: 50%;
- background-color:#00aced; ;
- opacity:0.9;
- padding: 7px 9px 2px; ;
- position:relative;
- bottom:8px;
+  border-radius: 50%;
+  background-color:#00aced; ;
+  opacity:0.9;
+  padding: 9px; 
+ 
 }
+
+
 .iniciar-com-twitter:hover{
-opacity:1;
+ opacity:1;
+}
+.google-button{
+  position:relative;
+  bottom:5px;
+  left: -30px;
 }
 .iniciar-com-google{
- border-radius: 50%;
- background-color:rgb(218, 31, 31) ;
- opacity:0.9;
- padding: 4px 8px;
- position:relative;
- bottom:5px;
- font-size: 26px;
- font-family:Century Gothic;
- font-weight: bold;
- opacity: 0.9;
+  border-radius: 50%;
+  background-color:rgb(218, 31, 31) ;
+  opacity:0.9;
+  padding: 4px 8px;
+  font-size: 24px;
+  font-family:Century Gothic;
+  font-weight: bold;
+  opacity: 0.9;
 }
 .iniciar-com-google:hover{
-opacity: 1;
+ opacity: 1;
 }
+
 /* fim Inciar sessão----------------------------------------------------------------------------------------------------------*/
+/* Registrar no discus*/
+.alinhar{
+  display:inline-block;
+  
+  
+}
+.form{
+  position:relative; 
+}
+ .form p{
+  font-size: 11px;
+  color: #687a86;
+  font-weight: 700;
+
+ }
+ .form span{
+   color:#687a86;
+  font-size: 12px;
+  border-radius: 50%;
+  border:2px solid ;
+  padding: 0px 3px;
+  font-weight: 700;
+ }
+
+  .action:hover .discus-information{
+  display: block;
+}
+ .action button{
+   border:none;
+   padding:2px;
+ }
+ .discus-information {
+  width: 300px;
+  color:#687a86;
+  border: 3px solid #dbdfe4;
+  border-radius: 4px;
+  padding: 1em;
+  background-color: white;
+  position:relative;
+  top:-15px;
+  left:10px;
+  z-index:1;
+  display: none;
+ }
+
+  
+
+.discus-information li {
+
+  list-style: disc;
+  margin: 0 0 6px;
+  line-height: 1.4;
+  font-size: 13px;
+  
+}
+
+.discus-information p{
+  font-weight: 700;
+   font-size: 16px;
+   margin: 0px;
+   text-align: center;
+}
+.discus-information button{
+    border: none;
+    width: 100%;
+    background: rgba(29,47,58,.6);
+    padding: 8px ;
+    color:white;
+    line-height: 1.1;
+    border-radius: 3px;
+    font-weight: 500; 
+    text-align: center;
+   
+}
+.discus-information a:hover{
+  background: none;
+}
+
+/* fim Registrar no discus----------------------------------------------------------------------------------------------------------*/
 
 /*Parte de Relacionados*/
 .rvj{
