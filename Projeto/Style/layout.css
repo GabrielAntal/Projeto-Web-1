@@ -1162,18 +1162,20 @@ textarea {
 
 /*Institucional*/
 .inst_sites{
-  
   background-color: rgb(240, 238, 238);
   padding: 20px 30px 15px 30px;
   position: absolute;
-  width: 100%;
+  width: 94%;
   height: auto;
+  
 }
 .inst{
   color:#575757;
   line-height: 50%;
-  padding: 8px 16px;
-  
+  padding: 32px 0px 0px;
+  margin: 16px;
+  position: relative;
+  height: auto;
 }
 
 .inst label{
@@ -1181,7 +1183,25 @@ textarea {
   padding: 8px 16px;
   font-size:18px;
   cursor: pointer;
-  width: 100%;
+  width: 90%;
+  position: absolute;
+  top: 20px;
+  font-weight: bold;
+  height: 20px;
+  
+}
+
+.inst label p{
+   bottom: -10%;
+   position: absolute;
+}
+
+.inst label i{
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  bottom: 22%;
+  transform: rotate(90deg);
 }
 
 .inst ul{
@@ -1189,6 +1209,8 @@ textarea {
   list-style: none;
   overflow: hidden;
   max-height: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 .inst ul li a{
@@ -1206,12 +1228,19 @@ textarea {
 
 .inst input:checked ~ ul{
   height: auto;
-  max-height: 200px;
+  max-height: 300px;
 }
+
 
 .inst input:checked ~ label{
  background-color: rgb(231, 229, 229);
 }
+
+.inst input:checked ~ label i{
+  transform: rotate(-90deg);
+  transition: 0.5s;
+ }
+ 
 
 .inst input{
   display: none;
@@ -1225,6 +1254,7 @@ textarea {
 @media only screen and (max-width: 600px){
   body{width: 100%;}
   img{width: 100%;}
+  
  
   
 }
@@ -1239,6 +1269,7 @@ textarea {
     height: 80px;
     overflow: visible;
   }
+  
 
 }
 
