@@ -447,7 +447,10 @@ button{
 
 }
 /*Fim de botões categoria ---------------------------------------------------------------------------------------------*/
-
+/* comentarios*/
+#comments{
+  border-bottom: 2px solid #e7e9ee;
+}
 /*botões de reações*/
 .reaction{
   display: inline-block;
@@ -924,96 +927,32 @@ textarea {
 }
 
 /*fim Inciar sessão----------------------------------------------------------------------------------------------------------*/
-/* Registrar no discus*
+  /*Registrar no discus*/
 .alinhar{
   display:inline-block;
-  
-  
-}
-.form{
-  position:relative; 
-}
- .form p{
-  font-size: 11px;
-  color: #687a86;
-  font-weight: 700;
 
+}
+.button-style{ 
+  background-color: rgba(29,47,58,.6);
+  outline: none;
+  color:white;
+  border: none;
+  border-radius: 3px;
+
+}
+ .button-style:hover{
+  background-color: rgba(29,47,58,.7);
+
+}
+ .button-style:active{
+  background-color: #288ce4;
  }
- .form span{
-   color:#687a86;
-  font-size: 12px;
-  border-radius: 50%;
-  border:2px solid ;
-  padding: 0px 3px;
-  font-weight: 700;
- }
-
-  .action:hover .discus-information{
-  display: block;
-}
- .action button{
-   border:none;
-   padding:2px;
- }
- .discus-information {
-  width: 300px;
-  color:#687a86;
-  border: 3px solid #dbdfe4;
-  border-radius: 4px;
-  padding: 1em;
-  background-color: white;
-  position:relative;
-  top:-15px;
-  left:10px;
-  z-index:1;
-  display: none;
- }
-
-  
-
-.discus-information li {
-
-  list-style: disc;
-  margin: 0 0 6px;
-  line-height: 1.4;
-  font-size: 13px;
-  
-}
-
-.discus-information p{
-  font-weight: 700;
-   font-size: 16px;
-   margin: 0px;
-   text-align: center;
-}
-.discus-information button{
-    border: none;
-    width: 100%;
-    background: rgba(29,47,58,.6);
-    padding: 8px ;
-    color:white;
-    line-height: 1.1;
-    border-radius: 3px;
-    font-weight: 500; 
-    text-align: center;
-   
-}
-.discus-information a:hover{
-  background: none;
-}
-
-/* fim Registrar no discus----------------------------------------------------------------------------------------------------------*/
- /*Registrar no discus*/
-.alinhar{
-  display:inline-block;
-  
-  
-}
 
 .action{
   position: absolute;
   top:7px;
   left:160px;
+  cursor:pointer;
 }
 .form{
   position:relative; 
@@ -1027,10 +966,10 @@ textarea {
   color: #687a86;
   font-weight: 700;
   margin-bottom:0px;
-
+ 
  }
  .form span{
-   color:#687a86;
+  color:#687a86;
   font-size: 12px;
   border-radius: 50%;
   border:2px solid ;
@@ -1038,26 +977,30 @@ textarea {
   font-weight: 700;
  }
 
-  .action:hover .discus-information{
+
+ .action:hover .discus-information{
   display: block;
 }
+
+ 
+
  .action button{
    border:none;
    padding:2px;
+   cursor: pointer;
  }
  .discus-information {
   width: 300px;
   color:#687a86;
-  border: 3px solid #dbdfe4;
+  box-shadow: 0 0 0 3px rgba(0,0,0,.2);
   border-radius: 4px;
-  padding: 1em;
+  padding: 0em;
   background-color: white;
   position:absolute;
-  top:28px;
+  top:30px;
   transform: translateX(-50%); 
   z-index:1;
-  box-sizing: border-box;
-  display: none;
+  display:none;
  }
 
   
@@ -1065,47 +1008,88 @@ textarea {
 .discus-information li {
 
   list-style: disc;
-  margin: 0 0 6px;
   line-height: 1.4;
   font-size: 13px;
   
 }
 
 .discus-information p{
-  font-weight: 700;
+   font-weight: 700;
    font-size: 16px;
-   margin: 0px;
+   margin-top: 1em;
    text-align: center;
 }
 .discus-information button{
-    border: none;
-    width: 100%;
-    background: rgba(29,47,58,.6);
-    padding: 8px ;
-    color:white;
+    width: 90%;
     line-height: 1.1;
-    border-radius: 3px;
     font-weight: 500; 
     text-align: center;
+    margin: 0em 1em 1em 1em;
+    padding: 8px ;
+   
    
 }
+
 .discus-information a:hover{
   background: none;
 }
 input{
   outline: none;
   width: 100%;
-  height: auto;
+  height: 32px;
+  border: 2px solid #dbdfe4;
+  padding: 5px 9px;
+  margin:5px 0px ;
   border-radius: 4px;
-  display: inline-block;
-  border: 2px solid #ccc;
-  padding: 12px 20px;
-  margin: 8px 0;
+  font-size: 13px;
   box-sizing: border-box;
+  
+}
+input:focus{
+  border-color: #c2c6cc;
+}
+input::placeholder{
+  font-size: 13px;
+
+}
+.form-text{
+  color:#687a86;
+  font-family:"Helvetica Neue",arial,sans-serif;
+  font-size: 13px;
+}
+.form-text a{
+  color:#288ce4;
+  text-decoration: none;
+}
+.form-text a:hover{
+ background-color:white;
+
+}
+form button{
+  float:right;
 }
 
 /* fim Registrar no discus----------------------------------------------------------------------------------------------------------*/
-
+/* fim comentarios----------------------------------------------------------------------------------------------------------*/
+/* sob-comentario*/
+.sob-comentario a{
+  font-size: 11px; 
+  font-family:"Helvetica Neue",arial,sans-serif; 
+  text-decoration: none;
+  font-weight: 700;
+  color: #656c7a;
+  margin: 5px;
+}
+.sob-comentario a:hover{
+  background-color:white;
+  color: rgb(29,47,58);
+}
+.sob-comentario i{
+  position: relative;
+  top: 0px;
+  font-size: 15px;
+}
+/* fim comentarios----------------------------------------------------------------------------------------------------------*/
 /*Parte de Relacionados*/
 .rvj{
   color: black;
