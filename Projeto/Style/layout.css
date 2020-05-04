@@ -1337,13 +1337,133 @@ form button{
 /*Medias para deixar o site responsivo*/
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 400px){
   body{width: 100%;}
   img{width: 100%;}
 
+  .barra2{
+    width: 78%;
+  }
+  
+  .save_image{
+    right:15px;
+    height: 20px;
+    width: 20px;
+   }
+
+   .img_share{
+     right: 55px;
+     height: 20px;
+     width: 20px;
+   }
+
   .barra2_filho{
-    font-size: 13px;
-    width: 50%;
+    font-size: 14px;
+    width: 60%;
+  }
+  
+  .barra_autor button{
+    width: 40px;
+    height: 38px;
+    overflow: hidden;
+    
+  }
+
+  .share{
+    transform: translateY(-3%);
+  }
+
+
+  .redirect{
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+  }
+  
+  .redirect img{
+    height: 65px;
+    width: 53px; 
+  }
+
+  .text1{
+    font-size: 14px;
+  }
+
+  .date_rel{
+    font-size: 14px;
+  }
+
+  .days{
+    font-size:14px;
+  }
+  
+  .text2{
+    font-size: 14px;
+  }
+
+
+
+  .pat{
+    font-size: 14px;
+  }
+
+  .inst_sites{
+
+    width: 100%;
+
+  }
+
+  .form{
+    position: static;
+    width: 100%;
+  }
+
+.begin-session{
+  width: 60%;
+}
+
+.dropdown{
+  left: 0px;
+}
+
+.comment-textarea{
+  top:10px;
+  width:100%;
+}
+
+.comentarios div{
+  font-size: 13px;
+}
+
+}
+
+
+@media only screen and (max-width: 770px){
+  body{
+    position: absolute;
+    width: 100%;
+  }
+  img{width: 100%;}
+  
+  .barra2{
+    width: 85%;
+  }
+  
+  .save_image{
+    right:15px;
+    height: 20px;
+    width: 20px;
+   }
+
+   .img_share{
+     right: 55px;
+     height: 20px;
+     width: 20px;
+   }
+
+  .barra2_filho{
+    font-size: 15px;
+    width: 60%;
   }
   
   .barra_autor button{
@@ -1370,58 +1490,135 @@ form button{
   }
 
   .text1{
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .date_rel{
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .days{
-    font-size:13px;
+    font-size:14px;
   }
   
   .text2{
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .pat{
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .inst_sites{
-
     width: 100%;
-  
-    
   }
 
-}
-@media only screen and (max-width: 750px){
-  body{width: 100%;}
-  img{width: 100%;}
- 
-  .comentarios{
-    border-bottom: solid 2px #e7e9ee;
-    white-space: nowrap;
-    clear:both;
-    height: 80px;
-    overflow: visible;
+  .form{
+    position: static;
+    width: 100%;
   }
-  
 
+.begin-session{
+  width: 60%;
 }
 
-@media only screen and (max-width: 770px){
-  body{width: 100%;}
-  img{width: 100%;}
-  
+.dropdown{
+  left: 0px;
+}
+
+.comment-textarea{
+  top:10px;
+  width:100%;
+}
+
+.comentarios div{
+  font-size: 13px;
+}
 
 }
 
 @media only screen and (max-width: 992px){
   body{width: 100%;}
   img{width: 100%;}
+
+  body{
+    position: absolute;
+    width: 100%;
+  }
+  img{width: 100%;}
+  
+  .barra2{
+    width: 85%;
+  }
+  
+  .save_image{
+    right:15px;
+    height: 20px;
+    width: 20px;
+   }
+
+   .img_share{
+     right: 55px;
+     height: 20px;
+     width: 20px;
+   }
+
+  .barra2_filho{
+    font-size: 14px;
+    width: 60%;
+  }
+  
+  .barra_autor button{
+    width: 40px;
+    height: 38px;
+    overflow: hidden;
+    
+  }
+
+  .share{
+    transform: translateY(-3%);
+  }
+
+
+  .redirect{
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+  }
+  
+  .redirect img{
+    height: 60px;
+    width: 48px; 
+  }
+
+  .text1{
+    font-size: 14px;
+  }
+
+  .date_rel{
+    font-size: 14px;
+  }
+
+  .days{
+    font-size:14px;
+  }
+  
+  .text2{
+    font-size: 14px;
+  }
+
+  .pat{
+    font-size: 14px;
+  }
+
+  .inst_sites{
+    width: 100%;
+  }
+
+
+
+
+
   
   
 }
