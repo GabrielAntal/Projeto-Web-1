@@ -1,0 +1,29 @@
+body{
+width: 100%;
+
+}
+.em_alta{
+ border-top: 1px solid rgba(236,238,239,.5) ;
+ border-bottom:  1px solid rgba(236,238,239,.5) ;
+}
+img .imagem{
+    width: 20px;
+    height: 21px;
+    margin-top: 16px;
+}
+.pesquisar{
+    position: relative;
+    top:  57.5px;
+}
+.bar{
+    background-color:white;
+    height: 57.5px;
+    width: 100%;
+    bottom:0;
+    position: fixed;
+    box-shadow: 0px 6.2px  6px 6px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.close{
+    float: right;
+}

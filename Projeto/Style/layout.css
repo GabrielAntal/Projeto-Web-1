@@ -90,6 +90,10 @@
     box-sizing: border-box;
     
   }
+  .search a:hover{
+    background:none ;
+
+  }
   .lup{
     position: absolute;
     line-height: 100%;
@@ -1333,13 +1337,34 @@ form button{
 
 
 /*Fim do Institucional--------------------------------------------------------------------------------------------*/
+/*NZN*/
+.nzn{
+  border-top:1px solid rgba(3,3,3,.05);
+  font-size:13px;
+  font-family:"Helvetica Neue",arial,sans-serif; 
+  color: #575757;
+  text-align:center;
+  line-height:2em;
+  font-weight: bold;
 
+}
+.nzn a{
+  text-decoration: none;
+}
+.nzn a:hover{
+  background: none;
+}
+.nzn img{
+  width:  114px;
+  height: 31px;
+}
+/*Fim NZN --------------------------------------------------------------------------------------------*/
 /*Medias para deixar o site responsivo*/
 
 
 @media only screen and (max-width: 400px){
   body{width: 100%;}
-  img{width: 100%;}
+  /*img{width: 100%;}*/
 
   .barra2{
     width: 78%;
