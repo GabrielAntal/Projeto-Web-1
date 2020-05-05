@@ -1361,13 +1361,122 @@ form button{
 /*Fim NZN --------------------------------------------------------------------------------------------*/
 /*Medias para deixar o site responsivo*/
 
-
-@media only screen and (max-width: 400px){
+@media only screen and (min-width: 300px){
   body{width: 100%;}
   /*img{width: 100%;}*/
 
   .barra2{
-    width: 78%;
+    width: 79%;
+  }
+  
+  .save_image{
+    right:13px;
+    height: 20px;
+    width: 20px;
+   }
+
+   .img_share{
+     right: 47px;
+     height: 20px;
+     width: 20px;
+   }
+
+  .barra2_filho{
+    font-size: 13px;
+    width: 60%;
+  }
+  
+  .barra_autor button{
+    width: 40px;
+    height: 38px;
+    overflow: hidden;
+    
+  }
+
+  .share{
+    transform: translateY(-3%);
+  }
+
+
+  .redirect{
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+  }
+  
+  .redirect img{
+    height: 65px;
+    width: 53px; 
+  }
+
+  .text1{
+    font-size: 12px;
+  }
+
+  .date_rel{
+    font-size: 12px;
+  }
+
+  .days{
+    font-size:12px;
+  }
+  
+  .text2{
+    font-size: 14px;
+  }
+
+
+
+  .pat{
+    font-size: 12px;
+  }
+
+  
+
+  .inst_sites{
+
+    width: 100%;
+
+  }
+
+  .form{
+    position: static;
+    width: 100%;
+  }
+
+.begin-session{
+  width: 60%;
+}
+
+.dropdown{
+  left: 0px;
+}
+
+.comment-textarea{
+  top:10px;
+  width:100%;
+}
+
+.comentarios div{
+  font-size: 13px;
+}
+.veja img{
+ transform: translateY(0%);
+}
+
+.veja ul{
+  font-size: 12px;
+}
+
+}
+
+
+@media only screen and (min-width: 410px){
+  body{width: 100%;}
+  /*img{width: 100%;}*/
+
+  .barra2{
+    width: 82%;
   }
   
   .save_image{
@@ -1377,7 +1486,7 @@ form button{
    }
 
    .img_share{
-     right: 55px;
+     right: 50px;
      height: 20px;
      width: 20px;
    }
@@ -1411,111 +1520,7 @@ form button{
   }
 
   .text1{
-    font-size: 14px;
-  }
-
-  .date_rel{
-    font-size: 14px;
-  }
-
-  .days{
-    font-size:14px;
-  }
-  
-  .text2{
-    font-size: 14px;
-  }
-
-
-
-  .pat{
-    font-size: 14px;
-  }
-
-  .inst_sites{
-
-    width: 100%;
-
-  }
-
-  .form{
-    position: static;
-    width: 100%;
-  }
-
-.begin-session{
-  width: 60%;
-}
-
-.dropdown{
-  left: 0px;
-}
-
-.comment-textarea{
-  top:10px;
-  width:100%;
-}
-
-.comentarios div{
-  font-size: 13px;
-}
-
-}
-
-
-@media only screen and (max-width: 770px){
-  body{
-    position: absolute;
-    width: 100%;
-  }
-  img{width: 100%;}
-  
-  .barra2{
-    width: 85%;
-  }
-  
-  .save_image{
-    right:15px;
-    height: 20px;
-    width: 20px;
-   }
-
-   .img_share{
-     right: 55px;
-     height: 20px;
-     width: 20px;
-   }
-
-  .barra2_filho{
     font-size: 15px;
-    width: 60%;
-  }
-  
-  .barra_autor button{
-    width: 40px;
-    height: 38px;
-    overflow: hidden;
-    
-  }
-
-  .share{
-    transform: translateY(-3%);
-  }
-
-
-  .redirect{
-    position: absolute;
-    bottom:10px;
-    right: 10px;
-  }
-  
-  .redirect img{
-    height: 60px;
-    width: 48px; 
-  }
-
-  .text1{
-    font-size: 14px;
   }
 
   .date_rel{
@@ -1527,15 +1532,21 @@ form button{
   }
   
   .text2{
-    font-size: 14px;
+    font-size: 15px;
   }
+
+
 
   .pat{
     font-size: 14px;
   }
 
+  
+
   .inst_sites{
+
     width: 100%;
+
   }
 
   .form{
@@ -1559,18 +1570,130 @@ form button{
 .comentarios div{
   font-size: 13px;
 }
+.veja img{
+ transform: translateY(0%);
+}
+
+.veja ul{
+  font-size: 14px;
+}
 
 }
 
-@media only screen and (max-width: 992px){
-  body{width: 100%;}
-  img{width: 100%;}
 
+@media only screen and (min-width: 750px){
   body{
     position: absolute;
     width: 100%;
   }
   img{width: 100%;}
+  
+  .barra2{
+    width: 88%;
+  }
+  
+  .save_image{
+    right:15px;
+    height: 20px;
+    width: 20px;
+   }
+
+   .img_share{
+     right: 55px;
+     height: 20px;
+     width: 20px;
+   }
+
+  .barra2_filho{
+    font-size: 19px;
+    width: 80%;
+  }
+  
+  .barra_autor button{
+    width: 40px;
+    height: 38px;
+    overflow: hidden;
+    
+  }
+
+  .share{
+    transform: translateY(-3%);
+  }
+
+
+  .redirect{
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+  }
+  
+  .redirect img{
+    height: 70px;
+    width: 58px; 
+  }
+
+  .text1{
+    font-size: 17px;
+  }
+
+  .date_rel{
+    font-size: 15px;
+  }
+
+  .days{
+    font-size:15px;
+  }
+  
+  .text2{
+    font-size: 17px;
+  }
+
+  .pat{
+    font-size: 15px;
+  }
+
+  .inst_sites{
+    width: 100%;
+  }
+
+  .form{
+    position: static;
+    width: 100%;
+  }
+
+.begin-session{
+  width: 60%;
+}
+
+.dropdown{
+  left: 0px;
+  font-size: 14px;
+}
+
+.comment-textarea{
+  top:10px;
+  width:100%;
+}
+
+.comentarios div{
+  font-size: 15px;
+}
+
+.veja img{
+  transform: translateY(0%);
+ }
+ 
+ .veja ul{
+   font-size: 15px;
+ }
+
+}
+
+@media only screen and (min-width: 810px){
+  body{width: 100%;}
+  img{width: 100%;}
+
+
   
   .barra2{
     width: 85%;
@@ -1612,7 +1735,7 @@ form button{
   }
   
   .redirect img{
-    height: 60px;
+    height: 62px;
     width: 48px; 
   }
 
@@ -1640,17 +1763,179 @@ form button{
     width: 100%;
   }
 
+  .veja img{
+    transform: translateY(0%);
+  }
 
 
 
-
-  
-  
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (min-width: 910px){
   body{width: 100%;}
   img{width: 100%;}
+
+
+  
+  .barra2{
+    width: 85%;
+  }
+  
+  .save_image{
+    right:15px;
+    height: 20px;
+    width: 20px;
+   }
+
+   .img_share{
+     right: 55px;
+     height: 20px;
+     width: 20px;
+   }
+
+  .barra2_filho{
+    font-size: 14px;
+    width: 60%;
+  }
+  
+  .barra_autor button{
+    width: 40px;
+    height: 38px;
+    overflow: hidden;
+    
+  }
+
+  .share{
+    transform: translateY(-3%);
+  }
+
+
+  .redirect{
+    position: absolute;
+    bottom:10px;
+    right: 10px;
+  }
+  
+  .redirect img{
+    height: 62px;
+    width: 48px; 
+  }
+
+  .text1{
+    font-size: 14px;
+  }
+
+  .date_rel{
+    font-size: 14px;
+  }
+
+  .days{
+    font-size:14px;
+  }
+  
+  .text2{
+    font-size: 14px;
+  }
+
+  .pat{
+    font-size: 14px;
+  }
+
+  .inst_sites{
+    width: 100%;
+  }
+
+  .veja img{
+    transform: translateY(0%);
+  }
+
+
+
+}
+
+@media only screen and (min-width: 1000px){
+  body{width: 100%;}
+  img{width: 100%;}
+
+  .barra2{
+    width: 95%;
+  }
+  
+ 
+
+  .barra2_filho{
+    font-size: 22px;
+    width: 75%;
+  }
+
+  .save_image{
+    right:25px;
+    height: 25px;
+    width: 25px;
+   }
+
+   .img_share{
+     right: 85px;
+     height: 25px;
+     width: 25px;
+   }
+
+  
+  .barra_autor button{
+    width: 40px;
+    height: 38px;
+    overflow: hidden;
+    
+  }
+
+  .share{
+    transform: translateY(-3%);
+  }
+
+
+  
+  .redirect img{
+    height: 84px;
+    width: 72px; 
+  }
+
+  .text1{
+    font-size: 19px;
+  }
+
+  .date_rel{
+    font-size: 17px;
+  }
+
+  .days{
+    font-size:17px;
+  }
+  
+  .text2{
+    font-size: 19px;
+  }
+
+  .pat{
+    font-size: 17px;
+  }
+
+  .inst_sites{
+    width: 100%;
+  }
+
+  .dropdown{
+    left: 0px;
+    font-size: 18px;
+  }
+  
+  .comment-textarea{
+    top:10px;
+    width:100%;
+  }
+  
+  .comentarios div{
+    font-size: 19px;
+  }
  
 }
 
