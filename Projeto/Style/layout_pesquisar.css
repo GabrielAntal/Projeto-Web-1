@@ -1,29 +1,175 @@
+/* geral*/
 body{
-width: 100%;
+width: auto;
 
-}
-.em_alta{
- border-top: 1px solid rgba(236,238,239,.5) ;
- border-bottom:  1px solid rgba(236,238,239,.5) ;
 }
 img .imagem{
     width: 20px;
     height: 21px;
     margin-top: 16px;
 }
+a:hover{
+ background: none;
+}
+i.icon{
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.icon:hover{
+   
+    background-color: rgba(0,0,0,0.1);
+    
+
+}
+
+/*fim geral*/
+.em_alta{
+ border-top: 1px solid rgba(236,238,239,.5) ;
+ border-bottom:  1px solid rgba(236,238,239,.5) ;
+ width: 100%;
+}
+/* barra superior*/
+.close{
+    float: right;
+    position: relative;
+    bottom: -15px;
+    margin-right:20px;
+    padding: 4px;
+    
+}
+ .close:active{ 
+    border: solid 2px;
+    border-color:  rgba(52,144,220,.5);
+    border-radius: 50%;
+}
+
+
+
+
+/*input[type=text] {
+    width: 95%;
+    float:left;
+    margin-top:15px;
+    margin-bottom:10px;
+    background-color: white;
+    background-position: center;
+    background-image: url("img/magnifying_glass.png");
+    background-repeat: no-repeat;
+    padding-left: 40px;
+   
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight:normal;
+    display: none;
+    
+     
+    background-repeat: no-repeat;
+
+}*/
+input::placeholder{
+    color:#b8c2cb;
+    font-size:16px;
+    font-weight: normal;
+
+}
+
+/*fim barra superior*/
 .pesquisar{
     position: relative;
     top:  57.5px;
 }
+
+.pesquisar p{
+    font-weight: bold;
+}
+.em_alta{
+    border-top: 1px solid rgba(236,238,239,.5) ;
+    border-bottom:  1px solid rgba(236,238,239,.5) ;
+    padding: 8px;
+   }
+/* barra inferior*/
 .bar{
     background-color:white;
     height: 57.5px;
     width: 100%;
     bottom:0;
     position: fixed;
-    box-shadow: 0px 6.2px  6px 6px rgba(0,0,0,0.2);
+    box-shadow: 0px -6.2px  6px -6px rgba(0,0,0,0.2);
     z-index: 1;
+   
 }
-.close{
-    float: right;
+.under{
+    position:relative;
+    top:12px;
+    font-size: 24px;
+    color:#b8c2cb;
+}
+.under:hover{
+    color: #1087ff;
+} 
+    
+
+.justify{
+    
+    display: flex;
+    justify-content: space-between;
+}
+i.home{
+    padding: 5px;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+.buscar{
+    color: #1087ff;
+    padding: 8px ;
+    font-size: 50px;
+}
+
+.marcador{
+    padding:5px 8px;
+    margin-right: 10px;
+}
+/* fim barra inferior*/
+
+@media only screen and (max-width: 1200px){
+    input[type=text]{
+        width:95% ;
+      }
+}
+@media only screen and (max-width: 992px){
+    input[type=text]{
+        width:90% ;
+      }
+   
+  }
+@media only screen and (max-width: 770px){
+    
+  
+}
+@media only screen and (max-width: 750px){
+    input[type=text]{
+        width:90% ;
+      }
+    
+  
+}
+@media only screen and (max-width: 600px){
+    input[type=text]{
+        width:80% ;
+      }
+}
+@media only screen and (max-width: 400px){
+    input[type=text]{
+        width:70%;
+      }
+
+}
+@media only screen and (max-width: 250px){
+    input[type=text]{
+        width:60% ;
+      }
+
 }

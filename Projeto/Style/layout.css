@@ -1363,7 +1363,7 @@ form button{
 
 @media only screen and (min-width: 300px){
   body{width: 100%;}
-  /*img{width: 100%;}*/
+  img{width: 100%;}
 
   .barra2{
     width: 79%;
@@ -1473,7 +1473,7 @@ form button{
 
 @media only screen and (min-width: 410px){
   body{width: 100%;}
-  /*img{width: 100%;}*/
+ img{width: 100%;}
 
   .barra2{
     width: 82%;
@@ -1773,7 +1773,7 @@ form button{
 
 @media only screen and (min-width: 910px){
   body{width: 100%;}
-  img{width: 100%;}
+ img{width: 100%;}
 
 
   
@@ -1855,7 +1855,7 @@ form button{
 
 @media only screen and (min-width: 1000px){
   body{width: 100%;}
-  img{width: 100%;}
+  /*img{width: 100%;}*/
 
   .barra2{
     width: 95%;
