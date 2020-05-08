@@ -380,7 +380,7 @@
   }
 .artigo{
   float: none;
-  width:90%;
+  width:97%;
   background-color:white; 
   margin: -20px auto 0px auto;
   padding:  15px ;/*conteudo interno, todo o conteudo sera ajeitado a 15px tanto a direita como esquerda , em cima e embaixo*/
@@ -818,7 +818,7 @@ textarea {
   background-color: #575757;
   color: white;
   position: absolute;
-  left: 948px;
+  right: 0px;
   width: 250px;
   height: 41px;
   transform: translateY(-31%);
@@ -1361,12 +1361,12 @@ form button{
 /*Fim NZN --------------------------------------------------------------------------------------------*/
 /*Medias para deixar o site responsivo*/
 
-@media only screen and (min-width: 300px){
+@media only screen and (min-width: 300px) and (max-width:400px){
   body{width: 100%;}
   img{width: 100%;}
 
   .barra2{
-    width: 79%;
+    width: 87%;
   }
   
   .save_image{
@@ -1382,7 +1382,7 @@ form button{
    }
 
   .barra2_filho{
-    font-size: 13px;
+    font-size: 14px;
     width: 60%;
   }
   
@@ -1410,25 +1410,25 @@ form button{
   }
 
   .text1{
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .date_rel{
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .days{
-    font-size:12px;
+    font-size:14px;
   }
   
   .text2{
-    font-size: 14px;
+    font-size: 16px;
   }
 
 
 
   .pat{
-    font-size: 12px;
+    font-size: 14px;
   }
 
   
@@ -1468,16 +1468,30 @@ form button{
   font-size: 12px;
 }
 
+.comment-textarea img{
+  left:10px;
+  position: absolute;
+ }
+
+  .text-area{
+    width: 80%;
+  }
+
+  .text-area-icons{
+    float: left;
+    height: 30px;
+   
+  }
+
+
 }
 
-
-
-@media only screen and (min-width: 410px){
+@media only screen and (min-width: 410px)and (max-width:500px){
   body{width: 100%;}
  img{width: 100%;}
 
   .barra2{
-    width: 82%;
+    width: 87%;
   }
   
   .save_image{
@@ -1493,7 +1507,7 @@ form button{
    }
 
   .barra2_filho{
-    font-size: 14px;
+    font-size: 16px;
     width: 60%;
   }
   
@@ -1578,10 +1592,18 @@ form button{
 .veja ul{
   font-size: 14px;
 }
+.comment-textarea img{
+  left:10px;
+  position: absolute;
+ }
+
+  .text-area{
+    width: 83%;
+  }
 
 }
 
-@media only screen and (min-width: 550px){
+@media only screen and (min-width: 550px)and (max-width:600px){
   body{width: 100%;}
  img{width: 100%;}
 
@@ -1690,7 +1712,7 @@ form button{
 
 }
 
-@media only screen and (min-width: 650px){
+@media only screen and (min-width: 610px)and (max-width:700px){
   body{width: 100%;}
  img{width: 100%;}
 
@@ -1799,17 +1821,17 @@ form button{
 
 }
 
-
-
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 710px)and (max-width:800px){
   body{
-    position: absolute;
     width: 100%;
   }
   img{width: 100%;}
+  .artigo p{
+    font-size: 22px;
+  }
   
   .barra2{
-    width: 88%;
+    width: 91%;
   }
   
   .save_image{
@@ -1918,7 +1940,7 @@ form button{
 
 }
 
-@media only screen and (min-width: 810px){
+@media only screen and (min-width: 810px) and (max-width:900px){
   body{width: 100%;}
   img{width: 100%;}
 
@@ -2003,7 +2025,7 @@ form button{
 
 }
 
-@media only screen and (min-width: 910px){
+@media only screen and (min-width: 910px)and (max-width:1000px){
   body{width: 100%;}
  img{width: 100%;}
 
@@ -2087,117 +2109,51 @@ form button{
 
 }
 
-@media only screen and (min-width: 1024px){
-  body{width: 100%;}
-  /*img{width: 100%;}*/
 
-  .barra2{
-    width: 95%;
-  }
+@media only screen and (min-width: 1024px)and (max-width:1100px){
+  body{width: 100%;}
+ img{width: 100%;}
+
   
- 
+
 
   .barra2_filho{
     font-size: 25px;
-    width: 75%;
-  }
-
-  .save_image{
-    right:25px;
-    height: 25px;
-    width: 25px;
-   }
-
-   .img_share{
-     right: 85px;
-     height: 25px;
-     width: 25px;
-   }
-
-  
-  .barra_autor button{
-    width: 40px;
-    height: 38px;
-    overflow: hidden;
-    
-  }
-
-  .share{
-    transform: translateY(-3%);
-  }
-
-
-  
-  .redirect img{
-    height: 84px;
-    width: 72px; 
   }
 
   .text1{
-    font-size: 21px;
+    font-size: 23px;
   }
 
-  .date_rel{
-    font-size: 18px;
+  .date_rel {
+    font-size: 20px;
   }
 
   .days{
-    font-size:18px;
-    left: 60px;
-    position: absolute;
+    font-size:20px;
+  
   }
   
   .text2{
-    font-size: 21px;
+    font-size: 23px;
   }
 
   .pat{
-    font-size: 18px;
-  }
-
-  .inst_sites{
-    width: 100%;
-  }
-
-  .dropdown{
-    left: 0px;
-    font-size: 18px;
-  }
-  
-  .comment-textarea{
-    top:10px;
-    width:100%;
-  }
-  
-  .comentarios div{
-    font-size: 18px;
-  }
-
-  .begin-session p{
-    font-size: 17px;
-  }
-
-  .form p{
-    font-size: 17px;
-  }
-
-  .form-text{
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .veja ul{
-    font-size: 18px;
-    left: 90px;
+    font-size: 15px;
+    left: 70px;
     position: absolute;
-    transform: translateY(-165%);
-  }
-
-  .save{
-    position: relative;
-    left: 170px;
   }
  
-}
+
+
+
+  }
+
+
 
 
 
