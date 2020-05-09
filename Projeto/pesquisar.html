@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <link rel="shortcut icon" href="img/log.jpg" sizes= "64x64">
-        <link rel="stylesheet" href="Style/layout.css">
         <link rel="stylesheet" href="Style/layout_pesquisar.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,19 +11,9 @@
         </title>
         <style>
              input[type=text] {
-             width: 95%;
-             float:left;
-             margin-top:15px;
-             margin-bottom:10px;
-             background-color: white;
              background-position:10px 2px;
              background-image: url("img/magnifying_glass.png");
              background-repeat: no-repeat;
-             padding-left: 40px;
-             border:none;
-             font-size: 18px;
-             font-weight:normal;
-             font: 400 16px Arial;
 
             }
     
@@ -34,7 +23,7 @@
        
     </head>
     <body>
-        <div class= "barra2 barra">
+        <div class= "top_bar barra">
             <input  class="alinhar" type="text" placeholder="O que você procura?">
             <div class="alinhar " >
                 <a href="Index.html">
@@ -47,34 +36,175 @@
         <div class="pesquisar">
             <p> Assuntos em alta:</p>
             <div class= "em_alta">
-                <img class="imagem" src="img/magnifying_glass.png" > Software
+                <img class="imagem" src="img/mini-lupa.png" > Software
             </div>
             <div class="em_alta">
-                <img class="imagem" src="img/magnifying_glass.png" > Celular
+                <img class="imagem" src="img/mini-lupa.png" > Celular
             </div>
             <div class="em_alta">
-                <img class="imagem" src="img/magnifying_glass.png" > Ciência
+                <img class="imagem" src="img/mini-lupa.png" > Ciência
             </div>
         </div>
         <div class="bar justify">
             <div class="alinhar">
                 <a href="https://m.tecmundo.com.br/" >
-                    <i  class="material-icons under icon home ">home</i>
+                    <i  class="material-icons under icon home hover-blue  ">home</i>
                 </a>
               
             </div>
-            <div  class="alinhar  "> 
-                <i class="fa fa-search icon under buscar"></i>
-            </div>
-            <div class="alinhar ">
-                <i class="fa fa-bookmark-o icon under marcador "></i>
-            </div>
-            <div class="alinhar ">
-                    <i class="fa fa-bars icon under  marcador"></i>
-                </a>
+            <div  class="alinhar  ">
+              <a href="Index.html">
+                  <button class="under">
+                    <i class="fa fa-search icon color-blue  buscar"></i>
+                  </button>
+              </a> 
                 
+            </div>
+            <div class="alinhar">
+               <button= class= "under">
+                   <i class="fa fa-bookmark-o icon  marcador hover-blue "></i>
+               </button>
+            </div>
+            <div class= "alinhar">
+                <button class= "under">
+                    <i class="fa fa-bars icon menu hover-blue "></i>
+                </button>
+            </div>
+        </div>
+        <!-- BOOKMARK-->
+        <div  class="bookmark">
+            <div class=" top_bar bookmark-bar " >
+                <a href="Index.html" class="alinhar">
+                    <i class="fa fa-angle-left icon back hover-blue"></i>
+                </a>
+                <div  class= "alinhar">
+                    <p class= " paragraph title">Bookmark</p>
+                <p class="paragraph"> Salve suas notícias e leia quando quiser</p>
+                </div>
+     
+            </div>
+            <section>
+                <div class="bookmark-empty">
+                    <img src="img/bookmark-empty.svg" alt="..."> 
+                    <p>Suas notícias salvas irão aparecer aqui para lê-las mais tarde ou quando estiver 
+                        <span style="font-weight: bold;">sem internet</span></p>
+                 </div>
+
+            </section>
+            
+
+            <div class="bar justify">
+                <div class="alinhar">
+                    <a href="https://m.tecmundo.com.br/" >
+                        <i  class="material-icons under icon home hover-blue  ">home</i>
+                    </a>
+                  
+                </div>
+                <div  class="alinhar  ">
+                    <button class="under">
+                        <i class="fa fa-search icon hover-blue  buscar"></i>
+                    </button> 
+                </div>
+                <div class="alinhar">
+                    <a href="Index.html">
+
+                        <button= class= "under">
+                            <i class="fa fa-bookmark-o icon  marcador color-blue "></i>
+                       </button>
+                    </a>
+                   
+                </div>
+                <div class= "alinhar">
+                    <button class= "under">
+                        <i class="fa fa-bars icon menu hover-blue "></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--MENU-->
+        <div class="open-menu">
+            <div class=" top_bar bookmark-bar " >
+                <a href="Index.html" class="alinhar">
+                    <i class="fa fa-angle-left icon back hover-blue"></i>
+                </a>
+                <div  class= "alinhar">
+                    <p class= " paragraph title">Menu</p>
+                    <p class="paragraph  menu-p"> Explore por temas</p>
+                </div>
+                <div class="alinhar modo-noturno">
+                    <button class="noturno">
+                        MODO NOTURNO? <i class="fa fa-moon-o"></i>
+                    </button>
+                </div>
+            </div>
+            <section>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://m.tecmundo.com.br/novidades"></a>
+                    
+                        </li>
+                        <li>
+                            <a href="https://m.tecmundo.com.br/review"></a>
+                        </li>
+                        <li>
+                            <a href="https://comparador.tecmundo.com.br/"></a>
+                        </li>
+                        <li>
+                            <a href="https://m.tecmundo.com.br/mais-lidas"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.tecmundo.com.br/cupons"></a>
+                        </li>
+                        <li>
+                            <a href="https://m.tecmundo.com.br/udemy"></a>
+                        </li>
+                        <li>
+                            <a href="https://m.tecmundo.com.br/microsoft-ia"></a>
+                        </li>
+                        <li>
+                            <a href="https://m.tecmundo.com.br/tutorial"></a>
+                        </li>
+                        <li>
+                            <a href="https://m.tecmundo.com.br/teste-de-velocidade.htm"></a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </section>
+
+            <div class="bar justify">
+                <div class="alinhar">
+                    <a href="https://m.tecmundo.com.br/" >
+                        <i  class="material-icons under icon home hover-blue  ">home</i>
+                    </a>
+                  
+                </div>
+                <div  class="alinhar  ">
+                    <button class="under">
+                        <i class="fa fa-search icon hover-blue  buscar"></i>
+                    </button> 
+                </div>
+                <div class="alinhar">
+                   <button= class="under">
+                       <i class="fa fa-bookmark-o icon  marcador hover-blue "></i>
+                   </button>
+                </div>
+                <div class="alinhar">
+                    <a href="Index.html">
+                        <button class= "under">
+                            <i class="fa fa-bars icon menu color-blue "></i>
+                        </button>
+                    </a>
+                    
+                </div>
             </div>
         </div>
         
+
+        </div>  
     </body>
 </html>
+
+            
