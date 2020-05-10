@@ -1,297 +1,370 @@
 /* geral*/
 body{
-    width: 100%;
-    color: #575757;
-    font-size: 16px;
-    font-family:"Source Sans Pro", sans-serif ;
-    margin:0;
+width: 100%;
+color: #575757;
+font-size: 16px;
+font-family:"Source Sans Pro", sans-serif ;
+margin:0;
+padding:0;
+
+}
+
+img.imagem{
+    width: 20px;
+    height: 21px;
+    margin-top: 5px;
+    margin-right: 10px;;
+}
+a:hover{
+ background: none;
+}
+i.icon{
+    font-size: 24px;
+    border-radius: 50%;
+    color:#aca5a5;
+}
+
+.icon:hover{ 
+    background-color: rgba(0,0,0,0.1);
+}
+.hover-blue:hover{
+    color:#1087ff;
+}
+i.color-blue{
+    color: #1087ff;
+}
+.alinhar{
+    display: inline-block;
+}
+button{
     padding:0;
+    box-sizing:content-box;
+    background-color: white;
+    border:none;
+    border-radius: 50%;
+    outline:none;
+
+}
+
+/*fim geral*/
+
+/* barra superior*/
+.top_bar{
+    background-color:white;
+    height: 57.5px;
+    width: 100%;
+    top:0;
+    position: fixed;
+    box-shadow: 0px 6.2px  6px -6px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.close{
+    float: right;
+    position: relative;
+    bottom: -15px;
+    margin-right:20px;
+    padding: 4px;
     
-    }
+}
+ .close:active{ 
+    border: solid 2px;
+    border-color:  rgba(52,144,220,.5);
+    border-radius: 50%;
+}
+
+input{
+    width: 95%;
+    float:left;
+    margin-top:15px;
+    margin-bottom:10px;
+    background-color: white;
+    padding-left: 40px;
+    border:none;         
+    font-size: 18px;
+    font-weight:normal;
+    font: 400 16px Arial;
+    outline:none;
+    height:32px;
+    box-sizing: border-box;
+}
+input::placeholder{
+    color:#b8c2cb;
+    font-size:16px;
+    font-weight: normal;
+
+}
+
+/*fim barra superior*/
+.pesquisar{
+    position: relative;
+    top:  57.5px;
+    z-index: 1;
+}
+
+.pesquisar p{
+    font-weight: bold;
+}
+.em_alta{
+    border-top: 1px solid rgba(236,238,239,.5) ;
+    border-bottom:  1px solid rgba(236,238,239,.5) ;
+    padding: 8px;
+    width: auto;
+   }
+/* barra inferior*/
+.bar{
+    background-color:white;
+    height: 57.5px;
+    width: 100%;
+    bottom:0;
+    position: fixed;
+    box-shadow: 0px -6.2px  6px -6px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+}
+
+.under{
+    position:relative;
+    top:12px;
+    font-size: 24px;
+    color:#b8c2cb;
+}
+
     
-    img.imagem{
-        width: 20px;
-        height: 21px;
-        margin-top: 5px;
-        margin-right: 10px;;
-    }
-    a:hover{
-     background: none;
-    }
-    i.icon{
-        font-size: 24px;
-        border-radius: 50%;
-        color:#aca5a5;
-    }
+
+.justify{
     
-    .icon:hover{ 
-        background-color: rgba(0,0,0,0.1);
-    }
-    .hover-blue:hover{
-        color:#1087ff;
-    }
-    i.color-blue{
-        color: #1087ff;
-    }
-    .alinhar{
-        display: inline-block;
-    }
-    button{
-        padding:0;
-        box-sizing:content-box;
-        background-color: white;
-        border:none;
-        border-radius: 50%;
-        outline:none;
+    display: flex;
+    justify-content: space-between;
+}
+i.home{
+    padding: 5px;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+    margin-left: 50px;
+}
+ i.buscar{
+    padding: 8px ;
+
+}
+
+.marcador{
+    padding:5px 8px;
+    margin:0px;
+}
+.menu{
+    padding:5px 8px;
+    margin-right: 50px;
+
+}
+/* fim barra inferior*/
+/* Bookmark*/
+div.bookmark{
+    width: 100%;
+    height:100%;
+    z-index:1;
+    background-color: white;
+    position: absolute;
+    top:0;
+    display: block;
+    color:#8995a0;
+    overflow: auto;
+
+  
+
+}
+i.back{
+    margin-top: 10px;
+    margin-left:10px;
+    padding: 3px 12px 7px 11px;
+    color:black ;
+    position: relative;
+    bottom:15px;
+}
+.bookmark-bar{ 
+    border-bottom: 1px solid #dbe1e5;
+    box-shadow: none;
+    padding: 5px;
+
+}
+.paragraph{
+    margin: 0px;
+}
+.title{
+    color: #030303;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+ 
+}
+section{
+    position: absolute;
+    top: 68.5px;
+    width: 100%;
+    height: 78%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.bookmark-empty{
+    font-size: 18px;
+    line-height: 28px;
+    padding: 16px;
+    text-align: center;
+
+}
+/*Menu*/
+div.open-menu{
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    z-index:1;
+    position: absolute;
+    top: 0;
+    display:block;
+    color:#575757;
+    overflow-y:auto;
+}
+.menu-p{
+    color:#8995a0;
+
+}
+.modo-noturno{
+    float:right;
+    position:relative;
+    top: 12px;
+    margin-right:20px;
+}
+.noturno{
+    border: 1px solid #eceeef;
+    border-radius: 15px;
+    padding:0px 4px 0px 16px;
+    font-size: 10px;
     
-    }
+}
+.noturno:focus{
+   border: 3px solid rgba(52,144,220,.5);     
+}    
+.noturno i{
+    font-size:15px;
+    padding:5px;
+    margin:4px 2px;
+    border-radius: 50%;
+    background-color:#f1f5f8;
+    color: #8995a0;
+}
+
+.open-menu section{
+    height:140px;
+    border-bottom: 1px solid  #dbe1e5;
+    overflow-x: auto;
+  
+
+}
+section p{
+    margin:2px;
+}
+section a{
+    text-decoration: none;
+    color:inherit;
+}
+.open-menu ul{
+    list-style: none;
+    margin:0px 0px 0px 10px;
+    padding:0px;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:0px;
+    white-space: nowrap;
+}
+.open-menu li{
+    display: inline-block;
+    margin:5px;
+    text-align: center;
+}
+section.categorias{
+    height:auto;
+    position:absolute;
+    border:none;
+    top:230px;
+    overflow-y:hidden;
+    overflow-x:hidden;
     
-    /*fim geral*/
+}
+.categorias ul{
+ position: initial;
+ display:block;
+
+}
+.categoria nav{
+    margin-bottom: 50px;
+}
+.menu-text{
+    border-top: 1px  solid  #dbe1e5;
+    text-align: center;
+    width:100%;
+    padding:10px;
+    display: inline-block;
+    position:absolute;
+    bottom:0px;
+    margin-top:50px;;
+    margin-bottom:70.5px;
+
     
-    /* barra superior*/
-    .top_bar{
-        background-color:white;
-        height: 57.5px;
-        width: 100%;
-        top:0;
-        position: fixed;
-        box-shadow: 0px 6.2px  6px -6px rgba(0,0,0,0.2);
-        z-index: 1;
+}
+.go-to-search{
+    color:#030303;
+    font: 16px "Surce sans Pro",sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5px;
+   
+}
+ .go-to-search:active{
+    border-radius: 5px;
+    border: 3px solid rgba(52,144,220,.5);
+}
+.go-to-search:hover{
+    color:#1087ff;
+}
+
+@media only screen and (max-width: 1200px){
+    input[type=text]{
+        width:93% ;
     }
-    .close{
-        float: right;
-        position: relative;
-        bottom: -15px;
-        margin-right:20px;
-        padding: 4px;
-        
-    }
-     .close:active{ 
-        border: solid 2px;
-        border-color:  rgba(52,144,220,.5);
-        border-radius: 50%;
-    }
-    
-    input{
-        width: 95%;
-        float:left;
-        margin-top:15px;
-        margin-bottom:10px;
-        background-color: white;
-        padding-left: 40px;
-        border:none;         
-        font-size: 18px;
-        font-weight:normal;
-        font: 400 16px Arial;
-        outline:none;
-        height:32px;
-        box-sizing: border-box;
-    }
-    input::placeholder{
-        color:#b8c2cb;
-        font-size:16px;
-        font-weight: normal;
-    
-    }
-    
-    /*fim barra superior*/
-    .pesquisar{
-        position: relative;
-        top:  57.5px;
-        z-index: 1;
-    }
-    
-    .pesquisar p{
-        font-weight: bold;
-    }
-    .em_alta{
-        border-top: 1px solid rgba(236,238,239,.5) ;
-        border-bottom:  1px solid rgba(236,238,239,.5) ;
-        padding: 8px;
-        width: auto;
-       }
-    /* barra inferior*/
-    .bar{
-        background-color:white;
-        height: 57.5px;
-        width: 100%;
-        bottom:0;
-        position: fixed;
-        box-shadow: 0px -6.2px  6px -6px rgba(0,0,0,0.2);
-        z-index: 1;
-       
-    }
-    
-    .under{
-        position:relative;
-        top:12px;
-        font-size: 24px;
-        color:#b8c2cb;
-    }
-    
-        
-    
-    .justify{
-        
-        display: flex;
-        justify-content: space-between;
-    }
-    i.home{
-        padding: 5px;
-        font-size: 30px;
-        position: relative;
-        top: 10px;
-        margin-left: 50px;
-    }
-     i.buscar{
-        padding: 8px ;
-    
-    }
-    
-    .marcador{
-        padding:5px 8px;
-        margin:0px;
-    }
-    .menu{
-        padding:5px 8px;
-        margin-right: 50px;
-    
-    }
-    /* fim barra inferior*/
-    /* Bookmark*/
-    div.bookmark{
-        width: 100%;
-        height:100%;
-        z-index:1;
-        background-color: white;
-        position: absolute;
-        top:0;
-        display: block;
-        color:#8995a0;
-    
-      
-    
-    }
-    i.back{
-        margin-top: 10px;
-        margin-left:10px;
-        padding: 3px 12px 7px 11px;
-        color:black ;
-        position: relative;
-        bottom:15px;
-    }
-    .bookmark-bar{ 
-        border-bottom: 1px solid #dbe1e5;
-        box-shadow: none;
-        padding: 5px;
-    
-    }
-    .paragraph{
-        margin: 0px;
-    }
-    .title{
-        color: #030303;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 32px;
-     
-    }
-    section{
-        position: absolute;
-        top: 68.5px;
-        width: 100%;
-        height: 78%;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    
-    }
-    .bookmark-empty{
-        font-size: 18px;
-        line-height: 28px;
-        padding: 16px;
-        text-align: center;
-    
-    }
-    /*Menu*/
-    div.open-menu{
-        width: 100%;
-        height: 100%;
-        background-color:white;
-        z-index:1;
-        position: absolute;
-        top: 0;
-        display:block;
-        color:#575757;
-        display:none;
-      
-    }
-    .menu-p{
-        color:#8995a0;
-    
-    }
-    .modo-noturno{
-        float:right;
-        position:relative;
-        top: 12px;
-        margin-right:20px;
-    }
-    .noturno{
-        border: 1px solid #eceeef;
-        border-radius: 15px;
-        padding:0px 4px 0px 16px;
-        font-size: 10px;
-        
-    }
-    .noturno:focus{
-       border: 3px solid rgba(52,144,220,.5);     
-    }    
-    .noturno i{
-        font-size:15px;
-        padding:5px;
-        margin:4px 2px;
-        border-radius: 50%;
-        background-color:#f1f5f8;
-        color: #8995a0;
-    }
-    
-    @media only screen and (max-width: 1200px){
-        input[type=text]{
-            width:93% ;
-        }
-    }
-    @media only screen and (max-width: 992px){
-        input[type=text]{
-            width:90% ;
-          }
-       
+}
+@media only screen and (max-width: 992px){
+    input[type=text]{
+        width:90% ;
       }
-    @media only screen and (max-width: 770px){
-        
-      
-    }
-    @media only screen and (max-width: 750px){
-        input[type=text]{
-            width:90% ;
-          }
-        
-      
-    }
-    @media only screen and (max-width: 600px){
-        input[type=text]{
-            width:85% ;
-          }
-    }
-    @media only screen and (max-width: 400px){
-        input[type=text]{
-            width:75%;
-          }
+   
+  }
+@media only screen and (max-width: 770px){
     
-    }
-    @media only screen and (max-width: 250px){
-        input[type=text]{
-            width:60% ;
-          }
+  
+}
+@media only screen and (max-width: 750px){
+    input[type=text]{
+        width:90% ;
+      }
     
-    }
-    
+  
+}
+@media only screen and (max-width: 600px){
+    input[type=text]{
+        width:85% ;
+      }
+}
+@media only screen and (max-width: 400px){
+    input[type=text]{
+        width:75%;
+      }
+
+}
+@media only screen and (max-width: 250px){
+    input[type=text]{
+        width:60% ;
+      }
+
+}
