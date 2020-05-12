@@ -48,7 +48,7 @@ button{
 
 /*fim geral*/
 
-/* barra superior*/
+/* barra superior */
 .top_bar{
     background-color:white;
     height: 57.5px;
@@ -94,7 +94,7 @@ input::placeholder{
 
 }
 
-/*fim barra superior*/
+/*fim barra superior */
 .pesquisar{
     position: relative;
     top:  57.5px;
@@ -185,6 +185,8 @@ i.back{
     border-bottom: 1px solid #dbe1e5;
     box-shadow: none;
     padding: 5px;
+    height: auto;
+    display: inline-block;
 
 }
 .paragraph{
@@ -205,6 +207,7 @@ section{
     align-items: center;
     display: flex;
     justify-content: center;
+   
 
 }
 .bookmark-empty{
@@ -225,6 +228,7 @@ div.open-menu{
     display:block;
     color:#575757;
     overflow-y:auto;
+  
 }
 .menu-p{
     color:#8995a0;
@@ -241,6 +245,7 @@ div.open-menu{
     border-radius: 15px;
     padding:0px 4px 0px 16px;
     font-size: 10px;
+    margin-right:20px;
     
 }
 .noturno:focus{
@@ -283,6 +288,8 @@ section a{
     display: inline-block;
     margin:5px;
     text-align: center;
+
+
 }
 section.categorias{
     height:auto;
@@ -291,26 +298,64 @@ section.categorias{
     top:230px;
     overflow-y:hidden;
     overflow-x:hidden;
+    display: block;
+    margin-bottom: 80px;
+
+  
+
     
 }
+.categoria-itens{
+    height:auto;
+    position: relative;
+    width:100%;
+    display: block;
+    margin-bottom:80px;
+    margin-left:auto;
+    margin-right: auto;
+
+
+
+}   
 .categorias ul{
- position: initial;
- display:block;
+ position:relative;
+ top:200px;
+ display:inline-block;
+ height: auto;
+ width:95%;
+ margin:0px 50px 0px auto;
 
 }
-.categoria nav{
-    margin-bottom: 50px;
+.categorias li{
+    position:relative;
+    text-align: left;
+    width: 50%;
+    /*padding:15px;*/
+    height: auto;
+
 }
+li p{
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+li img{
+    width:100%;
+    margin:5px;
+    border-radius: 5px;
+
+}
+
+
 .menu-text{
     border-top: 1px  solid  #dbe1e5;
     text-align: center;
     width:100%;
-    padding:10px;
-    display: inline-block;
-    position:absolute;
-    bottom:0px;
-    margin-top:50px;;
-    margin-bottom:70.5px;
+    height: 60px;
+    padding-top: 30px;
+    display:block;
+    position: relative;
+    bottom:50px;
 
     
 }
@@ -333,38 +378,160 @@ section.categorias{
     input[type=text]{
         width:93% ;
     }
+    .categorias ul{
+  
+        top:180px;
+        
+       
+    }
+
+}
+@media only screen and (max-width: 1150px){
+    .categorias ul{
+  
+        top:170px;
+        
+       
+    }
+}
+@media only screen and (max-width: 1100px){
+    .categorias ul{
+  
+        top:160px;
+        
+       
+    }
+}
+@media only screen and (max-width: 1050px){
+    .categorias ul{
+  
+        top:155px;
+        
+       
+    }
 }
 @media only screen and (max-width: 992px){
     input[type=text]{
         width:90% ;
-      }
+    }
+    .categorias ul{
+        top:140px;
+    }
+ 
    
   }
-@media only screen and (max-width: 770px){
-    
+@media only screen and (max-width: 850px){
+    .categorias ul{
+        top: 130px;
+    }
+}
+@media only screen and (max-width: 800px){
+  
+    .categorias ul{
+
+        top: 125px;
+    }
   
 }
 @media only screen and (max-width: 750px){
     input[type=text]{
         width:90% ;
-      }
+    }
+    .categorias ul{
+        top: 120px;
+    }
     
   
+}
+@media only screen and (max-width: 700px){
+    .categorias ul{
+        top:110px;
+    }
+}
+@media only screen and (max-width: 650px){
+    .categorias ul{
+        top:100px;
+    }
 }
 @media only screen and (max-width: 600px){
     input[type=text]{
         width:85% ;
       }
+    
+    .categorias ul{
+        top: 95px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .categorias ul{
+        top:90px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .categorias ul{
+        top:80px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .categorias ul{
+        top:75px;
+    }
 }
 @media only screen and (max-width: 400px){
     input[type=text]{
         width:75%;
       }
+    .modo-noturno{
+        display:inline-block;
+        float: none;
+        top:-8px;
+    }
+    .bookmark-bar{
+        white-space: nowrap;
+    }
+    .noturno{
+        white-space: nowrap;
+    }
+    .menu-bar-text{
+        white-space: normal;
+    }
+    .categorias ul{
+        top: 65px;
+    }
+
+}
+@media only screen and (max-width: 350px){
+    .categorias ul{
+        top:60px;
+    }
+ 
+}
+@media only screen and (max-width: 300px){
+    .categorias ul{
+        top: 55px;
+    }
 
 }
 @media only screen and (max-width: 250px){
     input[type=text]{
         width:60% ;
-      }
+    }
+    .categorias ul{
+        top: 50px;
+    }
+
+}
+@media only screen and (max-width: 200px){
+    .categorias ul{
+        top: 45px;
+    }
+
+
+}
+@media only screen and (max-width: 150px){
+    .categorias ul{
+        top: 40px;
+    }
+
 
 }
