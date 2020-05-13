@@ -35,10 +35,8 @@
    
    
    .logo{
-     top:0.5px;
      height:27px ;
      width: 32px;
-     bottom: 3px;
      left:0px;
      position: absolute;
    }
@@ -51,7 +49,6 @@
      left: 0px;
      height:27px;
      width: 32px;
-     bottom: 6px;
      float: left;
    }
 
@@ -208,7 +205,7 @@
   body{
     font-family: 'Source Sans Pro',sans-serif ;
     color:#575757;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 28px;
     
   }
@@ -283,7 +280,7 @@
 
 .comment{
     float: right;
-    margin-right: 1%;
+
   
 }
 .comment button{
@@ -312,23 +309,19 @@
 
 
 .comment_image{
-   
     display: inline-block;
     position: relative;
-    top: 0px;
-   
+    top: 2px; 
 }
 
 
 
 .comment_text{
-  
     display: inline-block;
     position: relative;
-    top:-5px;
+    top:-4px;
     font: 14px "Source Sans Pro", sans-serif;
     font-weight:normal;
-  
 }
 
 
@@ -358,7 +351,7 @@
 .share_image{
     display: inline-block;
     position: relative;
-    top: 7px;
+    top: 5px;
     transform: translateY(-28%);
 }
 .share_text{
@@ -815,6 +808,7 @@ textarea {
 }
 
 .publish{
+  font-size: 15px;
   background-color: #575757;
   color: white;
   position: absolute;
@@ -848,7 +842,7 @@ textarea {
 }
 .begin-session p{
    font-weight: 700;
-   font-size: 11px;
+   font-size: 15px;
    color: #687a86;
    margin: 0 0 10px;
    line-height: 1;
@@ -1059,7 +1053,7 @@ input::placeholder{
 .form-text{
   color:#687a86;
   font-family:"Helvetica Neue",arial,sans-serif;
-  font-size: 13px;
+  font-size: 18px;
 }
 .form-text a{
   color:#288ce4;
@@ -1116,7 +1110,7 @@ form button{
 
 .text1{
   color:#444444;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 
 }
@@ -1135,8 +1129,10 @@ form button{
 
 
 .save{
+  position: relative;
+  left: 40px;
   display: inline-block;
-  transform: translateY(-45%);
+  transform: translateY(-55%);
   padding-left: 15px;
   cursor: pointer;
 }
@@ -1146,7 +1142,7 @@ form button{
  
   color:rgb(186, 186, 196);
   height: 17px;
-  font-size: 14px;
+  font-size: 18px;
   width: 40px;
   line-height: 120%;
   transform: translateY(-80%);
@@ -1156,13 +1152,13 @@ form button{
 }
 
 .days{
-  
+  left: 20px;
   color:rgb(186, 186, 196);
   padding-right: 15px;
-  left: 45px;
+  position: relative;
   height: 17px;
   line-height: 120%;
-  font-size: 14px;
+  font-size: 18px;
   transform: translateY(-80%);
   border-right: lightgray 1px solid;
   text-align: center;
@@ -1182,7 +1178,7 @@ form button{
 
 .text2{
   color:#444444;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -1190,7 +1186,7 @@ form button{
 .pat{
   color: #E2AC55;
   height: 17px;
-  font-size: 14px;
+  font-size: 18px;
   width: 40px;
   line-height: 120%;
   transform: translateY(-170%);
@@ -1220,10 +1216,10 @@ form button{
 .veja ul{
   color:rgb(186, 186, 196);
   padding-right: 15px;
-  left:15px;
+  left:40px;
   height: 17px;
   line-height: 120%;
-  font-size: 14px;
+  font-size: 18px;
   transform: translateY(-170%);
   text-align: center;
   display: inline-block;
@@ -1362,7 +1358,8 @@ form button{
 /*Medias para deixar o site responsivo*/
 
 @media only screen and (min-width: 300px) and (max-width:400px){
-  body{width: 100%;}
+  body{width: 100%;
+  font-size: 18px;}
   img{width: 100%;}
 
   .barra2{
@@ -1465,7 +1462,7 @@ form button{
 }
 
 .veja ul{
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .comment-textarea img{
@@ -1477,10 +1474,12 @@ form button{
     width: 80%;
   }
 
-  .text-area-icons{
-    float: left;
-    height: 30px;
-   
+  
+
+  .publish{
+    width: 190px;
+    transform: translateY(-122%);
+    
   }
 
 
