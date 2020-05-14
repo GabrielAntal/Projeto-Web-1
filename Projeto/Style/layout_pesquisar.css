@@ -47,7 +47,12 @@ button{
 }
 
 /*fim geral*/
-
+/*search*/
+.search{
+    width: 100%;
+    overflow-y:auto;
+    display:none;
+}
 /* barra superior */
 .top_bar{
     background-color:white;
@@ -62,7 +67,7 @@ button{
     float: right;
     position: relative;
     bottom: -15px;
-    margin-right:20px;
+    
     padding: 4px;
     
 }
@@ -143,7 +148,7 @@ i.home{
     top: 10px;
     margin-left: 50px;
 }
- i.buscar{
+ .buscar{
     padding: 8px ;
 
 }
@@ -169,6 +174,8 @@ div.bookmark{
     display: block;
     color:#8995a0;
     overflow: auto;
+    display:none;
+   
 
   
 
@@ -187,6 +194,7 @@ i.back{
     padding: 5px;
     height: auto;
     display: inline-block;
+    
 
 }
 .paragraph{
@@ -228,6 +236,8 @@ div.open-menu{
     display:block;
     color:#575757;
     overflow-y:auto;
+    display: none;
+  
   
 }
 .menu-p{
@@ -376,7 +386,7 @@ li img{
 
 @media only screen and (max-width: 1200px){
     input[type=text]{
-        width:93% ;
+        width:95% ;
     }
     .categorias ul{
   
@@ -384,6 +394,7 @@ li img{
         
        
     }
+  
 
 }
 @media only screen and (max-width: 1150px){
@@ -409,17 +420,25 @@ li img{
         
        
     }
+  
 }
 @media only screen and (max-width: 992px){
     input[type=text]{
-        width:90% ;
+        width:94% ;
     }
     .categorias ul{
         top:140px;
     }
  
    
-  }
+}
+@media only screen and (max-width: 900px){
+   
+   
+ 
+   
+}
+
 @media only screen and (max-width: 850px){
     .categorias ul{
         top: 130px;
@@ -435,7 +454,7 @@ li img{
 }
 @media only screen and (max-width: 750px){
     input[type=text]{
-        width:90% ;
+        width:92% ;
     }
     .categorias ul{
         top: 120px;
@@ -452,10 +471,11 @@ li img{
     .categorias ul{
         top:100px;
     }
+
 }
 @media only screen and (max-width: 600px){
     input[type=text]{
-        width:85% ;
+        width:91% ;
       }
     
     .categorias ul{
@@ -476,10 +496,13 @@ li img{
     .categorias ul{
         top:75px;
     }
+    input[type=text]{
+        width:89% ;
+      }
 }
 @media only screen and (max-width: 400px){
     input[type=text]{
-        width:75%;
+        width:88%;
       }
     .modo-noturno{
         display:inline-block;
@@ -498,27 +521,78 @@ li img{
     .categorias ul{
         top: 65px;
     }
+    
+   
+    .menu{
+        margin-right: 15px;
+    }
+    i.home{
+        margin:0px;
+        
+    }
+ 
+    
 
 }
 @media only screen and (max-width: 350px){
     .categorias ul{
         top:60px;
     }
+    
+    .modo-noturno{
+        display: none;
+    }
+    .menu-bar-text{
+        white-space: normal;
+    }
+    
+    p.paragraph{
+        overflow: hidden;
+        width:250px;
+        text-overflow: ellipsis;
+    }
+    .menu-p{ 
+        width: 100px;
+        
+    }
+    i.icon{
+        font-size:18px;
+    }
+    i.home{
+        font-size:24px;
+
+    }
+
+    
  
 }
 @media only screen and (max-width: 300px){
     .categorias ul{
         top: 55px;
     }
+    p.paragraph{
+        overflow: hidden;
+        width:200px;
+        text-overflow: ellipsis;
+    }
+    input[type=text]{
+        width:85% ;
+    }
 
 }
 @media only screen and (max-width: 250px){
     input[type=text]{
-        width:60% ;
+        width:83% ;
     }
     .categorias ul{
         top: 50px;
     }
+    p.paragraph{
+        overflow: hidden;
+        width:130px;
+        text-overflow: ellipsis;
+    }
+   
 
 }
 @media only screen and (max-width: 200px){
@@ -532,6 +606,15 @@ li img{
     .categorias ul{
         top: 40px;
     }
+    p.paragraph{
+        overflow: hidden;
+        width:100px;
+        text-overflow: ellipsis;
+    }
+    input[type=text]{
+        width:80% ;
+    }
+
 
 
 }
