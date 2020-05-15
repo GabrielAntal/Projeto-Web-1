@@ -696,6 +696,7 @@ textarea {
   display: block;
   padding: 5px 0px;
   height:30px;
+  
  
 
 }
@@ -811,16 +812,15 @@ textarea {
   font-size: 15px;
   background-color: #575757;
   color: white;
-  position: absolute;
-  right: 0px;
+  float: right;
   width: 250px;
   height: 41px;
-  transform: translateY(-31%);
+  transform: translateY(-13%);
   border-radius: 0px 0px 4px 0px;
   text-align: center;
   line-height: 50%;
   font-weight: bold;
- 
+  margin:0px;
 }
 
 .publish:hover{
@@ -1477,9 +1477,15 @@ form button{
   
 
   .publish{
-    width: 190px;
-    transform: translateY(-122%);
-    
+    transform: translateY(-100%);
+    width: 155px;
+    font-size: 12px;
+   
+  }
+
+ 
+  .material-icons{
+    opacity: 0%;
   }
 
 
@@ -1598,6 +1604,12 @@ form button{
 
   .text-area{
     width: 83%;
+  }
+
+  .publish{
+    width: 240px;
+    transform: translateY(-100%);
+    
   }
 
 }
@@ -1807,6 +1819,14 @@ form button{
   width:100%;
 }
 
+
+.comment-textarea img{
+  left: 0px;
+  height: 40px;
+  width: 35px;
+  position: absolute;
+}
+
 .comentarios div{
   font-size: 13px;
 }
@@ -1825,9 +1845,7 @@ form button{
     width: 100%;
   }
   img{width: 100%;}
-  .artigo p{
-    font-size: 22px;
-  }
+  
   
   .barra2{
     width: 91%;
@@ -2126,11 +2144,18 @@ form button{
 
   .date_rel {
     font-size: 20px;
+   
   }
 
   .days{
     font-size:20px;
-  
+    left: 70px;
+    position: absolute;
+  }
+  .save{
+    position: relative;
+    left: 200px;
+    transform: translateY(-68%);
   }
   
   .text2{
@@ -2142,9 +2167,13 @@ form button{
   }
 
   .veja ul{
-    font-size: 15px;
-    left: 70px;
+    font-size: 20px;
+    left: 100px;
     position: absolute;
+  }
+
+  .comentarios div{
+    font-size: 20px;
   }
  
 
