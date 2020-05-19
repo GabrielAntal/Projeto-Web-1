@@ -6,7 +6,6 @@
     height: 115px;
     width: 100%;
     top:0px;
-    left: 0px;
     position: sticky;
     z-index: 1;
 
@@ -17,7 +16,6 @@
    .tec1{
      color: #1087FF;
      position: absolute;
-     font-family:'Source Sans Pro',sans-serif ;
      text-align: center;
      left: 50%;
      transform: translateX(-50%);
@@ -1363,7 +1361,7 @@ form button{
   img{width: 100%;}
 
   .barra2{
-    width: 87%;
+    width: 81%;
   }
   
   .save_image{
@@ -1391,7 +1389,7 @@ form button{
   }
 
   .share{
-    transform: translateY(-3%);
+    transform: translateY(3%);
   }
 
 
@@ -1407,7 +1405,7 @@ form button{
   }
 
   .text1{
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .date_rel{
@@ -1419,7 +1417,7 @@ form button{
   }
   
   .text2{
-    font-size: 16px;
+    font-size: 15px;
   }
 
 
@@ -1455,14 +1453,14 @@ form button{
 }
 
 .comentarios div{
-  font-size: 13px;
+  font-size: 15px;
 }
 .veja img{
  transform: translateY(0%);
 }
 
 .veja ul{
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .comment-textarea img{
@@ -1484,9 +1482,10 @@ form button{
   }
 
  
-  .material-icons{
+  .text-area-icons .material-icons{
     opacity: 0%;
   }
+ 
 
 
 }
@@ -1540,19 +1539,19 @@ form button{
   }
 
   .text1{
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .date_rel{
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .days{
-    font-size:14px;
+    font-size:15px;
   }
   
   .text2{
-    font-size: 15px;
+    font-size: 17px;
   }
 
 
@@ -1588,14 +1587,14 @@ form button{
 }
 
 .comentarios div{
-  font-size: 13px;
+  font-size: 16px;
 }
 .veja img{
  transform: translateY(0%);
 }
 
 .veja ul{
-  font-size: 14px;
+  font-size: 15px;
 }
 .comment-textarea img{
   left:10px;
@@ -1614,13 +1613,11 @@ form button{
 
 }
 
-@media only screen and (min-width: 550px)and (max-width:600px){
+@media only screen and (min-width: 501px)and (max-width:600px){
   body{width: 100%;}
  img{width: 100%;}
 
-  .barra2{
-    width: 85%;
-  }
+
   
   .save_image{
     right:15px;
@@ -1635,8 +1632,8 @@ form button{
    }
 
   .barra2_filho{
-    font-size: 15px;
-    width: 70%;
+    font-size: 19px;
+    width: 80%;
   }
   
   .barra_autor button{
@@ -1663,25 +1660,25 @@ form button{
   }
 
   .text1{
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .date_rel{
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .days{
-    font-size:14px;
+    font-size:15px;
   }
   
   .text2{
-    font-size: 15px;
+    font-size: 17px;
   }
 
 
 
   .pat{
-    font-size: 14px;
+    font-size: 15px;
   }
 
   
@@ -1711,14 +1708,22 @@ form button{
 }
 
 .comentarios div{
-  font-size: 13px;
+  font-size: 14px;
 }
 .veja img{
  transform: translateY(0%);
 }
 
 .veja ul{
-  font-size: 14px;
+  font-size: 15px;
+}
+
+
+
+.publish{
+  width: 200px;
+  transform: translateY(-15%);
+  
 }
 
 }
@@ -1892,25 +1897,25 @@ form button{
   }
 
   .text1{
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .date_rel{
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .days{
-    font-size:15px;
+    font-size:16px;
     left: 48px;
     position: absolute;
   }
   
   .text2{
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .pat{
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .inst_sites{
@@ -1937,7 +1942,7 @@ form button{
 }
 
 .comentarios div{
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .veja img{
@@ -1945,7 +1950,7 @@ form button{
  }
  
  .veja ul{
-   font-size: 15px;
+   font-size: 16px;
    left: 70px;
    position: absolute;
  }
