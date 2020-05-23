@@ -24,6 +24,8 @@
        
     </head>
     <body>
+    <input type="checkbox" class="in first" id="checks1">
+    <div class="pesq">
         <div class= "top_bar barra">
             <input  class="alinhar" type="text" placeholder="O que você procura?">
             <div class="alinhar " >
@@ -46,36 +48,48 @@
                 <img class="imagem" src="img/mini-lupa.png" > Ciência
             </div>
         </div>
+
+
         <div class="bar justify">
+          
             <div class="alinhar">
-                <a href="https://m.tecmundo.com.br/" >
+                <a href="Index.html" >
                     <i  class="material-icons under icon home hover-blue  ">home</i>
                 </a>
               
             </div>
-            <div  class="alinhar  ">
+            <div  class="alinhar">
               <a href="Index.html">
                   <button class="under">
-                    <i class="fa fa-search icon color-blue  buscar"></i>
+                    <i class="fa fa-search icon color-blue buscar"></i>
                   </button>
               </a> 
                 
             </div>
             <div class="alinhar">
                <button= class= "under">
+                   <label for="checks2">
                    <i class="fa fa-bookmark-o icon  marcador hover-blue "></i>
+                    </label>
                </button>
             </div>
-            <div class= "alinhar">
-                <button class= "under">
-                    <i class="fa fa-bars icon menu hover-blue "></i>
-                </button>
+            
+            <div class= "alinhar"> 
+                <div class= "under">
+                    <label for="checks3">
+                      <i class="fa fa-bars icon menu hover-blue "></i>
+                    </label>
+                </div>
+            
+                
             </div>
         </div>
+    </div>
        
             
       
         <!-- BOOKMARK-->
+        <input type="checkbox" class="in sec" id="checks2">
         <div  class="bookmark">
             <div class=" top_bar bookmark-bar " >
                 <a href="Index.html" class="alinhar">
@@ -99,233 +113,239 @@
 
             <div class="bar justify">
                 <div class="alinhar">
-                    <a href="https://m.tecmundo.com.br/" >
+                    <a href="Index.html" >
                         <i  class="material-icons under icon home hover-blue  ">home</i>
                     </a>
                   
                 </div>
                 <div  class="alinhar  ">
                     <button class="under">
+                        <a href="pesquisar.html">
                         <i class="fa fa-search icon hover-blue  buscar"></i>
+                        </a>
                     </button> 
                 </div>
                 <div class="alinhar">
-                    <a href="Index.html">
-
                         <button= class= "under">
                             <i class="fa fa-bookmark-o icon  marcador color-blue "></i>
                        </button>
-                    </a>
-                   
-                </div>
-                <div class= "alinhar">
-                    <button class= "under">
-                        <i class="fa fa-bars icon menu hover-blue "></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!--MENU-->
-        <div class="open-menu">
-            <div class=" top_bar bookmark-bar " >
-                <a href="Index.html" class="alinhar">
-                    <i class="fa fa-angle-left icon back hover-blue"></i>
-                </a>
-                <div  class= "alinhar menu-bar-text">
-                    <p class= " paragraph title">Menu</p>
-                    <p class="paragraph  menu-p"> Explore por temas</p>
-                </div>
-                <div class="alinhar modo-noturno">
-                    <button class="noturno">
-                        MODO NOTURNO? <i class="fa fa-moon-o"></i>
-                    </button>
-                </div>
-            </div>
-            <section>
-                <nav>
-                    <ul >
-                        <li>
-                            <a href="https://m.tecmundo.com.br/novidades">
-                                <img src="img/menu_icons/novidades.png">
-                                <p>Novidades</p>
-                            </a>
-                    
-                        </li>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/review">
-                                <img src="img/menu_icons/reviews.png" >
-                                <p>Review</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://comparador.tecmundo.com.br/">
-                                <img src="img/menu_icons/comparador.png" >
-                                <p> Comparador</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/mais-lidas">
-                                <img src="img/menu_icons/mais_lidas.png" >
-                                <p>Mais lidas</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.tecmundo.com.br/cupons">
-                                <img src="img/menu_icons/cupons.png" >
-                                <p> Cupons de...</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/udemy">
-                                <img src="img/menu_icons/star.png" >
-                                <p>Udemy</p>
-                                
-                            
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/microsoft-ia">
-                                <img src="img/menu_icons/star.png" >
-                                <p>Microsoft</p>
-                            
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/tutorial">
-                                <img src="img/menu_icons/tutoriais.png" >
-                                <p>Tutoriais</p>
-                            
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/teste-de-velocidade.htm">
-                                <img src="img/menu_icons/teste_de_velocidade.png" >
-                                <p> Teste de Ve...</p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-
-            </section>
-            <section class="categorias">
-                <div class="categoria-itens">
-                    <ul>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/celular">
-                                <img  src="img/menu/thumb-categoria-celulares.png" alt="Celulares">
-                                <p>Celulares</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/tecnologia">
-                                <img   src="img/menu/thumb-categoria-tecnologia.png" alt="Tecnologia">
-                                <p>Tecnologia</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/internet" alt="Internet">
-                                <img  src="img/menu/thumb-categoria-internet.png">
-                                <p>Internet</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/mercado">
-                                <img  src="img/menu/thumb-categoria-mercado.png" alt="Mercado">
-                                <p>Mercado</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/seguranca">
-                                <img  src="img/menu/thumb-categoria-seguranca.png" alt="Segurança">
-                                <p>Segurança</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/software">
-                                <img src="img/menu/thumb-categoria-softwares.png" alt="Software">
-                                <p>Software</p>
-                            </a>
-
-                        </li>
-
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/ciencia">
-                                <img src="img/menu/thumb-categoria-ciencia.png" alt="Ciência">
-                                <p>Ciência</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/produto">
-                                <img  src="img/menu/thumb-categoria-produtos.png" alt="Produto">
-                                <p>Produto</p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/cultura-geek">
-                                <img src="img/menu/thumb-categoria-cultura-geek.png" alt="Cultura Geek">
-                                <p>Cultura Geek</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://m.tecmundo.com.br/mobilidade-urbana-smart-cities">
-                                <img src="img/menu/thumb-categoria-mobilidade.png" alt="Mobilidade/SmartCities">
-                                <p>Mobilidade/SmartCities</p>
-                            </a>
-
-                        </li>
-
-                    </ul>
-                    
-                    
-
-
-                </div>
-                <div class="menu-text">
-                    <p>Não achou uma categoria?</p>
-                    <button class="go-to-search">Faça uma busca!</button>
                 </div>
                 
-            </section>
-             
-            
-           
-
-            <div class="bar justify">
-                <div class="alinhar">
-                    <a href="https://m.tecmundo.com.br/" >
-                        <i  class="material-icons under icon home hover-blue  ">home</i>
-                    </a>
-                  
-                </div>
-                <div  class="alinhar  ">
-                    <button class="under">
-                        <i class="fa fa-search icon hover-blue  buscar"></i>
-                    </button> 
-                </div>
-                <div class="alinhar">
-                   <button= class="under">
-                       <i class="fa fa-bookmark-o icon  marcador hover-blue "></i>
-                   </button>
-                </div>
-                <div class="alinhar">
-                    <a href="Index.html">
-                        <button class= "under">
-                            <i class="fa fa-bars icon menu color-blue "></i>
-                        </button>
-                    </a>
+                <div class= "alinhar">
+                    <button class= "under">
+                        <label for="checks3">
+                            <i class="fa fa-bars icon menu hover-blue "></i>
+                          </label>
+                    </button>
                     
                 </div>
+            
             </div>
-        </div>  
+        </div>
+
+    <!--MENU-->
+    <input type="checkbox"  class="in thir" id="checks3">
+             <div class="open-menu">
+                <div class=" top_bar bookmark-bar " >
+                    <a href="Index.html" class="alinhar">
+                        <i class="fa fa-angle-left icon back hover-blue"></i>
+                    </a>
+                    <div  class= "alinhar menu-bar-text">
+                        <p class= " paragraph title">Menu</p>
+                        <p class="paragraph  menu-p"> Explore por temas</p>
+                    </div>
+                    <div class="alinhar modo-noturno">
+                        <button class="noturno">
+                            MODO NOTURNO? <i class="fa fa-moon-o"></i>
+                        </button>
+                    </div>
+                </div>
+                <section>
+                    <nav>
+                        <ul >
+                            <li>
+                                <a href="https://m.tecmundo.com.br/novidades">
+                                    <img src="img/menu_icons/novidades.png">
+                                    <p>Novidades</p>
+                                </a>
+                        
+                            </li>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/review">
+                                    <img src="img/menu_icons/reviews.png" >
+                                    <p>Review</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://comparador.tecmundo.com.br/">
+                                    <img src="img/menu_icons/comparador.png" >
+                                    <p> Comparador</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/mais-lidas">
+                                    <img src="img/menu_icons/mais_lidas.png" >
+                                    <p>Mais lidas</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tecmundo.com.br/cupons">
+                                    <img src="img/menu_icons/cupons.png" >
+                                    <p> Cupons de...</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/udemy">
+                                    <img src="img/menu_icons/star.png" >
+                                    <p>Udemy</p>
+                                    
+                                
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/microsoft-ia">
+                                    <img src="img/menu_icons/star.png" >
+                                    <p>Microsoft</p>
+                                
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/tutorial">
+                                    <img src="img/menu_icons/tutoriais.png" >
+                                    <p>Tutoriais</p>
+                                
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/teste-de-velocidade.htm">
+                                    <img src="img/menu_icons/teste_de_velocidade.png" >
+                                    <p> Teste de Ve...</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+    
+                </section>
+                <section class="categorias">
+                    <div class="categoria-itens">
+                        <ul>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/celular">
+                                    <img  src="img/menu/thumb-categoria-celulares.png" alt="Celulares">
+                                    <p>Celulares</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/tecnologia">
+                                    <img   src="img/menu/thumb-categoria-tecnologia.png" alt="Tecnologia">
+                                    <p>Tecnologia</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/internet" alt="Internet">
+                                    <img  src="img/menu/thumb-categoria-internet.png">
+                                    <p>Internet</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/mercado">
+                                    <img  src="img/menu/thumb-categoria-mercado.png" alt="Mercado">
+                                    <p>Mercado</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/seguranca">
+                                    <img  src="img/menu/thumb-categoria-seguranca.png" alt="Segurança">
+                                    <p>Segurança</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/software">
+                                    <img src="img/menu/thumb-categoria-softwares.png" alt="Software">
+                                    <p>Software</p>
+                                </a>
+    
+                            </li>
+    
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/ciencia">
+                                    <img src="img/menu/thumb-categoria-ciencia.png" alt="Ciência">
+                                    <p>Ciência</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/produto">
+                                    <img  src="img/menu/thumb-categoria-produtos.png" alt="Produto">
+                                    <p>Produto</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/cultura-geek">
+                                    <img src="img/menu/thumb-categoria-cultura-geek.png" alt="Cultura Geek">
+                                    <p>Cultura Geek</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://m.tecmundo.com.br/mobilidade-urbana-smart-cities">
+                                    <img src="img/menu/thumb-categoria-mobilidade.png" alt="Mobilidade/SmartCities">
+                                    <p>Mobilidade/SmartCities</p>
+                                </a>
+    
+                            </li>
+    
+                        </ul>
+                        
+                        
+    
+    
+                    </div>
+                    <div class="menu-text">
+                        <p>Não achou uma categoria?</p>
+                        <button class="go-to-search">Faça uma busca!</button>
+                    </div>
+                    
+                </section>
+                 
+                
+               
+    
+                <div class="bar justify">
+                    <div class="alinhar">
+                        <a href="Index.html" >
+                            <i  class="material-icons under icon home hover-blue  ">home</i>
+                        </a>
+                      
+                    </div>
+                    <div  class="alinhar  ">
+                        <a href="pesquisar.html">
+                        <button class="under">
+                            <i class="fa fa-search icon hover-blue  buscar"></i>
+                        </button> 
+                        </a>
+                    </div>
+                    <div class="alinhar">
+                        <button= class= "under">
+                            <label for="checks2">
+                            <i class="fa fa-bookmark-o icon  marcador hover-blue "></i>
+                             </label>
+                        </button>
+                     </div>
+                    <div class="alinhar">
+                        <button class= "under">
+                            <i class="fa fa-bars icon menu hover-blue "></i>
+                        </button>
+                    </div>
+                </div>
+            </div> 
     </body>
 </html>
 
