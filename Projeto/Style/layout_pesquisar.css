@@ -166,26 +166,32 @@ i.home{
     cursor: pointer;
 }
 .menu{
-    padding:5px 8px;
+    padding:4px 1px 4px 8px;
     margin-right: 50px;
     width: 30px;
     cursor: pointer;
 }
+.m{
+    padding: 4px 6px 4px 4px;
+}
 
 .in{
+  display:none;
+}
+
+
+
+.check1:checked + .bookmark{
+    display: block;
+}
+
+
+.check2:checked + .open-menu{
+    display: block;
+}
+.check1:checked + .open-menu{
     display: none;
 }
-
-
-
-.sec:checked + .bookmark{
-    display: block;
-}
-
-.thir:checked + .open-menu{
-    display: block;
-}
-
 
 
 
