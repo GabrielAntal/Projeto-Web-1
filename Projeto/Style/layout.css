@@ -186,6 +186,9 @@
     transform: translateY(-50%);
     top: 50%;
     left: 56px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
    }
    /*Fim da Barra2--------------------------------------------------------------------------------------------------*/
@@ -204,11 +207,12 @@
     font-family: 'Source Sans Pro',sans-serif ;
     color:#575757;
     font-size: 22px;
-    line-height: 28px;
+    line-height: 1.6em;
     
   }
   h1{
     color:black;
+    line-height: 1em;
   }
  
   figure{
@@ -768,7 +772,7 @@ textarea {
   height: 25px;
   position:relative;
   display: inline-block;
-  bottom:1px;
+  bottom:4px;
  
 }
 .link1{
@@ -1357,7 +1361,8 @@ form button{
 
 @media only screen and (min-width: 300px) and (max-width:400px){
   body{width: 100%;
-  font-size: 18px;}
+  font-size: 18px;
+  }
   img{width: 100%;}
 
   .barra2{
@@ -1379,6 +1384,7 @@ form button{
   .barra2_filho{
     font-size: 14px;
     width: 60%;
+   
   }
   
   .barra_autor button{
