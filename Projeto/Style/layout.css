@@ -55,10 +55,9 @@
   background-color: white;
   border: none;
   position: absolute;
-  left: 10px;
+  left: 0px;
   bottom: 4px;
-  height: 35px;
-  width: 35px;
+  padding:5px 14px 5px 14px;
   text-align: center;
   line-height: 50%; 
 }
@@ -68,7 +67,6 @@
  }
  .button_back:active{
   border: solid 3px;
-  border-radius: 50%;
   border-color:rgba(52,144,220,.5);
 }
 
@@ -78,8 +76,7 @@
     position: absolute;
     right: 10px;
     bottom: 4px;
-    height: 35px;
-    width: 35px;
+    padding: 4px;
     text-align: center;
     line-height: 50%;
     box-sizing: border-box;
@@ -89,30 +86,18 @@
     background:none ;
 
   }
-  .lup{
-    position: absolute;
-    line-height: 100%;
-    top:0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    margin:auto;
-    
-  }
-
-
+  
 .search:active{
   border: solid 3px;
   border-color:rgba(52,144,220,.5);
   
  }
 
-
-  .search:hover{
+.search:hover{
     border-radius: 50%;
     background-color: rgba(0,0,0,.06);
 
-  }
+}
   /*Fim da Barra com a logo-----------------------------------------------------------------------------------------*/
 
   .barra2{/* barra para substituir a barra com a logo a partir da barra_autor*/
@@ -230,6 +215,8 @@
 
 
    /*barra autor*/
+   
+   
    .barra_autor{/* borda inferor da barra*/
     border-bottom: 1px solid;
     border-color:rgb(188, 197, 206) ;
@@ -1134,8 +1121,8 @@ form button{
   position: relative;
   left: 40px;
   display: inline-block;
-  transform: translateY(-55%);
-  padding-left: 15px;
+  transform: translateY(-44%);
+  padding: 0px 10px;
   cursor: pointer;
 }
 
@@ -1365,24 +1352,36 @@ form button{
   }
   img{width: 100%;}
 
-  .barra2{
-    width: 81%;
+ 
+
+  .delimeter{
+    width:125%;
   }
+  .image{
+    width: 125%;
+    height: auto;
+  }
+
+  .artigo{
+    width: 119%;
+  }
+
+ 
   
   .save_image{
-    right:13px;
+    right:18px;
     height: 20px;
     width: 20px;
    }
 
    .img_share{
-     right: 47px;
+     right: 55px;
      height: 20px;
      width: 20px;
    }
 
   .barra2_filho{
-    font-size: 14px;
+    font-size: 22px;
     width: 60%;
    
   }
@@ -1411,32 +1410,32 @@ form button{
   }
 
   .text1{
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .date_rel{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .days{
-    font-size:14px;
+    font-size:16px;
   }
   
   .text2{
-    font-size: 15px;
+    font-size: 17px;
   }
 
 
 
   .pat{
-    font-size: 14px;
+    font-size: 15px;
   }
 
-  
+ 
 
   .inst_sites{
 
-    width: 100%;
+    width: 108%;
 
   }
 
@@ -1496,14 +1495,19 @@ form button{
 
 }
 
-@media only screen and (min-width: 410px)and (max-width:500px){
+@media only screen and (min-width: 401px)and (max-width:500px){
   body{width: 100%;}
  img{width: 100%;}
 
-  .barra2{
-    width: 87%;
-  }
   
+  
+  .delimeter, .artigo, .barra{
+    width:108%;
+  }
+
+  .barra2{
+    width: 100%;
+  }
   .save_image{
     right:15px;
     height: 20px;
@@ -1517,7 +1521,7 @@ form button{
    }
 
   .barra2_filho{
-    font-size: 16px;
+    font-size: 20px;
     width: 60%;
   }
   
@@ -1623,23 +1627,27 @@ form button{
   body{width: 100%;}
  img{width: 100%;}
 
+ .delimeter, .artigo, .barra{
+  width:105%;
+}
 
+ 
   
   .save_image{
-    right:15px;
+    right:20px;
     height: 20px;
     width: 20px;
    }
 
    .img_share{
-     right: 50px;
+     right: 55px;
      height: 20px;
      width: 20px;
    }
 
   .barra2_filho{
     font-size: 19px;
-    width: 80%;
+    width: 75%;
   }
   
   .barra_autor button{
@@ -1737,10 +1745,14 @@ form button{
 @media only screen and (min-width: 610px)and (max-width:700px){
   body{width: 100%;}
  img{width: 100%;}
+ 
 
-  .barra2{
-    width: 90%;
-  }
+ .delimeter, .artigo, .barra{
+  width:104%;
+}
+
+
+ 
   
   .save_image{
     right:15px;
@@ -1849,6 +1861,10 @@ form button{
   font-size: 14px;
 }
 
+.save{
+  transform: translateY(-39%);
+}
+
 }
 
 @media only screen and (min-width: 710px)and (max-width:800px){
@@ -1857,19 +1873,24 @@ form button{
   }
   img{width: 100%;}
   
-  
-  .barra2{
-    width: 91%;
+  .delimeter, .artigo, .barra{
+    width:100%;
   }
+
+  .barra2{
+    width: 93%;
+  }
+
+ 
   
   .save_image{
-    right:15px;
+    right:20px;
     height: 20px;
     width: 20px;
    }
 
    .img_share{
-     right: 55px;
+     right: 65px;
      height: 20px;
      width: 20px;
    }
@@ -1964,6 +1985,7 @@ form button{
  .save{
    position: relative;
    left: 140px;
+   
  }
 
 }
@@ -1973,9 +1995,12 @@ form button{
   img{width: 100%;}
 
 
-  
+  .delimeter, .artigo, .barra{
+    width:104%;
+  }
+
   .barra2{
-    width: 90%;
+    width: 94%;
   }
   
   .save_image{
@@ -2166,7 +2191,8 @@ form button{
   .save{
     position: relative;
     left: 200px;
-    transform: translateY(-68%);
+    transform: translateY(-48%);
+    font-size: 18px;
   }
   
   .text2{
