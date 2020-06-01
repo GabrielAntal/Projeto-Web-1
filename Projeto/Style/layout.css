@@ -52,7 +52,7 @@
 
 
   .button_back{
-  background-color: white;
+  background-color: inherit;
   border: none;
   position: absolute;
   left: 0px;
@@ -71,7 +71,7 @@
 }
 
 .search{
-    background-color: white;
+    background-color: inherit;
     border: none;   
     position: absolute;
     right: 10px;
@@ -134,7 +134,6 @@
     border:  solid 3px;
     border-color:  rgba(52,144,220,.5);
     border-radius: 5px;
-   
    }
 
    .img_share{
@@ -174,8 +173,89 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-
    }
+ .in{
+  display:none;
+ }
+ button label{
+   position:relative;
+
+ }
+/* modo noturno*/
+.modo-noturno{
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right: 130px;
+  
+}
+  
+button.noturno{
+  border: 1px solid #eceeef;
+  border-radius: 15px;
+  padding:0px 4px 0px 16px;
+  font-size: 10px;
+  white-space: nowrap;
+  box-sizing:content-box;
+  outline: none;  
+}
+.noturno:focus{
+  border: 3px solid rgba(52,144,220,.5);     
+}    
+.noturno i{
+  font-size:15px;
+  padding:5px;
+  margin:4px 2px;
+  border-radius: 50%;
+  background-color:#f1f5f8;;
+  color: #8995a0;
+}
+.page{
+  background-color: white;
+  color: #575757;
+  width: 100%;
+  height: 100%;
+
+}
+input[type=checkbox]:checked ~ .page{
+  color:#dddddd;
+  background-color: #262626;
+}
+input[type=checkbox]:checked + .page .color-bar,
+input[type=checkbox]:checked + .page figure
+{
+  background-color: #414141;
+
+}
+
+input[type=checkbox]:checked + .page .noturno {
+  border:none;
+  color:#ddd;
+  
+}
+input[type=checkbox]:checked + .page .noturno i,
+input[type=checkbox]:checked + .page .barra,
+input[type=checkbox]:checked + .page .barra2{
+  background-color: rgba(39, 37, 37, 0.966);
+
+
+}
+input[type=checkbox]:checked + .page h1,
+input[type=checkbox]:checked + .page p.comentario,
+input[type=checkbox]:checked + .page p.rvj{
+  color:white;
+}
+input[type=checkbox]:checked + .page .inst_sites{
+  background-color: #1f1f1f;
+}
+input[type=checkbox]:checked + .page .img_share,
+input[type=checkbox]:checked + .page .save_image,
+input[type=checkbox]:checked + .page .barra_autor button
+{
+  color:#b5b7b9;
+}
+
+/*fim modo noturno */
    /*Fim da Barra2--------------------------------------------------------------------------------------------------*/
 
 
@@ -190,7 +270,6 @@
   }
   body{
     font-family: 'Source Sans Pro',sans-serif ;
-    color:#575757;
     font-size: 22px;
     line-height: 1.6em;
     
@@ -244,7 +323,7 @@
 
 }
 .perfil_autor a{
-  background-color: white;
+  background-color:inherit;
   text-decoration: none;
   color:#575757;
 }
@@ -292,7 +371,7 @@
 
 
 .comment a{
-  background-color: white;
+  background-color: inherit;
   text-decoration: none;
 }
 
@@ -363,7 +442,7 @@
 .artigo{
   float: none;
   width:97%;
-  background-color:white; 
+  background-color:inherit; 
   margin: -20px auto 0px auto;
   padding:  15px ;/*conteudo interno, todo o conteudo sera ajeitado a 15px tanto a direita como esquerda , em cima e embaixo*/
  
@@ -376,7 +455,7 @@
   font-weight: bold;
 }
 button{
-  background-color: white;
+  background-color: inherit;
   border: solid 1px;
   border-color: darkgray;
   border-radius: 5px;
@@ -417,7 +496,7 @@ button{
   display: inline-block;
 }
 .link_button:hover{
-  background-color: white ;
+  background-color: inherit ;
   
 }
  .comentario {
@@ -509,7 +588,7 @@ button{
 }
 .comentarios-tecmundo:hover {
   color:#2a2e2e;
-   background-color:white;
+   background-color:inherit;
 }
 .quantidade-de-comentarios{
   font:15px "Helvetica Neue",arial,sans-serif;
@@ -528,7 +607,7 @@ button{
 
 .comentarios-tecmundo a:hover{
   color:#2a2e2e;
-  background-color:white;
+  background-color:inherit;
 }
 
 .iniciar-sessao{
@@ -542,7 +621,7 @@ button{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color:white;
   border:2px solid #687a86;;
   border-radius:3px;
   z-index: 1 ;
@@ -584,7 +663,7 @@ button{
 
 }
 .remover-efeito a:hover{
-  background-color: white;
+  background-color:inherit;
 }
 .recomendar-img{
   color: #f05f70;
@@ -982,7 +1061,7 @@ textarea {
   box-shadow: 0 0 0 3px rgba(0,0,0,.2);
   border-radius: 4px;
   padding: 0em;
-  background-color: white;
+  background-color:inherit;
   position:absolute;
   top:30px;
   transform: translateX(-50%); 
@@ -1089,7 +1168,7 @@ form button{
 
 .relat{
   position: relative;
-  background-color: white;
+  background-color:inherit;
   height: 120px;
   width: 100%;
   border-bottom: lightgray 1px solid;
@@ -1113,7 +1192,7 @@ form button{
 
 .link_tex:hover{
   color: #1087ff;
-  background-color:white;
+  background-color:inherit;
 }
 
 
@@ -1189,7 +1268,7 @@ form button{
 
 .veja{
   position: relative;
-  background-color: white;
+  background-color:inherit;
   height: 120px;
   width: 100%;
   border-bottom: lightgray 1px solid;
@@ -1242,6 +1321,7 @@ form button{
   height: auto;
   
 }
+
 .inst{
   color:#575757;
   line-height: 50%;
@@ -1450,6 +1530,7 @@ form button{
 
 .dropdown{
   left: 0px;
+ 
 }
 
 .comment-textarea{
@@ -2217,7 +2298,11 @@ form button{
 
  }
 
-
+ @media only screen and (max-width:1000px){
+   div.share_text{
+     display: none;
+   }
+ }
 
 
 
