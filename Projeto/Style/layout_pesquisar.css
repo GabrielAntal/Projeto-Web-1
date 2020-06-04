@@ -115,6 +115,7 @@ input{
     outline:none;
     height:32px;
     box-sizing: border-box;
+    color:inherit;
 }
 input::placeholder{
     color:#b8c2cb;
@@ -399,8 +400,8 @@ nav ul{
     
 }
 .explorer{
-    width:110px;
-    height: 80px;
+    width:100px;
+    height: 70px;
 }
 
 .open-menu section{
@@ -671,7 +672,10 @@ p.legenda{
         margin:0px;
         
     }
-      
+    .explorer{
+        width:90px;
+        height: 60px;
+    }
 
 }
 @media only screen and (max-width: 350px){

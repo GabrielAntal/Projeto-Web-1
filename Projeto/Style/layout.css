@@ -229,13 +229,16 @@ input[type=checkbox]:checked + .page .barra2{
 }
 
 input[type=checkbox]:checked + .page .color-bar,
-input[type=checkbox]:checked + .page figure
+input[type=checkbox]:checked + .page figure,
+input[type=checkbox]:checked + .page .inst input:checked ~ label
 {
   background-color: #414141;
 
+
 }
 
-input[type=checkbox]:checked + .page .noturno {
+input[type=checkbox]:checked + .page .noturno,
+input[type=checkbox]:checked + .page .mudar-cor:hover {
   border:none;
   color:#ddd;
   
@@ -245,8 +248,6 @@ input[type=checkbox]:checked + .page,
 input[type=checkbox]:checked + .text-area-icons
 {
   background-color: rgba(39, 37, 37, 0.966);
-
-
 }
 input[type=checkbox]:checked + .page h1,
 input[type=checkbox]:checked + .page p.comentario,
@@ -258,25 +259,32 @@ input[type=checkbox]:checked + .page  .save,
 input[type=checkbox]:checked + .page  .reactions button,
 input[type=checkbox]:checked + .page .quantidade-de-comentarios,
 input[type=checkbox]:checked + .page .comentarios-tecmundo,
-input[type=checkbox]:checked + .page .form-text
+input[type=checkbox]:checked + .page .comentarios-tecmundo a:hover,
+input[type=checkbox]:checked + .page .form-text,
+input[type=checkbox]:checked + .page .inst ul li a:hover
 {
   color:white;
 }
 
-input[type=checkbox]:checked + .page .comentarios-tecmundo:hover,
-input[type=checkbox]:checked + .page .comentarios-tecmundo a:hover,
-input[type=checkbox]:checked + .page .mudar-cor:hover{
-  color: #00aced;
-}
+
 
 input[type=checkbox]:checked + .page .inst_sites{
   background-color: #1f1f1f;
+  color:#dddddd;
 }
 input[type=checkbox]:checked + .page .img_share,
 input[type=checkbox]:checked + .page .save_image,
 input[type=checkbox]:checked + .page .barra_autor button
 {
   color:#b5b7b9;
+}
+input[type=checkbox]:checked + .page .sobrepor{
+  display:none;
+}
+input[type=checkbox]:checked + .page .btn-secondary:focus{
+  background-color:  rgba(255,255,255,0.3);
+  border-color: white;
+
 }
 
 /*fim modo noturno */
@@ -613,7 +621,7 @@ button{
  
 }
 .comentarios-tecmundo:hover {
-  color:#2a2e2e;
+   color:#2a2e2e;
    background-color:inherit;
 }
 .quantidade-de-comentarios{
@@ -655,6 +663,7 @@ button{
   padding-bottom:5px;
    min-width:120px;
    max-width: 120px;
+  
 }
 .dropdown-content a {
   color: #687a86;
@@ -662,6 +671,7 @@ button{
   text-decoration: none;
   display:block;
   font-weight:normal;
+  
 
 }
 .dropdown-content a:hover {
@@ -771,6 +781,7 @@ textarea {
   border:none;
   box-sizing: border-box;
   overflow:hidden;
+  color:inherit;
   
  
 }
@@ -951,7 +962,7 @@ textarea {
  text-decoration:none;
 }
 .begin-session a:hover{
-  background-color:white;
+  background-color:inherit;
 }
 
 .session{
@@ -1087,7 +1098,7 @@ textarea {
   box-shadow: 0 0 0 3px rgba(0,0,0,.2);
   border-radius: 4px;
   padding: 0em;
-  background-color:inherit;
+  background-color:white;
   position:absolute;
   top:30px;
   transform: translateX(-50%); 
@@ -1136,6 +1147,7 @@ input{
   font-size: 13px;
   box-sizing: border-box;
   background-color: inherit;
+  color: inherit;
 }
 input:focus{
   border-color: #c2c6cc;
@@ -1350,7 +1362,7 @@ form button{
 }
 
 .inst{
-  color:#575757;
+  color:inherit;
   line-height: 50%;
   padding: 32px 0px 0px;
   margin: 16px;
@@ -1382,6 +1394,7 @@ form button{
   right: 10px;
   bottom: 22%;
   transform: rotate(90deg);
+  color:inherit;
 }
 
 .inst ul{
@@ -1431,10 +1444,12 @@ form button{
 /*Fim do Institucional--------------------------------------------------------------------------------------------*/
 /*NZN*/
 .nzn{
-  border-top:1px solid rgba(3,3,3,.05);
+ /* border-top:1px solid rgba(3,3,3,.05);*/
+  border-top:0.2px solid rgba(186, 186, 196,0.6);
+
   font-size:13px;
   font-family:"Helvetica Neue",arial,sans-serif; 
-  color: #575757;
+  color: inherit;
   text-align:center;
   line-height:2em;
   font-weight: bold;
@@ -1449,10 +1464,204 @@ form button{
 .nzn img{
   width:  114px;
   height: 31px;
+  
+}
+.sobrepor{
+  position:absolute;
 }
 /*Fim NZN --------------------------------------------------------------------------------------------*/
 /*Medias para deixar o site responsivo*/
+@media only screen and (max-width: 300px){
+ /* body{
+  width:100%;
+  margin: 0px;
+  padding: 0px;
+ background: yellow;
+  font-size: 16px;
+  }
+ div .artigo{
+   width:100%;
+ }
+  div.barra{
+    width: 100%;
+    background: yellowgreen;
+  }
+  .barra2_filho{
+    width:50%;
+    color:red;
+  }
+  .modo-noturno{
+   display: none;
+  }*/
 
+  .omitir{
+    display:none;
+  }
+ 
+  body{width: 100%;
+    font-size: 18px;
+   
+    
+    }
+    img{width: 100%;}
+  
+   
+  
+    .delimeter{
+      width:125%;
+     
+    }
+    .image{
+      width: 125%;
+     
+    }
+  
+    .artigo{
+      width: 119%;
+     
+
+    }
+  
+   
+    
+    .save_image{
+      right:18px;
+      height: 20px;
+      width: 20px;
+     }
+  
+     .img_share{
+       right: 55px;
+       height: 20px;
+       width: 20px;
+     }
+    
+    
+    .barra2_filho{
+      font-size: 22px;
+      /*width: 60%;*/
+      width:50%;
+     
+     
+    }
+
+    .modo-noturno{
+     display: none;
+    }
+    
+    .barra_autor button{
+      width: 40px;
+      height: 38px;
+      overflow: hidden;
+      
+    }
+  
+    .share{
+      transform: translateY(3%);
+    }
+  
+  
+    .redirect{
+      position: absolute;
+      bottom:10px;
+      right: 10px;
+    }
+    
+    .redirect img{
+      height: 65px;
+      width: 53px; 
+    }
+  
+    .text1{
+      font-size: 17px;
+    }
+  
+    .date_rel{
+      font-size: 16px;
+    }
+  
+    .days{
+      font-size:16px;
+    }
+    
+    .text2{
+      font-size: 17px;
+    }
+  
+  
+  
+    .pat{
+      font-size: 15px;
+    }
+  
+   
+  
+    .inst_sites{
+  
+      width: 108%;
+     
+    }
+  
+    .form{
+      position: static;
+      width: 100%;
+    }
+  
+  .begin-session{
+    width: 70%;
+    left:5px;
+
+  }
+  
+  .dropdown{
+    left: 0px;
+   
+  }
+  
+  .comment-textarea{
+    top:10px;
+    width:100%;
+
+  }
+  
+  .comentarios div{
+    font-size: 15px;
+  }
+  .veja img{
+   transform: translateY(0%);
+  }
+  
+  .veja ul{
+    font-size: 13px;
+  }
+  
+  .comment-textarea img{
+    left:10px;
+    position: absolute;
+   }
+  
+    .text-area{
+      width: 80%;
+    }
+  
+    
+  
+    .publish{
+      transform: translateY(-100%);
+      width: 155px;
+      font-size: 12px;
+     
+    }
+  
+   
+    .text-area-icons .material-icons{
+      opacity: 0%;
+    }
+   
+  
+  
+  
+}
 @media only screen and (min-width: 300px) and (max-width:400px){
   body{width: 100%;
   font-size: 18px;
@@ -1489,8 +1698,13 @@ form button{
 
   .barra2_filho{
     font-size: 22px;
-    width: 60%;
+    /*width: 60%;*/
+    width:40%;
+    
    
+  }
+  .modo-noturno{
+    right: 73px;
   }
   
   .barra_autor button{
@@ -1630,7 +1844,10 @@ form button{
 
   .barra2_filho{
     font-size: 20px;
-    width: 60%;
+    width: 40%;
+  }
+  .modo-noturno{
+    right:70px ;
   }
   
   .barra_autor button{
@@ -1758,6 +1975,16 @@ form button{
     width: 75%;
   }
   
+  .barra2_filho{
+    font-size: 17px;
+    width: 80%;
+    width:55%;
+  }
+  .modo-noturno{
+    right:80px;
+  }
+  
+  
   .barra_autor button{
     width: 40px;
     height: 38px;
@@ -1877,6 +2104,10 @@ form button{
   .barra2_filho{
     font-size: 17px;
     width: 80%;
+    width:60%
+  }
+  .modo-noturno{
+    right:75px;
   }
   
   .barra_autor button{
@@ -2006,8 +2237,11 @@ form button{
   .barra2_filho{
     font-size: 19px;
     width: 80%;
+    width:60%;
   }
-  
+  .modo-noturno{
+    right:85px;
+  }
   .barra_autor button{
     width: 40px;
     height: 38px;
@@ -2280,6 +2514,8 @@ form button{
 
   .barra2_filho{
     font-size: 25px;
+    width:100px;
+    width: 65%;
   }
 
   .text1{
