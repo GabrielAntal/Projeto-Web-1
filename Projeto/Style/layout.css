@@ -1,5 +1,6 @@
 ﻿﻿.delimeter{/* delimitador da barra com a logo*/
   float: none;
+  width: 9%;
 }
 .barra{ /*barra com a logo*/
     background-color:white;
@@ -103,7 +104,7 @@
   .barra2{/* barra para substituir a barra com a logo a partir da barra_autor*/
     background-color:white;
     height: 57.5px;
-    width: 100%;
+    width: 99%;
     top:0;
     position: fixed;
     box-shadow: 0px 6.2px  6px -6px rgba(0,0,0,0.2);
@@ -197,7 +198,8 @@ button.noturno{
   font-size: 10px;
   white-space: nowrap;
   box-sizing:content-box;
-  outline: none;  
+  outline: none; 
+  
 }
 .noturno:focus{
   border: 3px solid rgba(52,144,220,.5);     
@@ -259,14 +261,25 @@ input[type=checkbox]:checked + .page  .save,
 input[type=checkbox]:checked + .page  .reactions button,
 input[type=checkbox]:checked + .page .quantidade-de-comentarios,
 input[type=checkbox]:checked + .page .comentarios-tecmundo,
-input[type=checkbox]:checked + .page .comentarios-tecmundo a:hover,
 input[type=checkbox]:checked + .page .form-text,
-input[type=checkbox]:checked + .page .inst ul li a:hover
+input[type=checkbox]:checked + .page .inst ul li a:hover,
+input[type=checkbox]:checked + .page .dropdown a:hover
 {
   color:white;
 }
 
+input[type=checkbox]:checked + .page .link_button:hover,
+input[type=checkbox]:checked + .page .comentarios-tecmundo a:hover,
+input[type=checkbox]:checked + .page .sob-comentario a:hover
+{
+  color:#0a9eff;
+}
 
+input[type=checkbox]:checked + .page .link_button:hover
+
+{
+  background-color: white;
+}
 
 input[type=checkbox]:checked + .page .inst_sites{
   background-color: #1f1f1f;
@@ -1041,7 +1054,7 @@ textarea {
   color:white;
   border: none;
   border-radius: 3px;
-
+  cursor: pointer;
 }
  .button-style:hover{
   background-color: rgba(29,47,58,.7);
@@ -1154,7 +1167,7 @@ input:focus{
 }
 input::placeholder{
   font-size: 13px;
-
+  
 }
 .form-text{
   color:#687a86;
@@ -1166,8 +1179,8 @@ input::placeholder{
   text-decoration: none;
 }
 .form-text a:hover{
- background-color:white;
-
+ background-color:inherit;
+text-decoration: underline;
 }
 form button{
   float:right;
@@ -1185,7 +1198,7 @@ form button{
   margin: 5px;
 }
 .sob-comentario a:hover{
-  background-color:white;
+  background-color:inherit;
   color: rgb(29,47,58);
 }
 .sob-comentario i{
@@ -1356,7 +1369,7 @@ form button{
   background-color: rgb(240, 238, 238);
   padding: 20px 30px 15px 30px;
   position: absolute;
-  width: 94%;
+  width: 96%;
   height: auto;
   
 }
@@ -1368,6 +1381,7 @@ form button{
   margin: 16px;
   position: relative;
   height: auto;
+ 
 }
 
 .inst label{
@@ -1404,6 +1418,7 @@ form button{
   max-height: 0;
   padding: 0px;
   margin: 0px;
+  transform: translateY(10%);
 }
 
 .inst ul li a{
@@ -1413,6 +1428,7 @@ form button{
   text-decoration: none;
   color:inherit;
   display: block;
+  font-size: 18px;
 }
 .inst ul li a:hover{
   color: black;
@@ -1453,7 +1469,7 @@ form button{
   text-align:center;
   line-height:2em;
   font-weight: bold;
-
+  transform: translateY(10%);
 }
 .nzn a{
   text-decoration: none;
@@ -1471,7 +1487,7 @@ form button{
 }
 /*Fim NZN --------------------------------------------------------------------------------------------*/
 /*Medias para deixar o site responsivo*/
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 299px){
  /* body{
   width:100%;
   margin: 0px;
@@ -1654,24 +1670,24 @@ form button{
     }
   
    
-    .text-area-icons .material-icons{
-      opacity: 0%;
-    }
+      .text-area-icons .material-icons{
+        opacity: 0%;
+      }
    
   
   
   
 }
 @media only screen and (min-width: 300px) and (max-width:400px){
-  body{width: 100%;
+  body{
   font-size: 18px;
   }
-  img{width: 100%;}
+ 
 
  
 
   .delimeter{
-    width:125%;
+    width:150%;
   }
   .image{
     width: 125%;
@@ -1679,7 +1695,7 @@ form button{
   }
 
   .artigo{
-    width: 119%;
+    width: 140%;
   }
 
  
@@ -1699,12 +1715,13 @@ form button{
   .barra2_filho{
     font-size: 22px;
     /*width: 60%;*/
-    width:40%;
+    width:30%;
     
    
   }
   .modo-noturno{
     right: 73px;
+    
   }
   
   .barra_autor button{
@@ -1796,20 +1813,21 @@ form button{
  }
 
   .text-area{
-    width: 80%;
+    width: 85%;
   }
 
   
 
   .publish{
-    transform: translateY(-100%);
+    bottom :0;
     width: 155px;
     font-size: 12px;
-   
+    position: absolute;
+    transform: translateY(-5%);
   }
 
  
-  .text-area-icons .material-icons{
+  .text-area-icons .material-icons, .icon-gif{
     opacity: 0%;
   }
  
@@ -1818,17 +1836,21 @@ form button{
 }
 
 @media only screen and (min-width: 401px)and (max-width:500px){
-  body{width: 100%;}
- img{width: 100%;}
-
-  
-  
-  .delimeter, .artigo, .barra{
-    width:108%;
+  .delimeter{
+    width:109%;
+  }
+  .imagem{
+    width: 109%;
+  } 
+  .artigo{
+    width:112%;
+  } 
+  .barra{
+    width:109%;
   }
 
   .barra2{
-    width: 100%;
+    width: 96%;
   }
   .save_image{
     right:15px;
@@ -1942,8 +1964,12 @@ form button{
 
   .publish{
     width: 240px;
-    transform: translateY(-100%);
+    transform: translateY(-110%);
     
+  }
+
+  .text-area-icons .material-icons{
+    opacity: 0%;
   }
 
 }
