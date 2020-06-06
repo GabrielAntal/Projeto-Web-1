@@ -946,7 +946,7 @@ textarea {
 }
 
 .publish:active{
-  background-color:#00aced ;
+  background-color:#00aced;
 }
 /*fim do text-area------------------------------------------------------------------------------------------------------------*/
 /* iniciar sessão*/
@@ -1681,21 +1681,41 @@ form button{
 @media only screen and (min-width: 300px) and (max-width:400px){
   body{
   font-size: 18px;
+  width:116%;
+  margin: 0px;
+  padding:0px;
+  overflow-x: hidden;
+
   }
- 
 
+ .page{
+   width: 101%;
+   margin: 0px;
+   box-sizing: border-box;
+ }
+.artigo{
+  padding:2px;
+}
  
-
+  .omitir{
+    display: none;
+  }
   .delimeter{
-    width:150%;
+    width:101%;
+  
+  }
+  .imagem{
+    width:100%;;
   }
   .image{
-    width: 125%;
+    
+    width: 100%;
     height: auto;
   }
 
   .artigo{
-    width: 140%;
+    
+    width: 100%;
   }
 
  
@@ -1774,6 +1794,7 @@ form button{
   .inst_sites{
 
     width: 108%;
+    width:102%;
 
   }
 
