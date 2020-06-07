@@ -115,18 +115,28 @@
     
    }
 
-   .save_image{
+   .sb{
     position: absolute;
     border: none;
-    bottom: 50%;
+    bottom: 40%;
     transform: translateY(50%);
     right:56px;
     height: 25px;
     width: 25px;
     cursor: pointer;
+    font-size: 18px;
     text-align: center;
     color: black;
-    padding: 3px;
+    overflow: hidden;
+    line-height: 1.6em;
+   }
+
+ 
+
+   .save_image{
+
+    right:56px;
+
    
    }
 
@@ -141,17 +151,9 @@
    }
 
    .img_share{
-    position: absolute;
-    border: none;
-    bottom: 50%;
-    transform: translateY(50%);
+
     right:100px;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    text-align: center;
-    color: black;
-    padding: 3px;
+
    }
 
 
@@ -1355,7 +1357,8 @@ form button{
 }
 
 .list
-{list-style: none
+{
+  list-style: none
 }
 
  .list li:before{
@@ -1710,7 +1713,7 @@ form button{
   }
 
   .share{
-    transform: translateY(3%);
+    transform: translateY(-6%);
   }
 
 
@@ -1726,25 +1729,25 @@ form button{
   }
 
   .text1{
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .date_rel{
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .days{
-    font-size:16px;
+    font-size:13px;
   }
   
   .text2{
-    font-size: 17px;
+    font-size: 15px;
   }
 
 
 
   .pat{
-    font-size: 15px;
+    font-size: 13px;
   }
 
  
@@ -1779,6 +1782,7 @@ form button{
 
 .veja ul{
   font-size: 13px;
+  
 }
 
 .comment-textarea img{
@@ -1795,18 +1799,21 @@ form button{
   
 
   .publish{
-    bottom :0;
+    bottom:0px;
     width: 155px;
     font-size: 12px;
     position: absolute;
-    transform: translateY(-5%);
+    transform: translateX(70%);
   }
 
  
-  .text-area-icons .material-icons, .icon-gif{
+  .text-area-icons .material-icons, .icon-gif, .image, .divisor{
     opacity: 0%;
   }
  
+  .save{
+    transform: translateY(-30%);
+  }
 
 
 }
