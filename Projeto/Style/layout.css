@@ -1,6 +1,7 @@
 ﻿﻿.delimeter{/* delimitador da barra com a logo*/
   float: none;
   width: 9%;
+  width: 100%;;
 }
 .barra{ /*barra com a logo*/
     background-color:white;
@@ -12,7 +13,9 @@
 
    }
 
-
+.imagem{
+  width:100%;
+}
    
    .tec1{
      color: #1087FF;
@@ -104,7 +107,7 @@
   .barra2{/* barra para substituir a barra com a logo a partir da barra_autor*/
     background-color:white;
     height: 57.5px;
-    width: 99%;
+    width: 100%;
     top:0;
     position: fixed;
     box-shadow: 0px 6.2px  6px -6px rgba(0,0,0,0.2);
@@ -222,7 +225,7 @@ button.noturno{
 input[type=checkbox]:checked ~ .page{
   color:#dddddd;
   background-color: #262626;
-  opacity: 100%;
+
 }
 
 input[type=checkbox]:checked + .page .barra, 
@@ -268,18 +271,13 @@ input[type=checkbox]:checked + .page .dropdown a:hover
   color:white;
 }
 
-input[type=checkbox]:checked + .page .link_button:hover,
 input[type=checkbox]:checked + .page .comentarios-tecmundo a:hover,
 input[type=checkbox]:checked + .page .sob-comentario a:hover
 {
   color:#0a9eff;
 }
 
-input[type=checkbox]:checked + .page .link_button:hover
 
-{
-  background-color: white;
-}
 
 input[type=checkbox]:checked + .page .inst_sites{
   background-color: #1f1f1f;
@@ -291,7 +289,12 @@ input[type=checkbox]:checked + .page .barra_autor button
 {
   color:#b5b7b9;
 }
-input[type=checkbox]:checked + .page .sobrepor{
+input[type=checkbox]:checked + .page .logo_nzn_noturno{
+ 
+  display:inline-block;
+}
+input[type=checkbox]:checked + .page .logo_nzn{
+ 
   display:none;
 }
 input[type=checkbox]:checked + .page .btn-secondary:focus{
@@ -317,7 +320,10 @@ input[type=checkbox]:checked + .page .btn-secondary:focus{
     font-family: 'Source Sans Pro',sans-serif ;
     font-size: 22px;
     line-height: 1.6em;
-    
+    width:100%;
+    height: 100%;
+    padding:0px;
+    margin:0px;
   }
   h1{
     color:black;
@@ -486,11 +492,11 @@ input[type=checkbox]:checked + .page .btn-secondary:focus{
   }
 .artigo{
   float: none;
-  width:97%;
+  width:100%;
   background-color:inherit; 
   margin: -20px auto 0px auto;
   padding:  15px ;/*conteudo interno, todo o conteudo sera ajeitado a 15px tanto a direita como esquerda , em cima e embaixo*/
- 
+  box-sizing:border-box;
 }
 /*botões fonte*/
 .fonte{
@@ -1221,6 +1227,7 @@ form button{
   position: relative;
   background-color:inherit;
   height: 120px;
+ 
   width: 100%;
   border-bottom: lightgray 1px solid;
   padding: 16px 0px;
@@ -1369,9 +1376,9 @@ form button{
   background-color: rgb(240, 238, 238);
   padding: 20px 30px 15px 30px;
   position: absolute;
-  width: 96%;
+  width: 100%;
   height: auto;
-  
+  box-sizing: border-box;
 }
 
 .inst{
@@ -1462,7 +1469,7 @@ form button{
 .nzn{
  /* border-top:1px solid rgba(3,3,3,.05);*/
   border-top:0.2px solid rgba(186, 186, 196,0.6);
-
+  width: 100%;
   font-size:13px;
   font-family:"Helvetica Neue",arial,sans-serif; 
   color: inherit;
@@ -1482,63 +1489,24 @@ form button{
   height: 31px;
   
 }
-.sobrepor{
-  position:absolute;
+.logo_nzn_noturno{
+ display:none;
 }
 /*Fim NZN --------------------------------------------------------------------------------------------*/
 /*Medias para deixar o site responsivo*/
 @media only screen and (max-width: 299px){
- /* body{
-  width:100%;
-  margin: 0px;
-  padding: 0px;
- background: yellow;
-  font-size: 16px;
-  }
- div .artigo{
-   width:100%;
- }
-  div.barra{
-    width: 100%;
-    background: yellowgreen;
-  }
-  .barra2_filho{
-    width:50%;
-    color:red;
-  }
-  .modo-noturno{
-   display: none;
-  }*/
-
-  .omitir{
+ 
+  .omitir, .relat ul,.veja,.comment-textarea img,.share{
     display:none;
   }
  
-  body{width: 100%;
-    font-size: 18px;
-   
-    
-    }
-    img{width: 100%;}
-  
-   
-  
-    .delimeter{
-      width:125%;
-     
-    }
-    .image{
-      width: 125%;
-     
-    }
-  
-    .artigo{
-      width: 119%;
-     
 
-    }
+  h1{
+    font-size: 20px;
+
+  }  
   
-   
+  
     
     .save_image{
       right:18px;
@@ -1554,13 +1522,12 @@ form button{
     
     
     .barra2_filho{
-      font-size: 22px;
-      /*width: 60%;*/
-      width:50%;
-     
+      font-size: 16px;
+      width:60%;
+      left:10px;
      
     }
-
+   
     .modo-noturno{
      display: none;
     }
@@ -1611,13 +1578,16 @@ form button{
     }
   
    
-  
-    .inst_sites{
-  
-      width: 108%;
-     
+    .inst a {
+     font-size: 16px;
+     text-overflow: ellipsis;
+     white-space: nowrap; 
+     overflow: hidden;
+     padding:15px 0px 0px 0px;
     }
-  
+    .image{
+      width:100%;
+    }
     .form{
       position: static;
       width: 100%;
@@ -1645,10 +1615,12 @@ form button{
   }
   .veja img{
    transform: translateY(0%);
+   display:none;
   }
   
   .veja ul{
     font-size: 13px;
+    display:none;
   }
   
   .comment-textarea img{
@@ -1657,7 +1629,7 @@ form button{
    }
   
     .text-area{
-      width: 80%;
+      width: 100;
     }
   
     
@@ -1673,50 +1645,31 @@ form button{
       .text-area-icons .material-icons{
         opacity: 0%;
       }
-   
-  
-  
-  
+    .begin-session{
+      width: 100%;
+    }
+    .relat .text1{
+      display: block;
+      width: 70%;
+      height: 80%;
+      overflow: hidden;
+      text-overflow:ellipsis;
+    }
+    .relat{
+      height: auto;
+    }
+    .relat img{
+      
+      transform: translateY(-50%);
+    }
+    
 }
 @media only screen and (min-width: 300px) and (max-width:400px){
-  body{
-  font-size: 18px;
-  width:116%;
-  margin: 0px;
-  padding:0px;
-  overflow-x: hidden;
 
-  }
-
- .page{
-   width: 101%;
-   margin: 0px;
-   box-sizing: border-box;
- }
-.artigo{
-  padding:2px;
-}
- 
   .omitir{
     display: none;
   }
-  .delimeter{
-    width:101%;
-  
-  }
-  .imagem{
-    width:100%;;
-  }
-  .image{
-    
-    width: 100%;
-    height: auto;
-  }
-
-  .artigo{
-    
-    width: 100%;
-  }
+ 
 
  
   
@@ -1733,17 +1686,22 @@ form button{
    }
 
   .barra2_filho{
-    font-size: 22px;
-    /*width: 60%;*/
-    width:30%;
+    font-size: 18px;
+    left:20px;
+    width:60%;
     
    
   }
+  button.noturno{
+    padding: 0px 3px;
+  }
   .modo-noturno{
     right: 73px;
-    
+   
   }
-  
+  .night-mode-text{
+    display:none;
+  }
   .barra_autor button{
     width: 40px;
     height: 38px;
@@ -1791,12 +1749,7 @@ form button{
 
  
 
-  .inst_sites{
-
-    width: 108%;
-    width:102%;
-
-  }
+  
 
   .form{
     position: static;
@@ -1831,6 +1784,8 @@ form button{
 .comment-textarea img{
   left:10px;
   position: absolute;
+  width:10%;
+  height: auto;
  }
 
   .text-area{
@@ -1857,22 +1812,11 @@ form button{
 }
 
 @media only screen and (min-width: 401px)and (max-width:500px){
-  .delimeter{
-    width:109%;
-  }
-  .imagem{
-    width: 109%;
-  } 
-  .artigo{
-    width:112%;
-  } 
-  .barra{
-    width:109%;
-  }
+  
 
-  .barra2{
-    width: 96%;
-  }
+   .omitir{
+     display:none;
+   }
   .save_image{
     right:15px;
     height: 20px;
@@ -1888,6 +1832,7 @@ form button{
   .barra2_filho{
     font-size: 20px;
     width: 40%;
+    left:20px;
   }
   .modo-noturno{
     right:70px ;
@@ -1938,13 +1883,6 @@ form button{
     font-size: 14px;
   }
 
-  
-
-  .inst_sites{
-
-    width: 100%;
-
-  }
 
   .form{
     position: static;
@@ -1977,10 +1915,12 @@ form button{
 .comment-textarea img{
   left:10px;
   position: absolute;
+  width: 10%;
+  height: auto;
  }
 
   .text-area{
-    width: 83%;
+    width: 85%;
   }
 
   .publish{
@@ -1996,13 +1936,6 @@ form button{
 }
 
 @media only screen and (min-width: 501px)and (max-width:600px){
-  body{width: 100%;}
- img{width: 100%;}
-
- .delimeter, .artigo, .barra{
-  width:105%;
-}
-
  
   
   .save_image{
@@ -2017,15 +1950,13 @@ form button{
      width: 20px;
    }
 
-  .barra2_filho{
-    font-size: 19px;
-    width: 75%;
-  }
+  
   
   .barra2_filho{
     font-size: 17px;
     width: 80%;
     width:55%;
+    left:20px;
   }
   .modo-noturno{
     right:80px;
@@ -2079,11 +2010,6 @@ form button{
 
   
 
-  .inst_sites{
-
-    width: 100%;
-
-  }
 
   .form{
     position: static;
@@ -2102,7 +2028,9 @@ form button{
   top:10px;
   width:100%;
 }
-
+.text-area{
+  width:85%;
+}
 .comentarios div{
   font-size: 14px;
 }
@@ -2125,14 +2053,6 @@ form button{
 }
 
 @media only screen and (min-width: 610px)and (max-width:700px){
-  body{width: 100%;}
- img{width: 100%;}
- 
-
- .delimeter, .artigo, .barra{
-  width:104%;
-}
-
 
  
   
@@ -2150,7 +2070,7 @@ form button{
 
   .barra2_filho{
     font-size: 17px;
-    width: 80%;
+    left:20px;
     width:60%
   }
   .modo-noturno{
@@ -2204,11 +2124,7 @@ form button{
 
   
 
-  .inst_sites{
 
-    width: 100%;
-
-  }
 
   .form{
     position: static;
@@ -2231,11 +2147,13 @@ form button{
 
 .comment-textarea img{
   left: 0px;
-  height: 40px;
-  width: 35px;
+  height: auto;
+  width: 10%;
   position: absolute;
 }
-
+.text-area{
+  width:85%;
+}
 .comentarios div{
   font-size: 13px;
 }
@@ -2254,18 +2172,7 @@ form button{
 }
 
 @media only screen and (min-width: 710px)and (max-width:800px){
-  body{
-    width: 100%;
-  }
-  img{width: 100%;}
   
-  .delimeter, .artigo, .barra{
-    width:100%;
-  }
-
-  .barra2{
-    width: 93%;
-  }
 
  
   
@@ -2356,7 +2263,15 @@ form button{
   top:10px;
   width:100%;
 }
-
+.comment-textarea img{
+  left: 0px;
+  height: auto;
+  width:7%;
+  position: absolute;
+}
+.text-area{
+  width:90%;
+}
 .comentarios div{
   font-size: 17px;
 }
@@ -2380,17 +2295,7 @@ form button{
 }
 
 @media only screen and (min-width: 810px) and (max-width:900px){
-  body{width: 100%;}
-  img{width: 100%;}
-
-
-  .delimeter, .artigo, .barra{
-    width:104%;
-  }
-
-  .barra2{
-    width: 94%;
-  }
+ 
   
   .save_image{
     right:15px;
@@ -2468,15 +2373,7 @@ form button{
 }
 
 @media only screen and (min-width: 910px)and (max-width:1000px){
-  body{width: 100%;}
- img{width: 100%;}
 
-
-  
-  .barra2{
-    width: 85%;
-  }
-  
   .save_image{
     right:15px;
     height: 20px;
@@ -2553,10 +2450,7 @@ form button{
 
 
 @media only screen and (min-width: 1024px)and (max-width:1100px){
-  body{width: 100%;}
- img{width: 100%;}
 
-  
 
 
   .barra2_filho{
