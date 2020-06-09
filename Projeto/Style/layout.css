@@ -268,12 +268,14 @@ input[type=checkbox]:checked + .page .quantidade-de-comentarios,
 input[type=checkbox]:checked + .page .comentarios-tecmundo,
 input[type=checkbox]:checked + .page .form-text,
 input[type=checkbox]:checked + .page .inst ul li a:hover,
-input[type=checkbox]:checked + .page .dropdown a:hover
+input[type=checkbox]:checked + .page .dropdown a:hover,
+input[type=checkbox]:checked + .page .comentarios-tecmundo a:hover,
+input[type=checkbox]:checked + .page  .reactions  input[type=radio]:checked + .reaction
 {
   color:white;
 }
 
-input[type=checkbox]:checked + .page .comentarios-tecmundo a:hover,
+
 input[type=checkbox]:checked + .page .sob-comentario a:hover
 {
   color:#0a9eff;
@@ -291,17 +293,22 @@ input[type=checkbox]:checked + .page .barra_autor button
 {
   color:#b5b7b9;
 }
-input[type=checkbox]:checked + .page .logo_nzn_noturno{
- 
-  display:inline-block;
+input[type=checkbox]:checked + .page .logo_nzn_noturno,
+input[type=checkbox]:checked + .page .discus-dark{
+  display: inline-block;
+
 }
-input[type=checkbox]:checked + .page .logo_nzn{
+input[type=checkbox]:checked + .page .logo_nzn,
+input[type=checkbox]:checked + .page .discus-hover,
+input[type=checkbox]:checked + .page .discus{
  
   display:none;
 }
-input[type=checkbox]:checked + .page .btn-secondary:focus{
+input[type=checkbox]:checked + .page  .reactions  input[type=radio]:checked + .reaction .btn-secondary{
   background-color:  rgba(255,255,255,0.3);
   border-color: white;
+  color:white;
+  
 
 }
 
@@ -582,6 +589,7 @@ button{
   color: #2a2e2e;
   box-sizing: border-box;
   outline:none;
+  
 }
 
 
@@ -597,11 +605,15 @@ button{
  text-align: center;
  
 }
-.btn-secondary:focus{
+input[type=radio]:checked + .reaction .btn-secondary{
   color: #2e87e7;
   background-color:#f2f9ff;
   border-color:   #2e87e7;
 }
+input[type=radio]:checked + .reaction{
+  color: #2e87e7;
+}
+
  
 
 .reaction img{
@@ -672,6 +684,7 @@ button{
   position: relative;
   display: inline-block;
   white-space: normal;
+  color:inherit;
 }
 .dropdown-content {
   display: none;
@@ -700,7 +713,14 @@ button{
   color:white;
   
 }
-.dropdown:hover .dropdown-content {
+.dropdown button{
+  border:none;
+  outline:none;
+  color:inherit;
+  font:inherit;
+
+}
+.dropdown button:focus + .dropdown-content {
   display: block;
 }
 /*Fim dos itens de comentário 1 abaixo das reações   -------------------------------------------------------------------------------*/
@@ -865,7 +885,7 @@ textarea {
   color:#00aced;
   font-size:12px;
   position:absolute;
-  top: -4px;
+  top: 0px;
   right: -4px;
  
 }
@@ -963,12 +983,12 @@ textarea {
   height: auto;
   width: auto;
   padding: 0em;
-  
+  outline: none;
  
 }
 .begin-session p{
    font-weight: 700;
-   font-size: 15px;
+   font-size: 11px;
    color: #687a86;
    margin: 0 0 10px;
    line-height: 1;
@@ -999,6 +1019,9 @@ textarea {
 }
 .discus-hover:hover{
   opacity: 0;
+}
+.discus-dark{
+  display: none;
 }
 .facebook-button{
   position:relative;
@@ -1072,37 +1095,37 @@ textarea {
   background-color: #288ce4;
  }
 
-.action{
+button .action{
   position: absolute;
   top:7px;
   left:160px;
   cursor:pointer;
+  font-size: 12px;
+  border-radius: 50%;
+  border:2px solid #687a86;;
+  padding: 0px 3px;
+  font-weight: 700;
+  
 }
 .form{
   position:relative; 
   left:230px;
-  top:-70px;
+  top:-60px;
   display: inline-block;
   width: 80%;
 }
- .form p{
+ .discus-text {
   font-size: 11px;
   color: #687a86;
   font-weight: 700;
   margin-bottom:0px;
  
  }
- .form span{
-  color:#687a86;
-  font-size: 12px;
-  border-radius: 50%;
-  border:2px solid ;
-  padding: 0px 3px;
-  font-weight: 700;
- }
+ 
 
 
- .action:hover .discus-information{
+ .action:hover .discus-information,
+ .action button:focus + .discus-information{
   display: block;
 }
 
@@ -1112,6 +1135,7 @@ textarea {
    border:none;
    padding:2px;
    cursor: pointer;
+   
  }
  .discus-information {
   width: 300px;
@@ -1122,11 +1146,19 @@ textarea {
   background-color:white;
   position:absolute;
   top:30px;
-  transform: translateX(-50%); 
+  transform: translateX(-51%); 
   z-index:1;
   display:none;
+  
  }
-
+ .form span{
+  color:#687a86;
+  font-size: 12px;
+  border-radius: 50%;
+  border:2px solid ;
+  padding: 0px 3px;
+  font-weight: 700;
+ }
   
 
 .discus-information li {
@@ -1760,7 +1792,8 @@ form button{
   }
 
 .begin-session{
-  width: 60%;
+  width: 100%;
+  left: 0px;
 }
 
 .dropdown{
@@ -1896,9 +1929,10 @@ form button{
     width: 100%;
   }
 
-.begin-session{
-  width: 60%;
-}
+  .begin-session{
+    width: 100%;
+    left: 0px;
+  }
 
 .dropdown{
   left: 0px;
@@ -2023,9 +2057,10 @@ form button{
     width: 100%;
   }
 
-.begin-session{
-  width: 60%;
-}
+  .begin-session{
+    width: 100%;
+    left: 0px;
+  }
 
 .dropdown{
   left: 0px;
@@ -2138,9 +2173,10 @@ form button{
     width: 100%;
   }
 
-.begin-session{
-  width: 60%;
-}
+  .begin-session{
+    width: 100%;
+    left: 0px;
+  }
 
 .dropdown{
   left: 0px;
@@ -2215,6 +2251,10 @@ form button{
   }
 
 
+ .begin-session{
+    width: 100%;
+    left: 0px;
+  }
   .redirect{
     position: absolute;
     bottom:10px;
@@ -2331,6 +2371,7 @@ form button{
   .share{
     transform: translateY(-3%);
   }
+
 
 
   .redirect{
@@ -2504,11 +2545,10 @@ form button{
   .comentarios div{
     font-size: 20px;
   }
- 
-
-
+ .form{
+  width: 75%;
  }
-
+}
  @media only screen and (max-width:1000px){
    div.share_text{
      display: none;

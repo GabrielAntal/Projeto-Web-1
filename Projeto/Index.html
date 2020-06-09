@@ -540,78 +540,100 @@
                     <p class="comments_text" style=" font-weight: 600;"> O que você achou ?</p>
                     <p class="comments_text"> 61 respostas</p>
                     <div class="reactions">
-                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar com grupos de botões">
-                            <div class="btn-group mr-2" role="group" aria-label="first group">
-                                <div class=" reaction upvote">
-                                    <button type="button" class="btn btn-secondary">
-                                        <div class=" reaction upvote_image">
-                                            <img src="img/upvote-512x512.png">
-                                        </div>
-                                        <div class=" reaction reaction_text"> 
-                                            Curtir
-                                        </div>
-                                    </button>
-                                    <div>28</div>
-                                </div>
-                                <div class=" reaction funny">
-                                    <button type="button" class="btn btn-secondary">
-                                        <div class=" reaction funny_image">
-                                            <img src="img/funny-512x512.png">
-                                        </div>
-                                        <div class=" reaction reaction_text"> 
-                                            Engraçado
-                                        </div>
-                                    </button>
-                                    <div>5</div>
-                                </div>
-                                <div class=" reaction love">
-                                    <button type="button" class="btn btn-secondary">
-                                        <div class="reaction love_image">
-                                            <img src="img/love-512x512.png" >
-                                        </div>
-                                        <div class="reaction reaction_text"> 
-                                            Amei
-                                        </div>
-                                    </button>
-                                    <div>2</div>
-                                </div>
-                                <div class="reaction surprised">
-                                    <button type="button" class="btn btn-secondary">
-                                        <div class="reaction surprised_image">
-                                            <img src="img/surprised-512x512.png.">
-                                        </div>
-                                        <div class=" reaction reaction_text"> 
-                                            Surpreso
-                                        </div>
-                                    </button>
-                                    <div>6</div>
-                   
-                                </div>
-                                <div class=" reaction angry">
-                                    <button type="button" class="btn btn-secondary">
-                                        <div class="reaction angry_image">
-                                            <img src="img/angry-512x512.png" >
-                                        </div>
-                                        <div class="reaction reaction_text"> 
-                                            Irritado
-                                        </div>
-                                    </button>
-                                    <div>4</div>
-                                </div>
-                                <div class="reaction sad">
-                                    <button type="button" class="btn btn-secondary">
-                                        <div class="reaction sad_image">
-                                            <img src="img/sad-512x512.png">
-                                        </div>
-                                        <div class="reaction reaction_text"> 
-                                            Triste
-                                        </div>
-                  
-                                    </button>
-                                    <div>16</div>
-                                </div>
-                            </div>
-		               </div>   
+                        <input type="radio"  id="upvote-radio" name="reactions-buttons" class="in">
+                        <div class=" reaction upvote">
+                            <button type="button" class=" btn-secondary">
+                                <label for="upvote-radio">
+                                    <div class=" reaction upvote_image">
+                                        <img src="img/upvote-512x512.png">
+                                    </div>
+                                    <div class=" reaction reaction_text"> 
+                                        Curtir
+                                    </div>                                 
+                                </label>
+                            </button>
+                            <div>28</div>
+                        </div>
+                        <input type="radio"  id="funny-radio" name="reactions-buttons" class="in">
+                        <div class=" reaction funny">
+                            <button type="button" class=" btn-secondary">
+                                <label for="funny-radio">
+                                    <div class=" reaction funny_image">
+                                        <img src="img/funny-512x512.png">
+                                    </div>
+                                    <div class=" reaction reaction_text"> 
+                                        Engraçado
+                                    </div>
+
+                                </label>
+                                
+                            </button>
+                        
+                            <div>5</div>
+                        </div>
+                        <input type="radio"  id="love-radio" name="reactions-buttons" class="in">
+                        <div class=" reaction love">
+                            <button type="button" class=" btn-secondary">
+                                <label for="love-radio">
+                                    <div class="reaction love_image">
+                                        <img src="img/love-512x512.png" >
+                                    </div>
+                                    <div class="reaction reaction_text"> 
+                                        Amei
+                                    </div>
+
+                                </label>
+                               
+                            </button>
+                            <div>2</div>
+                        </div>
+                        <input type="radio"  id="surprised-radio" name="reactions-buttons" class="in">
+                        <div class="reaction surprised">
+                            <button type="button" class=" btn-secondary">
+                                <label for="surprised-radio">
+                                    <div class="reaction surprised_image">
+                                        <img src="img/surprised-512x512.png.">
+                                    </div>
+                                    <div class=" reaction reaction_text"> 
+                                        Surpreso
+                                    </div>
+                                </label>
+                            </button>
+                            <div>6</div>
+           
+                        </div> 
+                        <input type="radio"  id="angry-radio" name="reactions-buttons" class="in">       
+                        <div class=" reaction angry">
+                            <button type="button" class=" btn-secondary">
+                                <label for="angry-radio">
+                                    <div class="reaction angry_image">
+                                        <img src="img/angry-512x512.png" >
+                                    </div>
+                                    <div class="reaction reaction_text"> 
+                                        Irritado
+                                    </div>
+                                </label>
+                            </button>
+                            <div>4</div>
+                        </div>
+                        <input type="radio"  id="sad-radio" name="reactions-buttons" class="in">        
+                        <div class="reaction sad">
+                            <button type="button" class=" btn-secondary">
+                                <label for="sad-radio">
+                                    <div class="reaction sad_image">
+                                        <img src="img/sad-512x512.png">
+                                    </div>
+                                    <div class="reaction reaction_text"> 
+                                        Triste
+                                    </div>
+                                </label>
+
+                            </button>
+                            <div>16</div>
+                        </div>       
+                                
+                               
+                           
                     </div>
                     <div  class=" comentarios"><!--itens de comentário1-->
                         <div  class=" comentarios-tecmundo quantidade-de-comentarios">
@@ -630,7 +652,7 @@
                         </div>
                        <div class="comentarios-tecmundo iniciar-sessao">
                             <div class="dropdown"> 
-                                Iniciar sessão <i class="fa fa-caret-down"></i>
+                                <button>Iniciar sessão <i class="fa fa-caret-down"></i></button>
                                 <div class="dropdown-content">
                                     <a target="_blank" href="https://disqus.com/next/login/?forum=tecmundo&evs=bmV0d29ya19kZWZhdWx0X2hpZGRlbjpmYWxsdGhyb3VnaDpkeW5hbWlj#!auth%3Astart">Disqus</a>
                                     <a target="_blank" href="https://disqus.com/_ax/facebook/begin/?forum=tecmundo&ctkn=qyvr7BxXekWdC4fxFnf3OADIXKI4gshi&evs=bmV0d29ya19kZWZhdWx0X2hpZGRlbjpmYWxsdGhyb3VnaDpkeW5hbWlj">Facebook</a>
@@ -683,8 +705,8 @@
                             <option  class= "opcao" value=" mais recentes"> mais recentes</option>
                             <option class= "opcao" value="mais atigos"> mais antigos</option>
                         </select>-->
-                            <div class="dropdown"> 
-                                Mostrar primeiro os mais votados <i class="fa fa-caret-down"></i>
+                            <div class="dropdown">
+                                <button>Mostrar primeiro os mais votados <i class="fa fa-caret-down"></i></button>
                                 <div class="dropdown-content comments-order">
                                     <a  target="_parent" href="https://disqus.com/embed/comments/?base=default&f=tecmundo&t_u=https%3A%2F%2Fwww.tecmundo.com.br%2Fciencia%2F151284-virus-alienigena-arma-biologica-teorias-conspiratorias-covid-19.htm&t_e=V%C3%ADrus%20alien%C3%ADgena%20e%20arma%20biol%C3%B3gica%3A%20as%20teorias%20conspirat%C3%B3rias%20da%20Covid-19%20-%20TecMundo&t_d=%0A%20%20%20%20%20%20V%C3%ADrus%20alien%C3%ADgena%20e%20arma%20biol%C3%B3gica%3A%20as%20teorias%20conspirat%C3%B3rias%20da%20Covid-19%0A%20%20%20%20&t_t=V%C3%ADrus%20alien%C3%ADgena%20e%20arma%20biol%C3%B3gica%3A%20as%20teorias%20conspirat%C3%B3rias%20da%20Covid-19%20-%20TecMundo&s_o=asc&l=pt#">Mais votados</a>
                                     <a  target="_parent" href="https://disqus.com/embed/comments/?base=default&f=tecmundo&t_u=https%3A%2F%2Fwww.tecmundo.com.br%2Fciencia%2F151284-virus-alienigena-arma-biologica-teorias-conspiratorias-covid-19.htm&t_e=V%C3%ADrus%20alien%C3%ADgena%20e%20arma%20biol%C3%B3gica%3A%20as%20teorias%20conspirat%C3%B3rias%20da%20Covid-19%20-%20TecMundo&t_d=%0A%20%20%20%20%20%20V%C3%ADrus%20alien%C3%ADgena%20e%20arma%20biol%C3%B3gica%3A%20as%20teorias%20conspirat%C3%B3rias%20da%20Covid-19%0A%20%20%20%20&t_t=V%C3%ADrus%20alien%C3%ADgena%20e%20arma%20biol%C3%B3gica%3A%20as%20teorias%20conspirat%C3%B3rias%20da%20Covid-19%20-%20TecMundo&s_o=asc&l=pt#">Mais recentes</a>
@@ -763,6 +785,7 @@
                         <a target="_blank" href="https://disqus.com/next/login/?forum=tecmundo&evs=bmV0d29ya19kZWZhdWx0X2hpZGRlbjpmYWxsdGhyb3VnaDpkeW5hbWlj">
                             <button class="discus-button">
                                 <div title ="Discus"class= "session iniciar-com-discus">
+                                    <img width ="36px" height="35px" class="discus-dark" src= "img/icon_discus_dark.png" alt="discus">
                                     <img width ="36px" height="35px" class="discus-hover" src= "img/icon_discus_hover_0.png" alt="discus">
                                     <img width ="36px" height="35px" class="discus"src="img/icon_discus_0.1.png" alt="discus">
                                 </div>
@@ -798,22 +821,26 @@
                         </a>
                     </div>
                     <div class="form">
-                        <div class=" alinhar discus-text">
-                            <p> OU REGISTRE-SE NO DISCUS</div> <div class=" alinhar action"> <button class="information"><span>?</span></button></p>
-                            <div class="discus-information">
-                                <p>O Discus é uma rede de debates</p>
-                                <ul>
-                                   <li>O Disqus não modera nem censura comentários. As regras desta comunidade são criadas por ela própria.</li>
-                                    <li>Não seja mal educado, nem infrinja a lei, e verá que tudo será melhor!</li>
-
-                                </ul>
-                                <a href="https://docs.disqus.com/kb/terms-and-policies/" target="_blank">
-                                    <button class="button-style">Leia os termos e condições</button>
-                                </a>
-
+                      
+                        
+                            <div class=" alinhar discus-text">
+                                OU REGISTRE-SE NO DISCUS</div> <div class=" alinhar action"> <button class="information"><span>?</span></button>
+                                <div class="discus-information">
+                                    <p>O Discus é uma rede de debates</p>
+                                    <ul>
+                                       <li>O Disqus não modera nem censura comentários. As regras desta comunidade são criadas por ela própria.</li>
+                                        <li>Não seja mal educado, nem infrinja a lei, e verá que tudo será melhor!</li>
+    
+                                    </ul>
+                                    <a href="https://docs.disqus.com/kb/terms-and-policies/" target="_blank">
+                                        <button class="button-style">Leia os termos e condições</button>
+                                    </a>
+    
+                                </div>
+               
                             </div>
            
-                        </div>
+                      
            
 
            
