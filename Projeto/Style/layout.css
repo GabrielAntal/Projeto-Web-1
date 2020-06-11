@@ -118,10 +118,10 @@
    .sb{
     position: absolute;
     border: none;
-    bottom: 40%;
-    transform: translateY(50%);
+    top: 50%;
+    transform: translateY(-40%);
     right:56px;
-    height: 25px;
+    height: 26px;
     width: 25px;
     cursor: pointer;
     font-size: 18px;
@@ -837,7 +837,6 @@ textarea {
 .text-area-icons{
   background-color: inherit;
   border-top: 2px solid  #dbdfe4;
-  float:right;
   width: 100%;
   display: block;
   padding: 5px 0px;
@@ -958,15 +957,16 @@ textarea {
   font-size: 15px;
   background-color: #575757;
   color: white;
-  float: right;
+  position: absolute;
   width: 250px;
-  height: 41px;
-  transform: translateY(-13%);
+  height: 42px;
   border-radius: 0px 0px 4px 0px;
   text-align: center;
   line-height: 50%;
   font-weight: bold;
   margin:0px;
+  bottom:0px;
+  right: 0px;
 }
 
 .publish:hover{
@@ -1670,7 +1670,6 @@ form button{
     
   
     .publish{
-      transform: translateY(-100%);
       width: 155px;
       font-size: 12px;
      
@@ -1705,27 +1704,19 @@ form button{
     display: none;
   }
  
-
- 
-  
   .save_image{
-    right:18px;
-    height: 20px;
-    width: 20px;
+    right:15px;
    }
 
    .img_share{
-     right: 55px;
-     height: 20px;
-     width: 20px;
+     right: 47px;
    }
 
   .barra2_filho{
     font-size: 18px;
     left:20px;
-    width:60%;
-    
-   
+    width:57%;
+  
   }
   button.noturno{
     padding: 0px 3px;
@@ -1761,31 +1752,34 @@ form button{
   }
 
   .text1{
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .date_rel{
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .days{
-    font-size:13px;
+    font-size:10px;
+    left:2px
   }
   
   .text2{
-    font-size: 15px;
-  }
-
-
-
-  .pat{
     font-size: 13px;
   }
 
- 
+  .pat{
+    font-size: 13px;
+    
+  }
 
-  
-
+  .save{
+    left:20px;
+  }
+  .save i{
+    width: 10px;
+    height: 14px;
+  }
   .form{
     position: static;
     width: 100%;
@@ -1814,7 +1808,7 @@ form button{
 }
 
 .veja ul{
-  font-size: 13px;
+  font-size: 11px;
   
 }
 
@@ -1832,15 +1826,13 @@ form button{
   
 
   .publish{
-    bottom:0px;
     width: 155px;
     font-size: 12px;
-    position: absolute;
-    transform: translateX(70%);
+
   }
 
  
-  .text-area-icons .material-icons, .icon-gif, .image, .divisor{
+  .text-area-icons .material-icons{
     opacity: 0%;
   }
  
@@ -1857,16 +1849,15 @@ form button{
    .omitir{
      display:none;
    }
+
+
+
   .save_image{
-    right:15px;
-    height: 20px;
-    width: 20px;
+    right:10px;
    }
 
    .img_share{
-     right: 50px;
-     height: 20px;
-     width: 20px;
+     right: 45px;
    }
 
   .barra2_filho{
@@ -1962,12 +1953,11 @@ form button{
 
   .text-area{
     width: 85%;
+  
   }
 
   .publish{
     width: 240px;
-    transform: translateY(-110%);
-    
   }
 
   .text-area-icons .material-icons{
@@ -1978,17 +1968,14 @@ form button{
 
 @media only screen and (min-width: 501px)and (max-width:600px){
  
+ 
   
   .save_image{
     right:20px;
-    height: 20px;
-    width: 20px;
    }
 
    .img_share{
      right: 55px;
-     height: 20px;
-     width: 20px;
    }
 
   
@@ -2062,16 +2049,14 @@ form button{
     left: 0px;
   }
 
-.dropdown{
-  left: 0px;
-}
+
 
 .comment-textarea{
   top:10px;
   width:100%;
 }
 .text-area{
-  width:85%;
+  width:90%;
 }
 .comentarios div{
   font-size: 14px;
@@ -2087,27 +2072,24 @@ form button{
 
 
 .publish{
-  width: 200px;
-  transform: translateY(-15%);
+  width: 170px;
+  font-size: 13px;
+ 
   
 }
 
 }
 
-@media only screen and (min-width: 610px)and (max-width:700px){
+@media only screen and (min-width: 601px)and (max-width:700px){
 
  
   
   .save_image{
-    right:15px;
-    height: 20px;
-    width: 20px;
+    right:15px; 
    }
 
    .img_share{
      right: 50px;
-     height: 20px;
-     width: 20px;
    }
 
   .barra2_filho{
@@ -2212,23 +2194,21 @@ form button{
   transform: translateY(-39%);
 }
 
+.publish{
+  width: 200px;
 }
 
-@media only screen and (min-width: 710px)and (max-width:800px){
-  
+}
 
- 
+@media only screen and (min-width: 701px)and (max-width:800px){
+  
   
   .save_image{
     right:20px;
-    height: 20px;
-    width: 20px;
    }
 
    .img_share{
      right: 65px;
-     height: 20px;
-     width: 20px;
    }
 
   .barra2_filho{
@@ -2323,6 +2303,8 @@ form button{
   font-size: 17px;
 }
 
+
+
 .veja img{
   transform: translateY(0%);
  }
@@ -2345,15 +2327,11 @@ form button{
  
   
   .save_image{
-    right:15px;
-    height: 20px;
-    width: 20px;
+    right:20px;
    }
 
    .img_share{
      right: 55px;
-     height: 20px;
-     width: 20px;
    }
 
   .barra2_filho{
@@ -2366,6 +2344,9 @@ form button{
     height: 38px;
     overflow: hidden;
     
+  }
+  .modo-noturno{
+    right: 80px;
   }
 
   .share{
@@ -2416,22 +2397,25 @@ form button{
     transform: translateY(0%);
   }
 
+  .save{
+    position: relative;
+    left: 150px;
+    
+  }
 
 
 }
 
 @media only screen and (min-width: 910px)and (max-width:1000px){
 
+
+  
   .save_image{
-    right:15px;
-    height: 20px;
-    width: 20px;
+    right:20px;
    }
 
    .img_share{
-     right: 55px;
-     height: 20px;
-     width: 20px;
+     right: 65px;
    }
 
   .barra2_filho{
@@ -2492,7 +2476,9 @@ form button{
     transform: translateY(0%);
   }
 
-
+  .save{
+    position: relative;
+    left: 150px;
 
 }
 
