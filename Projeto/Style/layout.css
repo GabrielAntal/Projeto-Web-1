@@ -580,6 +580,7 @@ button{
 /*botões de reações*/
 .reaction{
   display: inline-block;
+  font-size: 18px;
 
 }
 
@@ -759,7 +760,6 @@ input[type=radio]:checked + .reaction{
 .twitter button{
   background-color:#00aced;
   border:none;
-  
 }
 .facebook button{
   background-color:#3b5998;
@@ -1147,8 +1147,9 @@ button .action{
   position:absolute;
   top:30px;
   transform: translateX(-51%); 
-  z-index:1;
+  z-index:0;
   display:none;
+  
   
  }
  .form span{
@@ -1376,7 +1377,7 @@ form button{
 
 .veja ul{
   color:rgb(186, 186, 196);
-  padding-right: 15px;
+  /*padding-right: 15px;*/
   left:40px;
   height: 17px;
   line-height: 120%;
@@ -1385,7 +1386,8 @@ form button{
   text-align: center;
   display: inline-block;
   position: relative;
-
+  padding:0px  15px 0px 60px;
+  
 }
 
 .list
@@ -1436,12 +1438,14 @@ form button{
   top: 20px;
   font-weight: bold;
   height: 20px;
+  border-radius: 2px;
   
 }
 
 .inst label p{
    bottom: -10%;
    position: absolute;
+  
 }
 
 .inst label i{
@@ -1458,7 +1462,7 @@ form button{
   list-style: none;
   overflow: hidden;
   max-height: 0;
-  padding: 0px;
+  padding: 5px  0px 0px 0px;
   margin: 0px;
   transform: translateY(10%);
 }
@@ -1470,7 +1474,7 @@ form button{
   text-decoration: none;
   color:inherit;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
 }
 .inst ul li a:hover{
   color: black;
@@ -1529,177 +1533,8 @@ form button{
 }
 /*Fim NZN --------------------------------------------------------------------------------------------*/
 /*Medias para deixar o site responsivo*/
-@media only screen and (max-width: 299px){
- 
-  .omitir, .relat ul,.veja,.comment-textarea img,.share{
-    display:none;
-  }
- 
-
-  h1{
-    font-size: 20px;
-
-  }  
-  
-  
-    
-    .save_image{
-      right:18px;
-      height: 20px;
-      width: 20px;
-     }
-  
-     .img_share{
-       right: 55px;
-       height: 20px;
-       width: 20px;
-     }
-    
-    
-    .barra2_filho{
-      font-size: 16px;
-      width:60%;
-      left:10px;
-     
-    }
-   
-    .modo-noturno{
-     display: none;
-    }
-    
-    .barra_autor button{
-      width: 40px;
-      height: 38px;
-      overflow: hidden;
-      
-    }
-  
-    .share{
-      transform: translateY(3%);
-    }
-  
-  
-    .redirect{
-      position: absolute;
-      bottom:10px;
-      right: 10px;
-    }
-    
-    .redirect img{
-      height: 65px;
-      width: 53px; 
-    }
-  
-    .text1{
-      font-size: 17px;
-    }
-  
-    .date_rel{
-      font-size: 16px;
-    }
-  
-    .days{
-      font-size:16px;
-    }
-    
-    .text2{
-      font-size: 17px;
-    }
-  
-  
-  
-    .pat{
-      font-size: 15px;
-    }
-  
-   
-    .inst a {
-     font-size: 16px;
-     text-overflow: ellipsis;
-     white-space: nowrap; 
-     overflow: hidden;
-     padding:15px 0px 0px 0px;
-    }
-    .image{
-      width:100%;
-    }
-    .form{
-      position: static;
-      width: 100%;
-    }
-  
-  .begin-session{
-    width: 70%;
-    left:5px;
-
-  }
-  
-  .dropdown{
-    left: 0px;
-   
-  }
-  
-  .comment-textarea{
-    top:10px;
-    width:100%;
-
-  }
-  
-  .comentarios div{
-    font-size: 15px;
-  }
-  .veja img{
-   transform: translateY(0%);
-   display:none;
-  }
-  
-  .veja ul{
-    font-size: 13px;
-    display:none;
-  }
-  
-  .comment-textarea img{
-    left:10px;
-    position: absolute;
-   }
-  
-    .text-area{
-      width: 100;
-    }
-  
-    
-  
-    .publish{
-      width: 155px;
-      font-size: 12px;
-     
-    }
-  
-   
-      .text-area-icons .material-icons{
-        opacity: 0%;
-      }
-    .begin-session{
-      width: 100%;
-    }
-    .relat .text1{
-      display: block;
-      width: 70%;
-      height: 80%;
-      overflow: hidden;
-      text-overflow:ellipsis;
-    }
-    .relat{
-      height: auto;
-    }
-    .relat img{
-      
-      transform: translateY(-50%);
-    }
-    
-}
 @media only screen and (min-width: 300px) and (max-width:400px){
-
+  
   .omitir{
     display: none;
   }
@@ -1788,31 +1623,31 @@ form button{
 .begin-session{
   width: 100%;
   left: 0px;
-}
+ }
 
-.dropdown{
+ .dropdown{
   left: 0px;
  
-}
+ }
 
-.comment-textarea{
+ .comment-textarea{
   top:10px;
   width:100%;
-}
+ }
 
 .comentarios div{
   font-size: 15px;
-}
-.veja img{
+ }
+ .veja img{
  transform: translateY(0%);
-}
+ }
 
-.veja ul{
+ .veja ul{
   font-size: 11px;
-  
-}
+  padding-left:  20px;
+ }
 
-.comment-textarea img{
+ .comment-textarea img{
   left:10px;
   position: absolute;
   width:10%;
@@ -1943,6 +1778,7 @@ form button{
 
 .veja ul{
   font-size: 15px;
+  padding-left: 30px;
 }
 .comment-textarea img{
   left:10px;
@@ -1965,6 +1801,7 @@ form button{
   }
 
 }
+
 
 @media only screen and (min-width: 501px)and (max-width:600px){
  
@@ -2061,22 +1898,23 @@ form button{
 .comentarios div{
   font-size: 14px;
 }
-.veja img{
+ .veja img{
  transform: translateY(0%);
-}
+ }
 
-.veja ul{
+ .veja ul{
   font-size: 15px;
-}
+  padding-left:40px;
+ }
 
 
 
-.publish{
+ .publish{
   width: 170px;
   font-size: 13px;
  
   
-}
+ }
 
 }
 
@@ -2160,43 +1998,45 @@ form button{
     left: 0px;
   }
 
-.dropdown{
+ .dropdown{
   left: 0px;
-}
+ }
 
-.comment-textarea{
+ .comment-textarea{
   top:10px;
   width:100%;
-}
+ }
 
 
-.comment-textarea img{
+ .comment-textarea img{
   left: 0px;
   height: auto;
   width: 10%;
   position: absolute;
-}
-.text-area{
+ }
+ .text-area{
   width:85%;
-}
-.comentarios div{
+ } 
+ .comentarios div{
   font-size: 13px;
-}
-.veja img{
+ }
+ .veja img{
  transform: translateY(0%);
-}
+ }
 
-.veja ul{
+ .veja ul{
   font-size: 14px;
-}
+  padding-left: 30px;
+  
+ }
 
-.save{
+ .save{
   transform: translateY(-39%);
-}
+ }
 
-.publish{
+ .publish{
   width: 200px;
-}
+ }
 
 }
 
@@ -2277,35 +2117,35 @@ form button{
     width: 100%;
   }
 
-.begin-session{
+ .begin-session{
   width: 60%;
-}
+ }
 
-.dropdown{
+ .dropdown{
   left: 0px;
   font-size: 14px;
-}
+ }
 
-.comment-textarea{
+ .comment-textarea{
   top:10px;
   width:100%;
-}
-.comment-textarea img{
+ }
+ .comment-textarea img{
   left: 0px;
   height: auto;
   width:7%;
   position: absolute;
-}
-.text-area{
+ }
+ .text-area{
   width:90%;
-}
-.comentarios div{
+ }
+ .comentarios div{
   font-size: 17px;
-}
+ }
 
 
 
-.veja img{
+ .veja img{
   transform: translateY(0%);
  }
  
@@ -2479,6 +2319,7 @@ form button{
   .save{
     position: relative;
     left: 150px;
+  }
 
 }
 
@@ -2535,11 +2376,204 @@ form button{
   width: 75%;
  }
 }
- @media only screen and (max-width:1000px){
-   div.share_text{
+@media only screen and (max-width:1000px){
+  div.share_text{
+   display: none;
+  }
+}
+@media only screen and (max-width:800px){
+
+  .form{
+    left:-10px;
+    top:10px;
+    width:100%;
+    position:relative; 
+    
+  }
+  .button-style{
+    position:relative;
+    bottom:20px;
+  }
+
+}
+
+
+@media only screen and (max-width: 299px){
+ 
+  .omitir, .relat ul,.veja,.comment-textarea img,.share{
+    display:none;
+  }
+ 
+
+  h1{
+    font-size: 20px;
+
+  }  
+  
+  
+    
+    .save_image{
+      right:18px;
+      height: 20px;
+      width: 20px;
+     }
+  
+     .img_share{
+       right: 55px;
+       height: 20px;
+       width: 20px;
+     }
+    
+    
+    .barra2_filho{
+      font-size: 16px;
+      width:60%;
+      left:10px;
+     
+    }
+   
+    .modo-noturno{
      display: none;
+    }
+    
+    .barra_autor button{
+      width: 40px;
+      height: 38px;
+      overflow: hidden;
+      
+    }
+  
+    .share{
+      transform: translateY(3%);
+    }
+  
+  
+    .redirect{
+      position: absolute;
+      bottom:10px;
+      right: 10px;
+    }
+    
+    .redirect img{
+      height: 65px;
+      width: 53px; 
+    }
+  
+    .text1{
+      font-size: 17px;
+    }
+  
+    .date_rel{
+      font-size: 16px;
+    }
+  
+    .days{
+      font-size:16px;
+    }
+    
+    .text2{
+      font-size: 17px;
+    }
+  
+  
+  
+    .pat{
+      font-size: 15px;
+    }
+  
+   
+    .inst a {
+     font-size: 16px;
+     text-overflow: ellipsis;
+     white-space: nowrap; 
+     overflow: hidden;
+     padding:15px 0px 0px 0px;
+    }
+    .image{
+      width:100%;
+    }
+    .form{
+      position: static;
+      width: 100%;
+    }
+  
+  .begin-session{
+    width: 70%;
+    left:5px;
+
+  }
+  
+  .dropdown{
+    left: 0px;
+   
+  }
+  
+  .comment-textarea{
+    top:10px;
+    width:100%;
+
+  }
+  
+  .comentarios div{
+    font-size: 15px;
+  }
+  .veja img{
+   transform: translateY(0%);
+   display:none;
+  }
+  
+  .veja ul{
+    font-size: 13px;
+    display:none;
+  }
+  
+  .comment-textarea img{
+    left:10px;
+    position: absolute;
    }
- }
+  
+    .text-area{
+      width: 100;
+    }
+  
+    
+  
+    .publish{
+      width: 155px;
+      font-size: 12px;
+     
+    }
+  
+   
+      .text-area-icons .material-icons{
+        opacity: 0%;
+      }
+    .begin-session{
+      width: 100%;
+    }
+    .relat .text1{
+      display: block;
+      width: 70%;
+      height: 80%;
+      overflow: hidden;
+      text-overflow:ellipsis;
+    }
+    .relat{
+      height: auto;
+    }
+    .relat img{
+      
+      transform: translateY(-50%);
+    }
+    .discus-information{
+      width:150px;
+    }
+    .button-style{
+      position:relative;
+      bottom:5px;
+    }
+}
+
 
 
 
