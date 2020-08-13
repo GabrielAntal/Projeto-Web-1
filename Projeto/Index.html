@@ -13,12 +13,23 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <style>
+            input[type=text].show {
+            background-position:10px 8px;
+            background-image: url("img/magnifying_glass.png");
+            background-repeat: no-repeat;
+            margin-left: 20px;
+
+           }
+   
+ 
+       </style>
         
     </head>
 
    
     <body>
-        <input type="checkbox" id="night-mode"class="in">
+        <input type="checkbox" id="night-mode"class="in"/>
 	    <div class="page">
 	        <div class= "barra2">
                 <div class= "barra2_filho">
@@ -53,6 +64,26 @@
                             tec<span style="font-weight: bold;">mundo</span>
                         </div>
                     </a>
+                    <div class=desktop_search>
+                         <input type="text" placeholder="O que você procura?" class="show in"/>
+                         <img class="img_bar in" src="img/img_bar.png">
+                         <div class= "search-box in">
+                            <div class= "box-title">
+                                <p > Assuntos em alta:</p>
+                            </div>
+                           
+                            <div class= "em_alta">
+                                 <i class="material-icons lup">search</i> Ciência   
+                            </div>
+                            <div class="em_alta ">
+                                <i class="material-icons lup">search</i> Software
+                            </div>
+                            <div class="em_alta">
+                                <i class="material-icons lup">search</i> Mobilidade Urbana/Smart Cities
+                            </div>
+                         </div>
+                    </div>
+
                     <div class="voltar">
                         <a class="button_back back" href="https://m.tecmundo.com.br/">
                             <i class="fa fa-angle-left" style="font-size:30px; color:#1087ff"></i>
@@ -537,7 +568,7 @@
                     <p class="comments_text" style=" font-weight: 600;"> O que você achou ?</p>
                     <p class="comments_text"> 61 respostas</p>
                     <div class="reactions">
-                        <input type="radio"  id="upvote-radio" name="reactions-buttons" class="in">
+                        <input type="radio"  id="upvote-radio" name="reactions-buttons" class="in"/>
                         <div class=" reaction upvote">
                             <button type="button" class=" btn-secondary">
                                 <label for="upvote-radio">
@@ -551,7 +582,7 @@
                             </button>
                             <div>28</div>
                         </div>
-                        <input type="radio"  id="funny-radio" name="reactions-buttons" class="in">
+                        <input type="radio"  id="funny-radio" name="reactions-buttons" class="in"/>
                         <div class=" reaction funny">
                             <button type="button" class=" btn-secondary">
                                 <label for="funny-radio">
@@ -568,7 +599,7 @@
                         
                             <div>5</div>
                         </div>
-                        <input type="radio"  id="love-radio" name="reactions-buttons" class="in">
+                        <input type="radio"  id="love-radio" name="reactions-buttons" class="in"/>
                         <div class=" reaction love">
                             <button type="button" class=" btn-secondary">
                                 <label for="love-radio">
@@ -584,7 +615,7 @@
                             </button>
                             <div>2</div>
                         </div>
-                        <input type="radio"  id="surprised-radio" name="reactions-buttons" class="in">
+                        <input type="radio"  id="surprised-radio" name="reactions-buttons" class="in"/>
                         <div class="reaction surprised">
                             <button type="button" class=" btn-secondary">
                                 <label for="surprised-radio">
@@ -599,7 +630,7 @@
                             <div>6</div>
            
                         </div> 
-                        <input type="radio"  id="angry-radio" name="reactions-buttons" class="in">       
+                        <input type="radio"  id="angry-radio" name="reactions-buttons" class="in"/>       
                         <div class=" reaction angry">
                             <button type="button" class=" btn-secondary">
                                 <label for="angry-radio">
@@ -613,7 +644,7 @@
                             </button>
                             <div>4</div>
                         </div>
-                        <input type="radio"  id="sad-radio" name="reactions-buttons" class="in">        
+                        <input type="radio"  id="sad-radio" name="reactions-buttons" class="in"/>        
                         <div class="reaction sad">
                             <button type="button" class=" btn-secondary">
                                 <label for="sad-radio">
@@ -843,9 +874,9 @@
            
                         <form class="form_pren">
               
-                            <input type="text" placeholder="Nome" >
-                            <input type="email" placeholder="E-mail" >
-                            <input type="password" placeholder="Palavra-passe">
+                            <input type="text" placeholder="Nome" />
+                            <input type="email" placeholder="E-mail"/>
+                            <input type="password" placeholder="Palavra-passe"/>
                             <div class="form-text">
                                 Please access our 
                                 <a href="https://help.disqus.com/customer/portal/articles/466259-privacy-policy" target="_blank">
@@ -881,7 +912,7 @@
 
             <nav class="inst_sites">
                 <div class="inst">
-                    <input type="checkbox" id="ckeck1">
+                    <input type="checkbox" id="ckeck1"/>
                     <label for="ckeck1">
                     <p>Institucional </p>
                     <i class="fa fa-angle-left" style="font-size:22px;"></i>
@@ -922,7 +953,7 @@
 
 
                 <div class="inst">
-                    <input type="checkbox" id="ckeck2">
+                    <input type="checkbox" id="ckeck2"/>
                     <label for="ckeck2">
                         <p>Nossos Sites</p>
                         <i class="fa fa-angle-left" style="font-size:22px;"></i>
